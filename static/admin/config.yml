@@ -1,27 +1,32 @@
-# backend: 
-#   name: gitlab
-#   repo: anadea/randd/anadea-jobs.git
+backend: 
+  name: git-gateway
+  repo: Anadea/anadea_jobs.git
 #   auth_type: implicit
 #   app_id: id
-#   branch: master
+  branch: main
 
-# media_folder: static.img
-# public_folder: /img
+media_folder: static/images
+public_folder: /images
 
-# collections:
-#   - name: "jobs"
-#     label: "Jobs"
-#     folder: "src/jobs"
-#     create: true
-#     slug: "{{slug}}"
-#     fields:
-#       - label: "Title"
-#         name: "title"
-#       - label: "Location"
-#         name: "location"
-#       - label: "Intro"
-#         name: "intro"
-#         required: false
+collections:
+  - name: "jobs"
+    label: "Jobs"
+    folder: "src/jobs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+      - label: "Location"
+        name: "location"
+      - label: "Intro"
+        name: "intro"
+        required: false
+      - label: "LinkedIn"
+        name: "linkedIn"
+        required: false
+      - label: "Details"
+        name: "detail"
 #       - label: "Required skills"
 #         name: "required_fields"
 #       - label: "Nice to have"
