@@ -22,6 +22,9 @@ collections:
       - label: "Intro"
         name: "intro"
         required: false
+      - label: "LinkedIn"
+        name: "linkedIn"
+        required: false
       - label: "Details"
         name: "detail"
 #       - label: "Required skills"
