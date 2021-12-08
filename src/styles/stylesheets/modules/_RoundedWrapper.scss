@@ -1,0 +1,75 @@
+.RoundedWrapper {
+  background-size: cover;
+  border-radius: 9px;
+  padding-top: 80px;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+  }
+
+  &--small {
+    padding: 22px 25px;
+  }
+
+  &--medium {
+    padding: 50px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 30px 25px;
+    }
+  }
+
+  &--large {
+    padding: 70px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 30px;
+    }
+  }
+
+  &--shadowed {
+    box-shadow: -20px 16px 100px rgba(get-color('black'), 0.5);
+
+    @include media-breakpoint-down(md) {
+      box-shadow: -10.75px 12.1833px 40.85px rgba(get-color('black'), 0.5);
+    }
+  }
+
+  &--healthcareProjects {
+    background: linear-gradient(0deg, get-color('medical-venice-blue') 0%, get-color('medical-elm') 100%);
+  }
+
+  &--progress {
+    background: linear-gradient(270.43deg, get-color('backend-amethyst') 1.77%, get-color('backend-malibu') 99.99%);
+    border-radius: 2px;
+    height: 6px;
+    padding: 0;
+  }
+
+  &--mobDev {
+    background-image: url('/assets/new_anadea/services/mobile_development/3.png');
+
+    @include media-breakpoint-down(sm) {
+      background-image: none;
+    }
+  }
+
+  &--blogPost {
+    @include media-breakpoint-down(sm) {
+      min-height: 220px;
+    }
+  }
+
+  &--travel {
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-right: 0;
+
+    @include media-breakpoint-down(md) {
+      padding-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.Button {
+  appearance: none;
+  background-color: get-color('cerise-red');
+  border: 0;
+  border-radius: 4px;
+  color: get-color('white');
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 16px;
+  margin: 0;
+  outline: none;
+  padding: 16px 24px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+
+  &--white {
+    background-color: get-color('white');
+    border: 2px solid get-color('royal-blue');
+    color: get-color('royal-blue');
+  }
+}

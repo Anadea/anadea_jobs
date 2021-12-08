@@ -1,0 +1,331 @@
+.Navigation {
+  position: fixed;
+  top: 0;
+  transition: background 0.3s;
+  width: 100%;
+  z-index: 10;
+
+  &.isCompressed {
+    @include media-breakpoint-up(lg) {
+      background-color: transparent;
+    }
+
+    .Navigation-content {
+      max-width: 100%;
+      padding: 0 0 0 20px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 20px;
+      }
+    }
+
+    .Navigation-logo {
+      padding-bottom: 21px;
+      padding-top: 21px;
+      top: 15px;
+    }
+
+    .Navigation-logoImage {
+      opacity: 0;
+    }
+
+    .Navigation-link {
+      opacity: 0;
+      pointer-events: none;
+
+      @include media-breakpoint-down(md) {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    }
+
+    .Navigation-breadcrumbs {
+      display: none;
+    }
+  }
+
+  &.isOpen {
+    @include media-breakpoint-up(lg) {
+      background-color: transparent;
+    }
+
+    .Navigation-linkList {
+      @include media-breakpoint-down(md) {
+        left: 0;
+      }
+    }
+
+    .Navigation-sandwich {
+      border-bottom-width: 0;
+
+      &::before {
+        height: 1px;
+        top: 7px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        height: 1px;
+        top: 7px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &:not(.isOpen) {
+    @include media-breakpoint-up(lg) {
+      background-color: transparent;
+    }
+
+    @include media-breakpoint-down(md) {
+      background-color: transparent;
+    }
+  }
+
+  &:not(.isCompressed) {
+    .Navigation-logo {
+      &:hover {
+        + .Navigation-breadcrumbs {
+          + .Navigation-linkList {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    .Navigation-breadcrumbs {
+      &:hover {
+        + .Navigation-linkList {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &-content {
+    align-items: center;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 70px;
+    transition: padding 0.5s, max-width 0.75s;
+
+    @include media-breakpoint-down(md) {
+      background: inherit;
+      padding: 0 20px;
+    }
+  }
+
+  &-linkList {
+    align-items: center;
+    align-self: stretch;
+    background: inherit;
+    display: flex;
+    justify-content: flex-end;
+    max-height: calc(100vh - 50px);
+    overflow: auto;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+      left: -100%;
+      padding: 20px;
+      position: absolute;
+      top: 50px;
+      transition: left 0.3s;
+    }
+  }
+
+  &-link {
+    color: get-color("cod-gray");
+    display: inline-block;
+    line-height: 40px;
+    opacity: 1;
+    padding: 0 15px;
+    text-decoration: none;
+    transition: background 0.3s, opacity 1s;
+
+    @include media-breakpoint-down(md) {
+      border-bottom: 1px solid get-color("alto");
+      display: block;
+      padding: 0;
+    }
+
+    &:hover {
+      .Navigation-linkText {
+        border-bottom: 3px solid rgba(get-color("cerise-red"), 0.5);
+
+        @include media-breakpoint-down(md) {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    &--darkTheme {
+      color: get-color("white");
+    }
+  }
+
+  &-linkText {
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.25s;
+
+    @include media-breakpoint-down(md) {
+      border-bottom: 0;
+    }
+  }
+
+  &-button {
+    padding-left: 15px;
+
+    @include media-breakpoint-down(md) {
+      padding: 20px 0;
+    }
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+    }
+  }
+
+  &-logo {
+    background: get-color("cerise-red");
+    flex-shrink: 0;
+    padding: 132px 20px 20px;
+    position: relative;
+    transition: padding 0.5s;
+    z-index: 200;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 21px;
+      padding-top: 21px;
+    }
+
+    &:hover {
+      + .Navigation-breadcrumbs {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+  }
+
+  &-logoImage {
+    bottom: 42px;
+    left: 50%;
+    opacity: 1;
+    position: absolute;
+    transform: translate(-50%, 0);
+    transition: opacity 0.5s;
+    width: 68px;
+
+    @include media-breakpoint-down(md) {
+      opacity: 0;
+    }
+  }
+
+  &-breadcrumbs {
+    background: inherit;
+    bottom: 0;
+    display: flex;
+    opacity: 0;
+    padding-left: 150px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+
+  &-breadcrumbsItem {
+    align-items: center;
+    background: url("/assets/new_anadea/anadea/arrow1.svg") no-repeat left
+      center;
+    color: get-color("cod-gray");
+    display: flex;
+    padding-left: 55px;
+
+    &:hover {
+      .Navigation-linkText {
+        border-bottom: 3px solid rgba(get-color("cerise-red"), 0.5);
+
+        @include media-breakpoint-down(md) {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    &:first-child {
+      display: none;
+    }
+
+    &--darkTheme {
+      background: url("/svg/arrow-dark-theme.svg") no-repeat left center;
+      color: get-color("white");
+    }
+  }
+
+  &-breadcrumbsLink {
+    color: inherit;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 255px;
+    text-decoration: none;
+  }
+
+  &-sandwich {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid currentColor;
+    color: get-color("emperor");
+    display: none;
+    height: 16px;
+    outline: none;
+    position: relative;
+    transition: all 0.3s linear;
+    width: 25px;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+
+    &--darkTheme {
+      color: get-color("white");
+    }
+
+    &::before {
+      background-color: currentColor;
+      content: "";
+      height: 2px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: all 0.3s linear;
+      width: 100%;
+    }
+
+    &::after {
+      background-color: currentColor;
+      content: "";
+      height: 2px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transition: all 0.3s linear;
+      width: 100%;
+    }
+  }
+}

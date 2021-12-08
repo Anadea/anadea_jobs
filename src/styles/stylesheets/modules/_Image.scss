@@ -1,0 +1,79 @@
+.Image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+
+  &--large {
+    width: 180%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &--medium {
+    max-width: 180%;
+    width: 180%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &--shiftLeft {
+    left: -350px;
+    max-width: unset;
+    width: calc(100% + 350px);
+
+    @include media-breakpoint-down(sm) {
+      left: unset;
+      width: 100%;
+    }
+  }
+
+  &--shiftRight {
+    max-width: unset;
+    width: calc(100% + 350px);
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &--shiftBoth {
+    left: -350px;
+    max-width: unset;
+    right: -350px;
+    width: calc(100% + 700px);
+
+
+    @include media-breakpoint-down(sm) {
+      left: unset;
+      right: unset;
+      width: 100%;
+    }
+  }
+
+  &--logo {
+    height: 144px;
+    width: 144px;
+
+    @include media-breakpoint-down(md) {
+      height: 160px;
+      width: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  &--xs-large {
+    @include media-breakpoint-down(xs) {
+      overflow: hidden;
+      width: 120%;
+    }
+  }
+}

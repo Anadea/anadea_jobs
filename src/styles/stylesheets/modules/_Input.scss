@@ -1,0 +1,46 @@
+.Input {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Stem Text', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: 100%;
+  line-height: 100%;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  width: 100%;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    border: 0;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  &--large {
+    padding: 17px;
+  }
+
+  &--autofillDark {
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: get-color('white');
+    }
+  }
+
+  &--generator {
+    padding: 17px;
+    
+    @include media-breakpoint-down(xs) {
+      font-size: 13px;
+      padding: 12px;
+    }
+  }
+}
+

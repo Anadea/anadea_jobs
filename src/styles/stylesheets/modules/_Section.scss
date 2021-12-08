@@ -1,0 +1,116 @@
+.Section {
+  overflow: hidden;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  &--start {
+    padding-bottom: 30px;
+    padding-top: 280px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 10px;
+      padding-top: 190px;
+    }
+  }
+
+  &--large {
+    padding-bottom: 200px;
+    padding-top: 300px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 70px;
+      padding-top: 190px;
+    }
+  }
+
+  &--stavRewards {
+    background-color: get-color('cod-gray');
+
+    @include media-breakpoint-down(sm) {
+      background: get-color('dark-gray');
+    }
+  }
+
+  &-bottomBackground {
+    bottom: 0;
+    content: '';
+    height: 30%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+    &--getsocio {
+      bottom: -14%;
+      height: 58%;
+      transform: rotate(-7deg);
+      width: 108%;
+    }
+  }
+
+  &-content {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: relative;
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &--fluid {
+      max-width: 100%;
+    }
+
+    &--companies {
+      align-items: center;
+      background-image: url('/assets/new_anadea/anadea/group7.png');
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      height: 775px;
+      padding: 50px 20px;
+
+      @include media-breakpoint-down(sm) {
+        align-items: flex-start;
+        background-image: url('/assets/new_anadea/anadea/group7_mobile.png');
+      }
+    }
+
+    &--realEstate {
+      align-items: flex-end;
+      background-image: url('/assets/new_anadea/solutions/real_estate/10.png');
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      padding-top: 130px;
+
+      @include media-breakpoint-down(sm) {
+        align-items: flex-start;
+        background-image: url('/assets/new_anadea/solutions/real_estate/10_mobile.png');
+        padding-top: 0;
+      }
+    }
+  }
+
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--footer {
+    padding-bottom: 54px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 90px;
+    }
+  }
+}

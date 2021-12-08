@@ -1,0 +1,13 @@
+.award {
+  position: absolute;
+  right: 0;
+
+  @include media-breakpoint-down(md) {
+    position: relative;
+    left: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

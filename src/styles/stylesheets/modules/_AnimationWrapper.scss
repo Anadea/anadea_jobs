@@ -1,0 +1,35 @@
+.AnimationWrapper {
+  display: block;
+  overflow: hidden;
+  padding-top: 250px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 330px;
+  }
+
+  svg {
+    transform: scale(1.2) !important;
+
+    @include media-breakpoint-down(md) {
+      transform: scale(1.4) !important;
+    }
+  }
+
+  &--jobs {
+    min-height: 750px;
+    overflow: hidden;
+    padding: 186px 0 0;
+    margin-bottom: -13%;
+
+    @include media-breakpoint-down(md) {
+      min-height: 350px;
+      padding: 120px 0 0;
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 240px 0 0;
+    }
+  }
+}

@@ -1,0 +1,289 @@
+@each $name, $val in $color-list {
+  .u-bg-#{$name} {
+    background-color: $val;
+  }
+}
+
+@each $name, $val in $color-list {
+  .u-dash-#{$name} {
+    &::before {
+      background-color: $val;
+    }
+  }
+}
+
+@for $opacity from 1 through 10 {
+  .u-opacity-#{$opacity} {
+    opacity: #{'0.'}#{$opacity};
+  }
+}
+
+@for $width from 1 through 10 {
+  .u-w-#{$width * 10} {
+    width: #{$width * 10}#{'%'};
+  }
+}
+
+
+.u-decoration-none {
+  text-decoration: none;
+}
+
+.u-d-none {
+  display: none;
+}
+
+.u-w-auto {
+  width: auto;
+}
+
+.u-w-lg-80 {
+  width: 80%;
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+}
+
+.u-svg-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(97%) contrast(90%);
+}
+
+.u-svg-alto {
+  filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(97%) contrast(92%);
+}
+
+.u-svg-blue-marguerite {
+  filter: invert(55%) sepia(59%) saturate(2140%) hue-rotate(213deg) brightness(83%) contrast(77%);
+}
+
+.u-svg-blue-marguerite2 {
+  filter: invert(50%) sepia(11%) saturate(1915%) hue-rotate(211deg) brightness(94%) contrast(90%);
+}
+
+.u-svg-cod-gray {
+  filter: invert(0%) sepia(12%) saturate(14%) hue-rotate(354deg) brightness(94%) contrast(87%);
+}
+
+.u-svg-jaffa {
+  filter: invert(81%) sepia(27%) saturate(5454%) hue-rotate(332deg) brightness(102%) contrast(92%);
+}
+
+.u-svg-de-york {
+  filter: invert(74%) sepia(50%) saturate(322%) hue-rotate(92deg) brightness(89%) contrast(93%);
+}
+
+.u-svg-linen {
+  filter: invert(94%) sepia(4%) saturate(1680%) hue-rotate(319deg) brightness(109%) contrast(97%);
+}
+
+.u-svg-mandy {
+  filter: invert(38%) sepia(74%) saturate(1509%) hue-rotate(327deg) brightness(90%) contrast(91%);
+}
+
+.u-svg-twine {
+  filter: invert(96%) sepia(49%) saturate(6509%) hue-rotate(313deg) brightness(81%) contrast(82%);
+}
+
+.u-svg-ocean-green {
+  filter: invert(57%) sepia(12%) saturate(1874%) hue-rotate(97deg) brightness(93%) contrast(93%);
+}
+
+.u-svg-curious-blue {
+  filter: invert(53%) sepia(79%) saturate(892%) hue-rotate(173deg) brightness(88%) contrast(94%);
+}
+
+.u-svg-gogoof-denim {
+  filter: invert(33%) sepia(54%) saturate(1436%) hue-rotate(179deg) brightness(97%) contrast(91%);
+}
+
+.u-svg-dodger-blue {
+  filter: invert(48%) sepia(21%) saturate(5290%) hue-rotate(193deg) brightness(101%) contrast(101%);
+}
+
+.u-svg-dodger-blue-2 {
+  filter: invert(50%) sepia(63%) saturate(3491%) hue-rotate(194deg) brightness(101%) contrast(101%);
+}
+
+.u-svg-moody-blue {
+  filter: invert(57%) sepia(6%) saturate(4967%) hue-rotate(207deg) brightness(84%) contrast(77%);
+}
+
+.u-svg-medium-turquoise {
+  filter: invert(66%) sepia(47%) saturate(525%) hue-rotate(141deg) brightness(97%) contrast(92%);
+}
+
+.u-svg-navy-blue {
+  filter: invert(41%) sepia(66%) saturate(887%) hue-rotate(173deg) brightness(89%) contrast(108%);
+}
+
+.u-svg-biloba-flower {
+  filter: invert(71%) sepia(40%) saturate(3660%) hue-rotate(213deg) brightness(99%) contrast(87%);
+}
+
+.u-svg-cornflower-blue {
+  filter: invert(48%) sepia(82%) saturate(550%) hue-rotate(184deg) brightness(101%) contrast(93%);
+}
+
+.u-svg-pelorous {
+  filter: invert(60%) sepia(65%) saturate(482%) hue-rotate(145deg) brightness(86%) contrast(85%);
+}
+
+.u-svg-cerise-red {
+  filter: invert(30%) sepia(54%) saturate(2693%) hue-rotate(314deg) brightness(86%) contrast(101%);
+}
+
+.u-h-100 {
+  height: 100%;
+}
+
+.u-spacer {
+  &-10 {
+    height: 10px;
+  }
+
+  &-20 {
+    height: 20px;
+  }
+
+  &-50 {
+    height: 50px;
+  }
+
+  &-75 {
+    height: 75px;
+  }
+
+  &-100 {
+    height: 100px;
+  }
+}
+
+.u-centered {
+  margin: 0 auto;
+}
+
+.u-widthMedium {
+  width: 66.6666666667%;
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.u-noPadded {
+  padding: 0;
+}
+
+.u-noPaddedBottom {
+  padding-bottom: 0;
+}
+
+.u-noPaddedTop {
+  padding-top: 0;
+}
+
+.u-md-noPadded {
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+}
+
+.u-noRadius {
+  border-radius: 0;
+}
+
+.u-bold {
+  font-weight: 800;
+}
+
+.u-normal {
+  font-weight: 400;
+}
+
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+.u-overflow-visible {
+  overflow: visible;
+}
+
+.u-overflow-x {
+  overflow-x: auto;
+}
+
+.u-mb-15 {
+  margin-bottom: 15px;
+}
+
+.u-mb-10 {
+  margin-bottom: 10px;
+}
+
+.u-mb-20 {
+  margin-bottom: 20px;
+}
+
+.u-mb-60 {
+  margin-bottom: 60px;
+}
+
+.u-mt-10 {
+  margin-top: 10px;
+}
+
+.u-mt-20 {
+  margin-top: 20px;
+}
+
+.u-pb-dk-40 {
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 40px;
+  }
+}
+
+.u-pb-mb-20 {
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 20px;
+  }
+}
+
+.u-m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-text-align-right {
+  text-align: right;
+}
+
+.u-hidden-xs {
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+.u-order-md {
+  @include media-breakpoint-down(md) {
+    order: 1;
+  }
+}
+
+.u-order-sm {
+  @include media-breakpoint-down(sm) {
+    order: 1;
+  }
+}
+
+.u-pointer {
+  cursor: pointer;
+}
+
+.u-generatorGradient {
+  background-image: linear-gradient(to bottom, get-color('deep-cove') 160px, get-color('white') 160px);
+
+  @include media-breakpoint-down(md) {
+    background-image: linear-gradient(to bottom, get-color('deep-cove') 50px, get-color('white') 50px);
+  }
+}

@@ -1,0 +1,73 @@
+.vacancies-list {
+  grid-row-gap: 40px;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: 0.3s;
+
+  @include media-breakpoint-down(sm) {
+    grid-row-gap: 30px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    grid-row-gap: 20px;
+  }
+
+  &__item {
+    max-width: calc(25% + 20px);
+    flex-basis: calc(25% + 20px);
+    transition: 0.3s;
+    animation-duration: 0.3s;
+    animation-name: showElems;
+    animation-timing-function: linear;
+
+    @include media-breakpoint-down(sm) {
+      max-width: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+    }
+
+    @include media-breakpoint-down(xs) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
+
+.vacancies-count {
+  color: get-color("cerise-red");
+  border: 1px solid get-color("cerise-red");
+  border-radius: 100%;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 24px;
+  padding: 2px 2.5px 2px 2px;
+  position: relative;
+  top: -3px;
+  min-width: 30px;
+  justify-content: center;
+  display: inline-flex;
+
+  &--footer {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 1px 0 1.5px;
+    top: -1px;
+    min-width: 20px;
+    margin-left: 5px;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+@keyframes showElems {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}

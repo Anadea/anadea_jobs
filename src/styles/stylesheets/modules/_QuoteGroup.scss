@@ -1,0 +1,110 @@
+.QuoteGroup {
+  display: flex;
+  padding: 160px 0;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    padding: 70px 0;
+  }
+
+  &--empty {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .QuoteGroup-image {
+      border-radius: 0;
+    }
+
+    .QuoteGroup-content {
+      padding-top: 40px;
+
+      @include media-breakpoint-down(md) {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  &-image {
+    border-radius: 100%;
+    flex: 0 0 60px;
+    height: 60px;
+    overflow: hidden;
+    width: 60px;
+
+    @include media-breakpoint-down(md) {
+      flex: 0 0 45px;
+      height: 45px;
+      margin: 0 auto;
+      width: 45px;
+    }
+
+    &--large {
+      flex: 0 0 120px;
+      height: 120px;
+      width: 120px;
+
+      @include media-breakpoint-down(md) {
+        flex: 0 0 75px;
+        height: 75px;
+        margin: 0 auto;
+        width: 75px;
+      }
+    }
+
+    &--alignLeft {
+      @include media-breakpoint-down(sm) {
+        margin: 0;
+      }
+    }
+  }
+
+  &-content {
+    padding-left: 40px;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    &--left {
+      @include media-breakpoint-down(md) {
+        padding-left: 40px;
+        padding-top: 0;
+        text-align: left;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 0;
+        padding-top: 45px;
+      }
+    }
+  }
+
+  &-text {
+    padding-bottom: 20px;
+
+    &--decorated {
+      position: relative;
+
+      &::before {
+        background-color: get-color('cerise-red');
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: -40px;
+        width: 44px;
+
+        @include media-breakpoint-down(sm) {
+          top: -15px;
+        }
+      }
+    }
+  }
+
+  &-author {
+    padding-bottom: 20px;
+  }
+}

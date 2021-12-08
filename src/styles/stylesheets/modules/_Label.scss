@@ -1,0 +1,12 @@
+@each $name, $val in $color-list {
+  .Label--#{$name} {
+    color: $val;
+  }
+}
+
+.Label {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 100%;
+  white-space: nowrap;
+}

@@ -1,0 +1,23 @@
+.PunctuationWithPseudoElem {
+  display: inline;
+
+  &::after {
+    content: ', ';
+  }
+
+  &--dot {
+    &::after {
+      content: '.';
+    }
+  }
+
+  &--parenthesis {
+    &::before {
+      content: '(';
+    }
+
+    &::after {
+      content: ')';
+    }
+  }
+}

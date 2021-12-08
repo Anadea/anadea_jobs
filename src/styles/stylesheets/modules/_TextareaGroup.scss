@@ -1,0 +1,70 @@
+@each $name, $val in $color-list {
+  .TextareaGroup--#{$name} {
+    color: $val;
+  }
+}
+
+.TextareaGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+
+  &-control {
+    background: transparent;
+    border: 0;
+    font-family: 'Stem Text', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    max-height: 200px;
+    min-height: 150px;
+    opacity: 0.5;
+    order: 2;
+    outline: none;
+    overflow-x: hidden;
+    padding: 0;
+    resize: none;
+
+    &--landing {
+      height: 100px;
+      opacity: 1;
+    }
+  }
+
+  &-label {
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    order: 1;
+  }
+
+  &-attachment {
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.5;
+    order: 3;
+    width: 145px;
+
+    &::before {
+      background: url('/assets/new_anadea/anadea/icon-clip.svg') no-repeat 50%;
+      content: '';
+      display: block;
+      height: 30px;
+      width: 34px;
+    }
+
+    &--light {
+      &::before {
+        background: url('/assets/new_anadea/anadea/icon-clip-white.svg') no-repeat 50%;
+      }
+    }
+
+    &--landing {
+      opacity: 0.8;
+    }
+  }
+}

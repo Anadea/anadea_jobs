@@ -1,0 +1,31 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+
+  &-footerLink {
+    padding-bottom: 10px;
+  }
+
+  &-footerLinkText {
+    color: get-color('footer-gray');
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    text-decoration: none;
+
+    &--lightTheme {
+      color: get-color('cod-gray');
+    }
+  }
+
+  &-footerLocale {
+    margin-top: 21px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+  }
+}

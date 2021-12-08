@@ -1,0 +1,13 @@
+.Muted {
+  &::before {
+    background: get-color('black');
+    border-radius: 9px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,52 @@
+.related-postList {
+  display: flex;
+  justify-content: center;
+  grid-gap: 84px;
+
+  @include media-breakpoint-down(lg) {
+    grid-gap: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+}
+
+.related-post {
+  width: 33.33%;
+  padding: 37px 45px 37px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 455px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    height: auto;
+    min-height: 270px;
+    padding: 30px;
+  }
+
+  &__author {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 27px;
+
+    &-img {
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 16px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

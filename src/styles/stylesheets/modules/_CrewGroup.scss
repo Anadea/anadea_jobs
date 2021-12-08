@@ -1,0 +1,16 @@
+.CrewGroup {
+  padding-bottom: 80px;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 30px;
+  }
+
+  &-image {
+    max-width: 230px;
+    padding-bottom: 22px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.Form {
+  background-color: get-color('white');
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  &-button {
+    padding-bottom: 12px;
+    padding-left: 12px;
+  }
+}
+
+.FormBlue {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  position: relative;
+  width: 100%;
+
+  &--paddedLeft {
+    padding-left: 80px;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+  }
+
+  &-title {
+    font-size: 32px;
+    line-height: 38px;
+    padding: 10px 0 40px;
+  }
+
+  &-attachmentIcon {
+    flex: 0 0 11px;
+  }
+
+  &-attachmentLabel {
+    color: get-color('white');
+    overflow: hidden;
+    padding-left: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &-errorImage {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 35px;
+    top: 0;
+    transition: height 0.5s, top 0.5s;
+    width: 125px;
+    z-index: 1;
+
+    &.isActive {
+      height: 109px;
+      top: -109px;
+    }
+  }
+}

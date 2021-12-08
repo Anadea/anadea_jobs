@@ -1,0 +1,36 @@
+.benefit {
+  @include media-breakpoint-down(md) {
+    &:not(:last-child)  {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__image {
+    height: 210px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    img {
+      @include media-breakpoint-down(md) {
+        max-height: 100%;
+      }
+    }
+  }
+
+  &__desc {
+    width: 240px;
+    max-width: 100%;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    .ContentGroup {
+      padding-bottom: 0;
+    }
+  }
+}

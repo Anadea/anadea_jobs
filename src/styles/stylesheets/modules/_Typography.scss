@@ -1,0 +1,187 @@
+@each $name, $val in $color-list {
+  .Typography--#{$name} {
+    color: $val;
+
+    &:-internal-autofill-selected,
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: $val;
+    }
+
+    &.Typography--bordered.Typography--link {
+      border-bottom: 3px solid rgba($val, 0.2);
+    }
+
+    &.Typography--link {
+      &:hover {
+        border-bottom: 3px solid rgba($val, 0.5);
+      }
+
+      &.isActive {
+        border-bottom: 3px solid rgba($val, 0.5);
+      }
+    }
+  }
+}
+
+@mixin font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+.Typography {
+  &--heading1 {
+    @include font(56px, 64px);
+    font-weight: 800;
+
+    @include media-breakpoint-down(md) {
+      @include font(36px, 44px);
+    }
+  }
+
+  &--heading2 {
+    @include font(40px, 48px);
+    font-weight: 800;
+
+    @include media-breakpoint-down(md) {
+      @include font(28px, 36px);
+    }
+  }
+
+  &--heading3 {
+    @include font(22px, 30px);
+    font-weight: 800;
+
+    @include media-breakpoint-down(md) {
+      @include font(18px, 26px);
+      font-weight: 800;
+    }
+  }
+
+  &--heading4 {
+    @include font(26px, 30px);
+    font-weight: 800;
+
+    @include media-breakpoint-down(md) {
+      @include font(20px, 26px);
+    }
+  }
+
+  &--body0 {
+    @include font(12px, 20px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      line-height: 18px;
+    }
+  }
+
+  &--body1 {
+    @include font(16px, 24px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      @include font(14px, 22px);
+    }
+  }
+
+  &--body2 {
+    @include font(18px, 28px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      @include font(16px, 26px);
+    }
+  }
+
+  &--body2-smaller-xs {
+    @include font(18px, 28px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      @include font(16px, 26px);
+    }
+
+    @include media-breakpoint-down(xs) {
+      @include font(13px, 26px);
+    }
+  }
+
+  &--body2-smaller-mobile {
+    @include font(18px, 28px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      @include font(16px, 26px);
+    }
+
+    @include media-breakpoint-down(xs) {
+      @include font(14px, 22px);
+    }
+  }
+
+  &--body3 {
+    @include font(22px, 34px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      @include font(16px, 26px);
+    }
+  }
+
+  &--body4 {
+    @include font(26px, 45px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      @include font(22px, 34px);
+    }
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--align {
+    text-align: right;
+
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+    }
+  }
+
+  &--no-underline {
+    text-decoration: none;
+  }
+
+  &--dashedItem {
+    padding-bottom: 1em;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+    }
+
+    &::before {
+      content: '';
+      height: 1px;
+      left: -30px;
+      position: absolute;
+      top: 0.75em;
+      width: 17px;
+
+      @include media-breakpoint-down(md) {
+        flex: 0 0 17px;
+        margin-right: 20px;
+        margin-top: 0.75em;
+        position: static;
+        vertical-align: top;
+      }
+    }
+  }
+
+  &--thin {
+    font-weight: 300;
+  }
+}

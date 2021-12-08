@@ -1,0 +1,17 @@
+.Slide {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  width: 100%;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 20px;
+  }
+
+  &--noPadded {
+    padding-bottom: 0;
+  }
+
+  &--testimonials {
+    box-sizing: border-box;
+  }
+}
