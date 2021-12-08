@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageProvider from '../image-provider/image-provider'
+import ImageProvider from '../ImageProvider/ImageProvider'
 
 const Values = () => {
   return (

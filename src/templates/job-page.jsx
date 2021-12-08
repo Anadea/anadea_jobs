@@ -1,7 +1,7 @@
 import React from 'react'
-import Benefits from '../components/benefits/benefits'
+import Benefits from '../components/Benefits/Benefits'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout/layout'
+import Layout from '../components/Layout/Layout'
 import ApplyForm from '../components/ApplyForm/ApplyForm'
 
 const JobPage = ({ data  }) => {

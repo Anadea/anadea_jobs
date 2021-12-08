@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import {graphql} from 'gatsby'
-import Animation from '../components/animation/animation'
-import Benefits from '../components/benefits/benefits'
-import Layout from '../components/layout/layout'
-import Vacancies from '../components/vacancies/vacancies'
-import Values from '../components/values/values'
+import Animation from '../components/Animation/Animation'
+import Benefits from '../components/Benefits/Benefits'
+import Layout from '../components/Layout/Layout'
+import Vacancies from '../components/Vacancies/Vacancies'
+import Values from '../components/Values/Values'
 
 const IndexPage = ({data}) => {
   const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);

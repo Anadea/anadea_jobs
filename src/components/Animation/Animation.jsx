@@ -14,7 +14,7 @@ const Animation = () => {
         progressiveLoad: false,
         preserveAspectRatio: 'xMidYMid slice',
       },
-      assetsPath: '../animation/',
+      assetsPath: '../Animation/',
     })
   }, [])
 

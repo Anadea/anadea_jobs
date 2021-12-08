@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'gatsby'
-import VacanciesCount from "../vacanciesCount/vacanciesCount";
+import VacanciesCount from "../VacanciesCount/VacanciesCount";
 
 const Vacancies = ({ data }) => {
   const [showCount, setShowCount] = useState(5);

@@ -1,6 +1,6 @@
 import React from 'react'
 import {socialLinks} from '../../constants/social-links'
-import VacanciesCount from "../vacanciesCount/vacanciesCount";
+import VacanciesCount from "../VacanciesCount/VacanciesCount";
 import {graphql, useStaticQuery} from "gatsby";
 
 const Footer = () => {
