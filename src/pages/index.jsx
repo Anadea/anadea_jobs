@@ -29,7 +29,7 @@ const IndexPage = ({data}) => {
         </section>
       </div>
       <Animation/>
-      {data && isActive ? (<Vacancies data={data}/>) : ''}
+      <Vacancies data={data} />
       <Benefits/>
       <Values/>
     </Layout>
@@ -39,8 +39,7 @@ const IndexPage = ({data}) => {
 export default IndexPage
 
 
-export const query = () => {
-  graphql`
+export const query = graphql`
       query Vacancies {
           allMarkdownRemark {
               nodes {
@@ -58,4 +57,4 @@ export const query = () => {
           }
       }
   `
-}
+
