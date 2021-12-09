@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {graphql} from 'gatsby'
 import Animation from '../components/Animation/Animation'
 import Benefits from '../components/Benefits/Benefits'
@@ -7,7 +7,7 @@ import Vacancies from '../components/Vacancies/Vacancies'
 import Values from '../components/Values/Values'
 
 const IndexPage = ({data}) => {
-  const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);
+  // const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);
 
   return (
     <Layout theme={'dark'}>
@@ -36,9 +36,6 @@ const IndexPage = ({data}) => {
   )
 }
 
-export default IndexPage
-
-
 export const query = graphql`
       query Vacancies {
           allMarkdownRemark {
@@ -58,3 +55,5 @@ export const query = graphql`
       }
   `
 
+
+export default IndexPage
