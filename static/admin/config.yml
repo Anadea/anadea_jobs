@@ -1,17 +1,17 @@
 backend: 
   name: git-gateway
-  repo: Anadea/anadea_jobs.git
+  repo: Anadea/anadea_jobs
 #   auth_type: implicit
 #   app_id: id
   branch: main
 
-media_folder: static/images
+media_folder: static/images/uploads
 public_folder: /images
 
 collections:
   - name: "jobs"
     label: "Jobs"
-    folder: "src/jobs"
+    folder: "src/markdown-pages"
     create: true
     slug: "{{slug}}"
     fields:

@@ -1,7 +1,8 @@
 ---
 title: test
 location: Dnipro (Ukraine)
-isActive: true
+isActive: false
+linkedIn: 'qwe'
 ---
 
 ## Required skills:
