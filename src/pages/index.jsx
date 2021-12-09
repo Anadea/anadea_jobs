@@ -7,7 +7,7 @@ import Vacancies from '../components/Vacancies/Vacancies'
 import Values from '../components/Values/Values'
 
 const IndexPage = ({data}) => {
-  const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);
+  // const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);
 
   return (
     <Layout theme={'dark'}>

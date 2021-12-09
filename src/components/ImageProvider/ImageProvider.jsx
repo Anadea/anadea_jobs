@@ -5,15 +5,15 @@ import {GatsbyImage, getImage} from "gatsby-plugin-image";
 const ImageProvider = ({ fileName, alt, style }) => {
   const { allFile } = useStaticQuery(graphql`
     query {
-        allFile(filter: {sourceInstanceName: {eq: "images"}}) {
-          nodes {
-            name
-            childImageSharp {
-              gatsbyImageData(quality: 95, formats: [PNG, WEBP], placeholder: BLURRED)
+        allFile(filter: {sourceInstanceName: {eq: "images"}, ext: {ne: ".svg"}}) {
+            nodes {
+                name
+                childImageSharp {
+                    gatsbyImageData(quality: 95, formats: [PNG, WEBP], placeholder: BLURRED)
+                }
+                ext
+                sourceInstanceName
             }
-            ext
-            sourceInstanceName
-          }
         }
     }
   `)
