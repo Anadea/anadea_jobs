@@ -1,8 +1,6 @@
 backend: 
-  name: git-gateway
-  repo: Anadea/anadea_jobs.git
-#   auth_type: implicit
-#   app_id: id
+  name: github
+  repo: Anadea/anadea_jobs
   branch: main
 
 media_folder: static/images
@@ -10,8 +8,8 @@ public_folder: /images
 
 collections:
   - name: "jobs"
-    label: "Jobs"
-    folder: "src/jobs"
+    label: "jobs"
+    folder: "src/markdown-pages"
     create: true
     slug: "{{slug}}"
     fields:
@@ -19,6 +17,8 @@ collections:
         name: "title"
       - label: "Location"
         name: "location"
+      - label: "IsActive"
+        name: "isActive"
       - label: "Intro"
         name: "intro"
         required: false
@@ -27,11 +27,5 @@ collections:
         required: false
       - label: "Details"
         name: "detail"
-#       - label: "Required skills"
-#         name: "required_fields"
-#       - label: "Nice to have"
-#         name: "nice_to_have"
-#       - label: "Responsibilities"
-#         name: "responsibilities"
-#       - label: "We offer"
-#         name: "we_offer"
+        widget: "markdown"
+

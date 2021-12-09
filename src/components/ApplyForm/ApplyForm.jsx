@@ -31,6 +31,10 @@ const validate = values => {
 }
 
 const ApplyFormFormik = ({ data }) => {
+
+  console.log('data: ', data)
+  console.log("data.markdownRemark.frontmatter.linkedIn", data.markdownRemark.frontmatter.linkedIn)
+
   const [validationFlag, setValidationFlag] = useState(false)
   const [resumeName, setResumeName] = useState('')
 
@@ -39,6 +43,7 @@ const ApplyFormFormik = ({ data }) => {
 
   const formik = useFormik({
     initialValues: {
+      jobPosition: data.markdownRemark.frontmatter.title,
       name: '',
       phone: '',
       email: '',
@@ -81,13 +86,6 @@ const ApplyFormFormik = ({ data }) => {
             Apply now
           </p>
           <form onSubmit={formik.handleSubmit}>
-            <input
-              type="hidden"
-              name="job_position"
-              id="job-position"
-              value={data.markdownRemark.frontmatter.title}
-            />
-
             <div className="InputGroup">
               <div className="InputGroup-input">
                 <input
