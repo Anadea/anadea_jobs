@@ -11,26 +11,24 @@ const JobPage = props => {
       query={graphql`
         query {
           allMarkdownRemark {
-            edges {
-              node {
-                html
-                frontmatter {
-                  title
-                  location
-                  linkedIn
-                }
-                fields {
-                  slug
-                }
+            nodes {
+              html
+              frontmatter {
+                title
+                location
+                linkedIn
+              }
+              fields {
+                slug
               }
             }
           }
         }
       `}
       render={data => {
-        const node = data.allMarkdownRemark.edges.find(elem => elem.node.fields.slug === path).node;
-        
-        return (<Layout theme={'white'}>
+        const nodes = data.allMarkdownRemark.nodes.find(elem => elem.fields.slug === path);
+        return nodes ? (
+        <Layout theme={'white'}>
           <div className="Section Section--start">
             <div className="Section-content">
               <div className="row">
@@ -38,29 +36,29 @@ const JobPage = props => {
                   <div className="ContentGroup ContentGroup--padded">
                     <div className="ContentGroup-title">
                       <h1 className="Typography Typography--heading1 Typography--cod-gray">
-                        {node.frontmatter.title}
+                        {/* {nodes.frontmatter.title} */}
                       </h1>
                     </div>
                     <p className="Typography Typography--body2 Typography--cod-gray">
-                      {`Location: ${node.frontmatter.location}`}
+                      {`Location: ${nodes.frontmatter.location}`}
                     </p>
                   </div>
                   <div
                     className="JobPage"
                     dangerouslySetInnerHTML={{
-                      __html: node.html,
+                      __html: nodes.html,
                     }}
                   />
                 </div>
                 <div className="col-md-4">
-                  <ApplyForm data={node} />
+                  <ApplyForm data={nodes} />
                 </div>
               </div>
             </div>
           </div>
           <Benefits />
         </Layout>
-        )
+        ) : ''
       }
       }
     />
