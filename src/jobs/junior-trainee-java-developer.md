@@ -7,7 +7,6 @@ linkedIn: https://www.linkedin.com/jobs/view/2791551584/?refId=o1kzx1sRjp8KtR57P
 ---
 
 ## Required skills:
-
 - Knowledge of any programming language
 - Knowledge/desire to learn Java, Scala and Kotlin programming language
 - Basic knowledge of computer science (algorithms, data structures)
