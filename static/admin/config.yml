@@ -19,6 +19,7 @@ collections:
         name: "location"
       - label: "IsActive"
         name: "isActive"
+        widget: "boolean"
       - label: "Intro"
         name: "intro"
         required: false
