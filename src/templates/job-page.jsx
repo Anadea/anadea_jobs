@@ -11,22 +11,24 @@ const JobPage = props => {
       query={graphql`
         query {
           allMarkdownRemark {
-            nodes {
-              html
-              frontmatter {
-                title
-                location
-                linkedIn
-              }
-              fields {
-                slug
+            edges {
+              node {
+                html
+                frontmatter {
+                  title
+                  location
+                  linkedIn
+                }
+                fields {
+                  slug
+                }
               }
             }
           }
         }
       `}
       render={data => {
-        const nodes = data.allMarkdownRemark.nodes.find(elem => elem.fields.slug === path);
+        const node = data.allMarkdownRemark.edges.find(elem => elem.node.fields.slug === path).node;
         
         return (<Layout theme={'white'}>
           <div className="Section Section--start">
@@ -36,22 +38,22 @@ const JobPage = props => {
                   <div className="ContentGroup ContentGroup--padded">
                     <div className="ContentGroup-title">
                       <h1 className="Typography Typography--heading1 Typography--cod-gray">
-                        {nodes.frontmatter.title}
+                        {node.frontmatter.title}
                       </h1>
                     </div>
                     <p className="Typography Typography--body2 Typography--cod-gray">
-                      {`Location: ${nodes.frontmatter.location}`}
+                      {`Location: ${node.frontmatter.location}`}
                     </p>
                   </div>
                   <div
                     className="JobPage"
                     dangerouslySetInnerHTML={{
-                      __html: nodes.html,
+                      __html: node.html,
                     }}
                   />
                 </div>
                 <div className="col-md-4">
-                  <ApplyForm data={nodes} />
+                  <ApplyForm data={node} />
                 </div>
               </div>
             </div>
