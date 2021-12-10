@@ -36,7 +36,7 @@ const JobPage = props => {
                   <div className="ContentGroup ContentGroup--padded">
                     <div className="ContentGroup-title">
                       <h1 className="Typography Typography--heading1 Typography--cod-gray">
-                        {/* {nodes.frontmatter.title} */}
+                        {nodes.frontmatter.title} 
                       </h1>
                     </div>
                     <p className="Typography Typography--body2 Typography--cod-gray">
