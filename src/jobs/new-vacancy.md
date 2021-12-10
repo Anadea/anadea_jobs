@@ -5,4 +5,4 @@ isActive: true
 intro: Intro
 detail: "**Lorem**"
 ---
-**details**
+***details***
