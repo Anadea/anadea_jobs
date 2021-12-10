@@ -27,6 +27,6 @@ collections:
         name: "linkedIn"
         required: false
       - label: "Details"
-        name: "detail"
+        name: body
         widget: "markdown"
 
