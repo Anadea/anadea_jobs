@@ -1,6 +1,6 @@
 ---
 title: New Vacancy
-location: Misk
+location: Minsk
 isActive: true
 intro: Intro
 detail: "**Lorem**"
