@@ -31,10 +31,6 @@ const validate = values => {
 }
 
 const ApplyFormFormik = ({ data }) => {
-
-  console.log('data: ', data)
-  console.log("data.markdownRemark.frontmatter.linkedIn", data.markdownRemark.frontmatter.linkedIn)
-
   const [validationFlag, setValidationFlag] = useState(false)
   const [resumeName, setResumeName] = useState('')
 
@@ -43,7 +39,7 @@ const ApplyFormFormik = ({ data }) => {
 
   const formik = useFormik({
     initialValues: {
-      jobPosition: data.markdownRemark.frontmatter.title,
+      jobPosition: data.frontmatter.title,
       name: '',
       phone: '',
       email: '',
@@ -233,8 +229,8 @@ const ApplyFormFormik = ({ data }) => {
         </div>
       </div>
 
-      {data.markdownRemark.frontmatter.linkedIn && (
-        <a href={data.markdownRemark.frontmatter.linkedIn} target="_blank">
+      {data.frontmatter.linkedIn && (
+        <a href={data.frontmatter.linkedIn} target="_blank">
           <button
             name="button"
             className="Button Button--white Typography Typography---royal-blue u-w-100 button-applyLinkedin"
