@@ -10,9 +10,9 @@ const Vacancies = ({ data }) => {
   )
 
   const vacancies = data.allMarkdownRemark.nodes
-  console.log('vacancies: ', vacancies)
+  const isActive =  vacancies.find(elem => elem.frontmatter.isActive)
 
-  if (vacancies.length === 0) {
+  if (vacancies.length === 0 || !isActive) {
     return (
       <section className="Section u-noPaddedTop u-bg-jobs-bastille">
       <div className="Section-content">

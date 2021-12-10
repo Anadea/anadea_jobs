@@ -1,53 +1,68 @@
 import React from 'react'
 import Benefits from '../components/Benefits/Benefits'
-import { graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import ApplyForm from '../components/ApplyForm/ApplyForm'
 
-const JobPage = ({ data  }) => {
-  const job = data.markdownRemark
+const JobPage = props => {
+  const path = props.path;
   return (
-    <Layout theme={'white'}>
-      <div className="Section Section--start">
-        <div className="Section-content">
-          <div className="row">
-            <div className="col-md-8">
-              <div className="ContentGroup ContentGroup--padded">
-                <div className="ContentGroup-title">
-                  <h1 className="Typography Typography--heading1 Typography--cod-gray">
-                    {job.frontmatter.title}
-                  </h1>
+    <StaticQuery
+      query={graphql`
+        query {
+          allMarkdownRemark {
+            nodes {
+              html
+              frontmatter {
+                title
+                location
+                linkedIn
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      `}
+      render={data => {
+        const nodes = data.allMarkdownRemark.nodes.find(elem => elem.fields.slug === path);
+        
+        return (<Layout theme={'white'}>
+          <div className="Section Section--start">
+            <div className="Section-content">
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="ContentGroup ContentGroup--padded">
+                    <div className="ContentGroup-title">
+                      <h1 className="Typography Typography--heading1 Typography--cod-gray">
+                        {nodes.frontmatter.title}
+                      </h1>
+                    </div>
+                    <p className="Typography Typography--body2 Typography--cod-gray">
+                      {`Location: ${nodes.frontmatter.location}`}
+                    </p>
+                  </div>
+                  <div
+                    className="JobPage"
+                    dangerouslySetInnerHTML={{
+                      __html: nodes.html,
+                    }}
+                  />
                 </div>
-                <p className="Typography Typography--body2 Typography--cod-gray">
-                  {`Location: ${job.frontmatter.location}`}
-                </p>
+                <div className="col-md-4">
+                  <ApplyForm data={nodes} />
+                </div>
               </div>
-              <div
-                className="JobPage"
-                dangerouslySetInnerHTML={{ __html: job.html }} />
-            </div>
-            <div className="col-md-4">
-              <ApplyForm data={data}/>
             </div>
           </div>
-        </div>
-      </div>
-      <Benefits />
-    </Layout>
+          <Benefits />
+        </Layout>
+        )
+      }
+      }
+    />
   )
 }
 
 export default JobPage
-
-export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        location
-        linkedIn
-      }
-    }
-  }
-`
