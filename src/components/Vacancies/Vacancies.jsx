@@ -14,11 +14,11 @@ const Vacancies = ({ data }) => {
 
   if (vacancies.length === 0 || !isActive) {
     return (
-      <section className="Section u-noPaddedTop u-bg-jobs-bastille">
-      <div className="Section-content">
+      <section className="Section u-noPaddedTop u-bg-jobs-bastille" >
+      <div id="positions" className="Section-content">
         <div className="ContentGroup ContentGroup--padded u-centered">
           <div className="ContentGroup-title">
-            <h2 className="Typography Typography--heading2 Typography--centered Typography--white">
+            <h2  id="positions" className="Typography Typography--heading2 Typography--centered Typography--white">
               Open positions <VacanciesCount count={filteredData.length} />
             </h2>
           </div>
@@ -47,7 +47,7 @@ const Vacancies = ({ data }) => {
 
   return (
     <section className="Section u-noPaddedTop u-bg-jobs-bastille">
-      <div className="Section-content">
+      <div id="positions" className="Section-content">
         <div className="ContentGroup ContentGroup--padded u-centered">
           <div className="ContentGroup-title">
             <h2 className="Typography Typography--heading2 Typography--centered Typography--white">

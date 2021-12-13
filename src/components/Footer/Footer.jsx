@@ -1,7 +1,9 @@
 import React from 'react'
 import {socialLinks} from '../../constants/social-links'
 import VacanciesCount from "../VacanciesCount/VacanciesCount";
-import {graphql, useStaticQuery} from "gatsby";
+import {graphql, useStaticQuery, Link} from "gatsby";
+import { animateScroll as scroll } from "react-scroll";
+
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -10,7 +12,18 @@ const Footer = () => {
               totalCount
           }
       }`)
+
   const totalCount = data.allMarkdownRemark.totalCount;
+  const scrollToTop = () => {
+    scroll.scrollTo('positions', {
+      duration: 800,
+      delay: 100,
+      smooth: true,
+      containerId: 'positions',
+      offset: 50, 
+    })
+  };
+
   return (
     <footer className="Section Section--footer u-bg-jobs-bastille">
       <section className="Section Section--no-padding">
@@ -19,56 +32,44 @@ const Footer = () => {
             <div className="col-6 col-md-2">
               <div className="ContentGroup">
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://adanea.info/about-us">Company</a>
+                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/about-us" target="_blank">Company</a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/services">Services</a>
+                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/services" target="_blank">Services</a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/projects">Projects</a>
+                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/projects" target="_blank">Projects</a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/solutions">Solutions</a>
+                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/solutions" target="_blank">Solutions</a>
                 </div>
-              </div>
-              <div className="Page-footerLink Page-footerLocale">
-                <a className="Page-footerLinkText" href="https://anadea.info/ru/">Russian version</a>
               </div>
             </div>
             <div className="col-6 col-md-2">
               <div className="ContentGroup">
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info">Write for us</a>
-                </div>
-
-                <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/team">Team</a>
-                </div>
-
-                <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/blog">Blog</a>
+                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/contacts"  target="_blank">Write for us</a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/jobs">Careers
+                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/blog"  target="_blank">Blog</a>
+                </div>
+                <div className="Page-footerLink">
+                  <Link className="Page-footerLinkText u-bold" onClick={scrollToTop} to="#positions">Careers
                     {totalCount ? ( <VacanciesCount
                     count={totalCount} location="footer"/>): ''}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-3 col-lg-2">
               <div className="ContentGroup">
                 <div className="Page-footerLink">
-                  <a href="/free-project-estimate" className="Page-footerLinkText  u-bold"><span
-                    itemProp="name">App cost calculator Beta</span></a>
-                </div>
-                <div className="Page-footerLink">
-                  <a href="https://businessnameguide.com/" className="Page-footerLinkText   u-bold"
+                  <a href="https://businessnameguide.com/" className="Page-footerLinkText u-bold"
                      target="_blank" rel="noopener noreferrer">Business name
                     generator</a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText   u-bold" href="/privacy-terms">Privacy &amp; Terms</a>
+                  <a className="Page-footerLinkText u-bold" href="https://anadea.info/privacy-terms" target="_blank">Privacy &amp; Terms</a>
                 </div>
               </div>
             </div>
