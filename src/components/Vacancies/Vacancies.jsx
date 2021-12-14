@@ -18,7 +18,7 @@ const Vacancies = ({ data }) => {
       <div id="positions" className="Section-content">
         <div className="ContentGroup ContentGroup--padded u-centered">
           <div className="ContentGroup-title">
-            <h2  id="positions" className="Typography Typography--heading2 Typography--centered Typography--white">
+            <h2  className="Typography Typography--heading2 Typography--centered Typography--white">
               Open positions <VacanciesCount count={filteredData.length} />
             </h2>
           </div>

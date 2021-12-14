@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {socialLinks} from '../../constants/social-links'
 import VacanciesCount from "../VacanciesCount/VacanciesCount";
 import {graphql, useStaticQuery, Link} from "gatsby";
-import { animateScroll as scroll } from "react-scroll";
+import { scroller } from "react-scroll";
 
 
 const Footer = () => {
@@ -14,14 +14,24 @@ const Footer = () => {
       }`)
 
   const totalCount = data.allMarkdownRemark.totalCount;
-  const scrollToTop = () => {
-    scroll.scrollTo('positions', {
-      duration: 800,
-      delay: 100,
-      smooth: true,
-      containerId: 'positions',
-      offset: 50, 
-    })
+  const path = window.location.pathname
+
+  const scrollToTop = (e) => {
+    let timeout = 0;
+    if (path === '/') {
+      e.preventDefault();
+    } else {
+      timeout = 100;
+    }
+
+    setTimeout(() => {
+      scroller.scrollTo('positions', {
+        duration: 800,
+        delay: 100,
+        smooth: true,
+        offset: -50, 
+      })
+    }, timeout)
   };
 
   return (
@@ -54,7 +64,7 @@ const Footer = () => {
                   <a className="Page-footerLinkText  u-bold" href="https://anadea.info/blog"  target="_blank">Blog</a>
                 </div>
                 <div className="Page-footerLink">
-                  <Link className="Page-footerLinkText u-bold" onClick={scrollToTop} to="#positions">Careers
+                  <Link className="Page-footerLinkText u-bold" onClick={scrollToTop} to="/#positions">Careers
                     {totalCount ? ( <VacanciesCount
                     count={totalCount} location="footer"/>): ''}
                   </Link>
