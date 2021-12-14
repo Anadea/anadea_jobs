@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { useFormik } from 'formik'
+import axios from 'axios'
 
 const validate = values => {
+  console.log('values', values)
   const errors = {}
-  if (!values.name) {
-    errors.name = true
-  } else if (values.name.length > 30) {
-    errors.name = true
+  if (!values.first_name) {
+    errors.first_name = true
+  } else if (values.first_name.length > 30) {
+    errors.first_name = true
   }
 
   if (!values.phone) {
@@ -27,6 +29,7 @@ const validate = values => {
     errors.skype = true
   }
 
+  console.log('errors', errors)
   return errors
 }
 
@@ -34,24 +37,51 @@ const ApplyFormFormik = ({ data }) => {
   const [validationFlag, setValidationFlag] = useState(false)
   const [resumeName, setResumeName] = useState('')
 
-  useEffect(() => {
-  }, [validationFlag, resumeName])
+  useEffect(() => {}, [validationFlag, resumeName])
 
   const formik = useFormik({
     initialValues: {
-      jobPosition: data.frontmatter.title,
-      name: '',
+      job_position: data.frontmatter.title,
+      // first_name: 'qwe',
+      // phone: '11111111111',
+      // email: 'qwe@we.we',
+      first_name: '',
       phone: '',
       email: '',
       skype: '',
-      resume: [],
+      resume_file: [],
     },
     validate,
     onSubmit: values => {
-      console.log(values)
+      
+      console.log('on submit', values)
 
-      formik.resetForm()
-      setResumeName('')
+      const formData = new FormData();
+
+      formData.append('job_application', values)
+      formData.append('token', process.env.FORM_TOKEN)
+      console.log('formData', formData)
+      axios({
+        method: 'POST',
+        url: `${process.env.API}/jobs`,
+        // headers: {
+        //   auth: {
+        //     username: "anahoret",
+        //     password: "epyfnm"
+        //   },
+        //   "Content-Type": "multipart/form-data"
+        // },
+        headers: {
+          Authorization: `Basic ${process.env.HEADER_TOKEN}`,
+          "Content-Type": "multipart/form-data"
+        },
+        formData,
+      }).then(res => {
+        console.log(values)
+        console.log(res.values)
+      })
+      // formik.resetForm()
+      // setResumeName('')
     },
   })
 
@@ -60,7 +90,7 @@ const ApplyFormFormik = ({ data }) => {
     let myFiles = Array.from(files)
     if (myFiles.length && myFiles[0]) {
       setResumeName(myFiles[0].name)
-      formik.setFieldValue('resume', myFiles)
+      formik.setFieldValue('resume_file', myFiles)
     }
   }
 
@@ -86,12 +116,12 @@ const ApplyFormFormik = ({ data }) => {
               <div className="InputGroup-input">
                 <input
                   className="Input Input--large Input--autofillDark Typography Typography--white"
-                  id="name"
+                  id="first_name"
                   type="text"
-                  name="name"
+                  name="first_name"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.name}
+                  value={formik.values.first_name}
                 />
               </div>
               <div className="InputGroup-label">
@@ -101,7 +131,7 @@ const ApplyFormFormik = ({ data }) => {
                 >
                   Name:
                 </label>
-                {validationFlag && formik.errors.name ? (
+                {validationFlag && formik.errors.first_name ? (
                   <img
                     className="inputInvalid"
                     src="../../images/icons/exclamationpoint.svg"
@@ -202,8 +232,8 @@ const ApplyFormFormik = ({ data }) => {
               </label>
               <div className="d-none">
                 <input
-                  data-size="500"
-                  accept=".png, .jpg, .jpeg, .pdf"
+                  data-size="5000"
+                  accept=".png, .jpg, .jpeg, .pdf, .doc"
                   className="jsFileInput"
                   type="file"
                   name="resumeField"
@@ -244,4 +274,3 @@ const ApplyFormFormik = ({ data }) => {
 }
 
 export default ApplyFormFormik
-
