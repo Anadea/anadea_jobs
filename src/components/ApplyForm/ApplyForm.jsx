@@ -3,7 +3,6 @@ import { useFormik } from 'formik'
 import axios from 'axios'
 
 const validate = values => {
-  console.log('values', values)
   const errors = {}
   if (!values.first_name) {
     errors.first_name = true
@@ -11,9 +10,8 @@ const validate = values => {
     errors.first_name = true
   }
 
-  if (!values.phone) {
-    errors.phone = true
-  } else if (
+  if (
+    values.phone &&
     !/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]{9,12}$/i.test(values.phone)
   ) {
     errors.phone = true
@@ -21,31 +19,37 @@ const validate = values => {
 
   if (!values.email) {
     errors.email = true
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+  } else if (
+    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,10}$/i.test(values.email)
+  ) {
     errors.email = true
   }
 
-  if (values.skype && !/^[a-z][a-z0-9_\-.,]{5,31}$/i.test(values.skype)) {
+  if (!values.skype) {
+    errors.skype = true
+  } else if (!/[a-z0-9_\-.,:]$/i.test(values.skype)) {
     errors.skype = true
   }
 
-  console.log('errors', errors)
+  if (values.resume_file.length === 0) {
+    errors.resume_file = true
+  }
   return errors
 }
 
 const ApplyFormFormik = ({ data }) => {
   const [validationFlag, setValidationFlag] = useState(false)
   const [resumeName, setResumeName] = useState('')
+  const [successMessage, setSuccessMessage] = useState(false)
+  const [fileMessage, setFileMessage] = useState(false)
 
-  useEffect(() => {}, [validationFlag, resumeName])
+  useEffect(()=> {}, [validationFlag, resumeName])
 
   const formik = useFormik({
     initialValues: {
       job_position: data.frontmatter.title,
-      // first_name: 'qwe',
-      // phone: '11111111111',
-      // email: 'qwe@we.we',
       first_name: '',
+      last_name: '',
       phone: '',
       email: '',
       skype: '',
@@ -53,35 +57,7 @@ const ApplyFormFormik = ({ data }) => {
     },
     validate,
     onSubmit: values => {
-      
-      console.log('on submit', values)
-
-      const formData = new FormData();
-
-      formData.append('job_application', values)
-      formData.append('token', process.env.FORM_TOKEN)
-      console.log('formData', formData)
-      axios({
-        method: 'POST',
-        url: `${process.env.API}/jobs`,
-        // headers: {
-        //   auth: {
-        //     username: "anahoret",
-        //     password: "epyfnm"
-        //   },
-        //   "Content-Type": "multipart/form-data"
-        // },
-        headers: {
-          Authorization: `Basic ${process.env.HEADER_TOKEN}`,
-          "Content-Type": "multipart/form-data"
-        },
-        formData,
-      }).then(res => {
-        console.log(values)
-        console.log(res.values)
-      })
-      // formik.resetForm()
-      // setResumeName('')
+      sendForm(values)
     },
   })
 
@@ -89,29 +65,84 @@ const ApplyFormFormik = ({ data }) => {
     const files = event.target.files
     let myFiles = Array.from(files)
     if (myFiles.length && myFiles[0]) {
-      setResumeName(myFiles[0].name)
-      formik.setFieldValue('resume_file', myFiles)
+      const allowedExtensions = ['jpg', 'png', 'jpeg', 'pdf', 'doc', 'docx']
+      const size = myFiles[0].size / 1024 / 1024 < 5
+      const format = myFiles[0].name.split('.').pop()
+      if (size && allowedExtensions.includes(format)) {
+        setResumeName(myFiles[0].name)
+        formik.setFieldValue('resume_file', myFiles[0])
+        setFileMessage(false)
+      } else {
+        setFileMessage(true)
+      }
     }
+  }
+
+  const sendForm = data => {
+    const formData = new FormData()
+    data.last_name = data.first_name;
+    for (let i in data) {
+      formData.append(`job_application[${i}]`, data[i])
+    }
+
+    formData.append('token', process.env.FORM_TOKEN)
+
+    axios
+      .post(`${process.env.API}/jobs`, formData, {
+        headers: {
+          //Authorization: `Basic ${process.env.HEADER_TOKEN}`,
+        },
+        // auth: {
+        //   username: 'anahoret',
+        //   password: 'epyfnm'
+        // }
+      })
+      .then(res => {
+        if (res && res.status === 200) {
+          formik.resetForm()
+          setResumeName('')
+          setSuccessMessage(true)
+          setTimeout(() => {
+            setSuccessMessage(false)
+          }, 3000)
+        }
+      })
+      .catch(err => {
+        console.log('error', err)
+      })
   }
 
   return (
     <div className="FormBlock">
-      {validationFlag &&
-      Object.values(formik.errors).find(key => key === true) ? (
-        <div className="formInvalid">
-          <img
-            className="formInvalid-picture"
-            src="../../images/icons/validator.png"
-          />
-        </div>
-      ) : null}
-
+      <div
+        className={`formInvalid ${
+          Object.values(formik.errors).find(key => key === true)
+            ? 'formInvalid--show'
+            : ''
+        }`}
+      >
+        <img
+          className="formInvalid-picture"
+          src="../../images/icons/validator.png"
+        />
+      </div>
       <div className="FormBlue u-bg-royal-blue">
         <div className="FormBlue-title">
           <p className="Typography Typography--white u-bold formBlue-title">
             Apply now
           </p>
-          <form onSubmit={formik.handleSubmit}>
+          <form
+            name="resume"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            onSubmit={formik.handleSubmit}
+          >
+            <p className="d-none">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
             <div className="InputGroup">
               <div className="InputGroup-input">
                 <input
@@ -131,12 +162,14 @@ const ApplyFormFormik = ({ data }) => {
                 >
                   Name:
                 </label>
-                {validationFlag && formik.errors.first_name ? (
-                  <img
-                    className="inputInvalid"
-                    src="../../images/icons/exclamationpoint.svg"
-                  />
-                ) : null}
+                <img
+                  className={`inputInvalid ${
+                    validationFlag && formik.errors.first_name
+                      ? 'inputInvalid--show'
+                      : ''
+                  }`}
+                  src="../../images/icons/exclamationpoint.svg"
+                />
               </div>
             </div>
 
@@ -159,12 +192,14 @@ const ApplyFormFormik = ({ data }) => {
                 >
                   Phone:
                 </label>
-                {validationFlag && formik.errors.phone ? (
-                  <img
-                    className="inputInvalid"
-                    src="../../images/icons/exclamationpoint.svg"
-                  />
-                ) : null}
+                <img
+                  className={`inputInvalid ${
+                    validationFlag && formik.errors.phone
+                      ? 'inputInvalid--show'
+                      : ''
+                  }`}
+                  src="../../images/icons/exclamationpoint.svg"
+                />
               </div>
             </div>
 
@@ -187,12 +222,14 @@ const ApplyFormFormik = ({ data }) => {
                 >
                   Email:
                 </label>
-                {validationFlag && formik.errors.email ? (
-                  <img
-                    className="inputInvalid"
-                    src="../../images/icons/exclamationpoint.svg"
-                  />
-                ) : null}
+                <img
+                  className={`inputInvalid ${
+                    validationFlag && formik.errors.email
+                      ? 'inputInvalid--show'
+                      : ''
+                  }`}
+                  src="../../images/icons/exclamationpoint.svg"
+                />
               </div>
             </div>
 
@@ -215,6 +252,14 @@ const ApplyFormFormik = ({ data }) => {
                 >
                   Skype:
                 </label>
+                <img
+                  className={`inputInvalid ${
+                    validationFlag && formik.errors.skype
+                      ? 'inputInvalid--show'
+                      : ''
+                  }`}
+                  src="../../images/icons/exclamationpoint.svg"
+                />
               </div>
             </div>
 
@@ -229,11 +274,19 @@ const ApplyFormFormik = ({ data }) => {
                 <span className="FormBlue-attachmentLabel jsFileInputLabel Typography Typography--white Typography--body2 d-flex align-items-center">
                   {resumeName ? resumeName : 'Attach a resume'}
                 </span>
+                <img
+                  className={`inputInvalid ${
+                    validationFlag && formik.errors.resume_file
+                      ? 'inputInvalid--show'
+                      : ''
+                  }`}
+                  src="../../images/icons/exclamationpoint.svg"
+                />
               </label>
               <div className="d-none">
                 <input
                   data-size="5000"
-                  accept=".png, .jpg, .jpeg, .pdf, .doc"
+                  accept=".png, .jpg, .jpeg, .pdf, .doc, .docx"
                   className="jsFileInput"
                   type="file"
                   name="resumeField"
@@ -243,18 +296,32 @@ const ApplyFormFormik = ({ data }) => {
               </div>
             </div>
 
+            <div
+              className={`Typography Typography--white fileMessage ${
+                fileMessage ? 'fileMessage--show' : ''
+              }`}
+            >
+              <p>
+                Please upload files having extensions: .jpg, .png, .pdf, .doc
+              </p>
+              <p>File size must under 5mb.</p>
+            </div>
             <button
               disabled={formik.isSubmitting}
               type="submit"
               className="Button Button--white Typography Typography---royal-blue u-w-100"
-              onClick={() =>
-                setValidationFlag(
-                  Object.values(formik.errors).find(key => key === true),
-                )
-              }
+              onClick={() => setValidationFlag(Object.values(formik.errors).find(key => key === true))}
             >
               Submit
             </button>
+
+            <div
+              className={`FormBlue-successMessage Typography--body2 Typography--white ${
+                successMessage ? 'FormBlue-successMessage--show' : ''
+              }`}
+            >
+              Request has been sent
+            </div>
           </form>
         </div>
       </div>
