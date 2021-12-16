@@ -47,6 +47,8 @@ const ApplyFormFormik = ({ data }) => {
 
   const formik = useFormik({
     initialValues: {
+      'bot-field': '',
+      'form-name': 'resume',
       job_position: data.frontmatter.title,
       first_name: '',
       last_name: '',
@@ -82,7 +84,11 @@ const ApplyFormFormik = ({ data }) => {
     const formData = new FormData()
     data.last_name = data.first_name;
     for (let i in data) {
-      formData.append(`job_application[${i}]`, data[i])
+      if (i !== 'bot-field' && i !== 'form-name') {
+        formData.append(`job_application[${i}]`, data[i]);
+      } else {
+        formData.append(i, data[i]);
+      }
     }
 
     formData.append('token', process.env.FORM_TOKEN)
@@ -140,7 +146,7 @@ const ApplyFormFormik = ({ data }) => {
           >
             <p className="d-none">
               <label>
-                Don’t fill this out if you’re human: <input name="bot-field" />
+                Don’t fill this out if you’re human: <input name='bot-field' onChange={formik.handleChange} value={formik.values['bot-field']} />
               </label>
             </p>
             <div className="InputGroup">
