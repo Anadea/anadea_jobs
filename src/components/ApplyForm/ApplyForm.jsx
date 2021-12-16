@@ -94,15 +94,7 @@ const ApplyFormFormik = ({ data }) => {
     formData.append('token', process.env.FORM_TOKEN)
 
     axios
-      .post(`${process.env.API}/jobs`, formData, {
-        headers: {
-          //Authorization: `Basic ${process.env.HEADER_TOKEN}`,
-        },
-        // auth: {
-        //   username: 'anahoret',
-        //   password: 'epyfnm'
-        // }
-      })
+      .post(`${process.env.API}/jobs`, formData,)
       .then(res => {
         if (res && res.status === 200) {
           formik.resetForm()
