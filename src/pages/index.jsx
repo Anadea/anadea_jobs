@@ -6,9 +6,11 @@ import Layout from '../components/Layout/Layout'
 import Vacancies from '../components/Vacancies/Vacancies'
 import Values from '../components/Values/Values'
 
+
 const IndexPage = ({data}) => {
   // const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);
 
+  console.log('env', process.env)
   return (
     <Layout theme={'dark'}>
       <div className="ContentGroup ContentGroup--absolute">
