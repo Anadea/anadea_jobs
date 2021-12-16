@@ -1,4 +1,5 @@
 .JobPage {
+  margin-bottom: 20px;
   @mixin font($font-size, $line-height) {
     font-size: $font-size;
     line-height: $line-height;
@@ -28,7 +29,7 @@
 
   li {
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 47%;
     @include font(18px, 28px);
     font-weight: 400;
 
@@ -62,8 +63,16 @@
     }
   }
 
+  // li:nth-child(odd) {
+  //   padding-right: 5%;
+  // }
+  // li:nth-child(even) {
+  //   max-width: 45%;
+  // }
+
   ul {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }

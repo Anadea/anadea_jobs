@@ -36,6 +36,7 @@
 
   &-attachmentIcon {
     flex: 0 0 11px;
+    cursor: pointer;
   }
 
   &-attachmentLabel {
@@ -45,6 +46,7 @@
     opacity: .6;
     text-overflow: ellipsis;
     white-space: nowrap;
+    cursor: pointer;
   }
 
   &-errorImage {
@@ -60,6 +62,20 @@
     &.isActive {
       height: 109px;
       top: -109px;
+    }
+  }
+
+  &-successMessage {
+    opacity: 0;
+    height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    text-align: center;
+
+    &--show {
+      opacity: 1;
+      height: auto;
+      margin-top: 15px;
     }
   }
 }
