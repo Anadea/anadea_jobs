@@ -14,7 +14,8 @@ const Footer = () => {
       }`)
 
   const totalCount = data.allMarkdownRemark.totalCount;
-  const path = window.location.pathname
+  const isBrowser = () => typeof window !== "undefined"
+  const path = isBrowser() && window.location.pathname
 
   const scrollToTop = (e) => {
     let timeout = 0;
