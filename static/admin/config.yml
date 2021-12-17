@@ -20,12 +20,6 @@ collections:
       - label: "IsActive"
         name: "isActive"
         widget: "boolean"
-      - label: "Intro"
-        name: "intro"
-        required: false
-      - label: "LinkedIn"
-        name: "linkedIn"
-        required: false
       - label: "Details"
         name: body
         widget: "markdown"
