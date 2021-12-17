@@ -9,8 +9,9 @@ import Values from '../components/Values/Values'
 
 const IndexPage = ({data}) => {
   // const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);
-
-  console.log('env', process.env)
+  
+  console.log('process', process.env.GATSBY_FORM_TOKEN)
+  
   return (
     <Layout theme={'dark'}>
       <div className="ContentGroup ContentGroup--absolute">

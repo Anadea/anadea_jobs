@@ -91,10 +91,10 @@ const ApplyFormFormik = ({ data }) => {
       }
     }
 
-    formData.append('token', process.env.FORM_TOKEN)
+    formData.append('token', process.env.GATSBY_FORM_TOKEN)
 
     axios
-      .post(`${process.env.API}/jobs`, formData,)
+      .post(`${process.env.GATSBY_API}/jobs`, formData,)
       .then(res => {
         if (res && res.status === 200) {
           formik.resetForm()
