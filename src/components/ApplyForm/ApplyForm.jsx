@@ -10,8 +10,9 @@ const validate = values => {
     errors.first_name = true
   }
 
-  if (
-    values.phone &&
+  if (!values.phone) {
+    errors.phone = true
+  } else if (
     !/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]{9,12}$/i.test(values.phone)
   ) {
     errors.phone = true
@@ -19,15 +20,11 @@ const validate = values => {
 
   if (!values.email) {
     errors.email = true
-  } else if (
-    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,10}$/i.test(values.email)
-  ) {
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,10}$/i.test(values.email)) {
     errors.email = true
   }
 
-  if (!values.skype) {
-    errors.skype = true
-  } else if (!/[a-z0-9_\-.,:]$/i.test(values.skype)) {
+  if (values.skype && !/[a-z0-9_\-.,:]$/i.test(values.skype)) {
     errors.skype = true
   }
 
@@ -43,7 +40,7 @@ const ApplyFormFormik = ({ data }) => {
   const [successMessage, setSuccessMessage] = useState(false)
   const [fileMessage, setFileMessage] = useState(false)
 
-  useEffect(()=> {}, [validationFlag, resumeName])
+  useEffect(() => {}, [validationFlag, resumeName])
 
   const formik = useFormik({
     initialValues: {
@@ -82,19 +79,19 @@ const ApplyFormFormik = ({ data }) => {
 
   const sendForm = data => {
     const formData = new FormData()
-    data.last_name = data.first_name;
+    data.last_name = data.first_name
     for (let i in data) {
       if (i !== 'bot-field' && i !== 'form-name') {
-        formData.append(`job_application[${i}]`, data[i]);
+        formData.append(`job_application[${i}]`, data[i])
       } else {
-        formData.append(i, data[i]);
+        formData.append(i, data[i])
       }
     }
 
     formData.append('token', process.env.GATSBY_FORM_TOKEN)
 
     axios
-      .post(`${process.env.GATSBY_API}/jobs`, formData,)
+      .post(`${process.env.GATSBY_API}/jobs`, formData)
       .then(res => {
         if (res && res.status === 200) {
           formik.resetForm()
@@ -138,7 +135,12 @@ const ApplyFormFormik = ({ data }) => {
           >
             <p className="d-none">
               <label>
-                Don’t fill this out if you’re human: <input name='bot-field' onChange={formik.handleChange} value={formik.values['bot-field']} />
+                Don’t fill this out if you’re human:{' '}
+                <input
+                  name="bot-field"
+                  onChange={formik.handleChange}
+                  value={formik.values['bot-field']}
+                />
               </label>
             </p>
             <div className="InputGroup">
@@ -308,7 +310,11 @@ const ApplyFormFormik = ({ data }) => {
               disabled={formik.isSubmitting}
               type="submit"
               className="Button Button--white Typography Typography---royal-blue u-w-100"
-              onClick={() => setValidationFlag(Object.values(formik.errors).find(key => key === true))}
+              onClick={() =>
+                setValidationFlag(
+                  Object.values(formik.errors).find(key => key === true),
+                )
+              }
             >
               Submit
             </button>
@@ -323,17 +329,6 @@ const ApplyFormFormik = ({ data }) => {
           </form>
         </div>
       </div>
-
-      {data.frontmatter.linkedIn && (
-        <a href={data.frontmatter.linkedIn} target="_blank">
-          <button
-            name="button"
-            className="Button Button--white Typography Typography---royal-blue u-w-100 button-applyLinkedin"
-          >
-            <span>Apply with LinkedIn</span>
-          </button>
-        </a>
-      )}
     </div>
   )
 }

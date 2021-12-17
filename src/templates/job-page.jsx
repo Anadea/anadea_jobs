@@ -16,7 +16,6 @@ const JobPage = props => {
               frontmatter {
                 title
                 location
-                linkedIn
               }
               fields {
                 slug
