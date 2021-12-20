@@ -4,10 +4,10 @@ import axios from 'axios'
 
 const validate = values => {
   const errors = {}
-  if (!values.first_name) {
-    errors.first_name = true
-  } else if (values.first_name.length > 30) {
-    errors.first_name = true
+  if (!values.full_name) {
+    errors.full_name = true
+  } else if (values.full_name.length > 30) {
+    errors.full_name = true
   }
 
   if (!values.phone) {
@@ -47,8 +47,7 @@ const ApplyFormFormik = ({ data }) => {
       'bot-field': '',
       'form-name': 'resume',
       job_position: data.frontmatter.title,
-      first_name: '',
-      last_name: '',
+      full_name: '',
       phone: '',
       email: '',
       skype: '',
@@ -79,7 +78,6 @@ const ApplyFormFormik = ({ data }) => {
 
   const sendForm = data => {
     const formData = new FormData()
-    data.last_name = data.first_name
     for (let i in data) {
       if (i !== 'bot-field' && i !== 'form-name') {
         formData.append(`job_application[${i}]`, data[i])
@@ -147,12 +145,12 @@ const ApplyFormFormik = ({ data }) => {
               <div className="InputGroup-input">
                 <input
                   className="Input Input--large Input--autofillDark Typography Typography--white"
-                  id="first_name"
+                  id="full_name"
                   type="text"
-                  name="first_name"
+                  name="full_name"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.first_name}
+                  value={formik.values.full_name}
                 />
               </div>
               <div className="InputGroup-label">
@@ -164,7 +162,7 @@ const ApplyFormFormik = ({ data }) => {
                 </label>
                 <img
                   className={`inputInvalid ${
-                    validationFlag && formik.errors.first_name
+                    validationFlag && formik.errors.full_name
                       ? 'inputInvalid--show'
                       : ''
                   }`}
