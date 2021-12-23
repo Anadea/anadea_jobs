@@ -21,6 +21,7 @@
     @include font(18px, 28px);
     font-weight: 400;
     width: 60%;
+    text-align: justify;
 
     @include media-breakpoint-down(md) {
       @include font(16px, 26px);
@@ -28,16 +29,17 @@
   }
 
   li {
-    flex: 0 0 50%;
-    max-width: 47%;
-    @include font(18px, 28px);
+    flex: 0 0 100%;
+    max-width: 100%;
+    @include font(16px, 20px);
     font-weight: 400;
+    text-align: justify;
 
     @include media-breakpoint-down(md) {
-      @include font(16px, 26px);
+      @include font(14px, 26px);
     }
 
-    padding-bottom: 1em;
+    padding-bottom: 0.7em;
     position: relative;
 
     @include media-breakpoint-down(md) {
@@ -49,7 +51,8 @@
       height: 1px;
       left: -30px;
       position: absolute;
-      top: 0.75em;
+      top: calc(50% - 0.35em);
+      transform: translate(0, -50%);
       width: 17px;
       background-color: #ADC9D2;
 
@@ -74,5 +77,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 12px;
   }
 }

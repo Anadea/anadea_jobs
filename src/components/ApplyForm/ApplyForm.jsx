@@ -119,7 +119,7 @@ const ApplyFormFormik = ({ data }) => {
           src="../../images/icons/validator.png"
         />
       </div>
-      <div className="FormBlue u-bg-royal-blue">
+      <div className="FormBlue u-bg-cerise-red">
         <div className="FormBlue-title">
           <p className="Typography Typography--white u-bold formBlue-title">
             Apply now
@@ -307,7 +307,7 @@ const ApplyFormFormik = ({ data }) => {
             <button
               disabled={formik.isSubmitting}
               type="submit"
-              className="Button Button--white Typography Typography---royal-blue u-w-100"
+              className="Button Button--white-red Typography Typography--cerise-red u-w-100"
               onClick={() =>
                 setValidationFlag(
                   Object.values(formik.errors).find(key => key === true),
