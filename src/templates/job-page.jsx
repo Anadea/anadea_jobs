@@ -28,18 +28,18 @@ const JobPage = props => {
         const nodes = data.allMarkdownRemark.nodes.find(elem => elem.fields.slug === path);
         return nodes ? (
         <Layout theme={'white'}>
-          <div className="Section Section--start">
+          <div className="Section Section--job">
             <div className="Section-content">
               <div className="row">
                 <div className="col-md-8">
                   <div className="ContentGroup ContentGroup--padded">
                     <div className="ContentGroup-title">
-                      <h1 className="Typography Typography--heading1 Typography--cod-gray">
+                      <h1 className="Typography Typography--heading2 Typography--cod-gray">
                         {nodes.frontmatter.title} 
                       </h1>
                     </div>
                     <p className="Typography Typography--body2 Typography--cod-gray">
-                      {`Location: ${nodes.frontmatter.location}`}
+                      <span className='Typography--bold'>Location</span>: {`${nodes.frontmatter.location}`}
                     </p>
                   </div>
                   <div

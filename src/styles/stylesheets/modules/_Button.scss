@@ -21,5 +21,11 @@
     background-color: get-color('white');
     border: 2px solid get-color('royal-blue');
     color: get-color('royal-blue');
+
+    &-red {
+      border-color: get-color('white');
+      background-color: get-color('white');
+      border: 2px solid get-color('white');
+    }
   }
 }
