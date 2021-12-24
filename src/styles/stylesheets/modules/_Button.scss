@@ -22,10 +22,10 @@
     border: 2px solid get-color('royal-blue');
     color: get-color('royal-blue');
 
-    &-red {
-      border-color: get-color('white');
+    &-black {
       background-color: get-color('white');
       border: 2px solid get-color('white');
+      color: get-color('jobs-bastille');
     }
   }
 }
