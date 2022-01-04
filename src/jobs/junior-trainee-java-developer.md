@@ -6,20 +6,22 @@ linkedIn: https://www.linkedin.com/jobs/view/2791551584/?refId=o1kzx1sRjp8KtR57P
 ---
 ## Requirements
 
-* Knowledge of any programming language
-* Knowledge/desire to learn Java, Scala and Kotlin programming language
-* Basic knowledge of computer science (algorithms, data structures)
-* Good knowledge of OOP principles
+* Strong knowledge of Java Core
+* Computer science (algorithms, data structures)
+* Good knowledge of OOP and SOLID principles
 * Understanding of web applications working principles
+* Understanding of HTTP protocol and RESTful approach
 * Knowledge of SQL and understanding how relational databases work
-* Basic knowledge of Git
-* English - Intermediate or higher
+* Experience of the UNIX command-line tools, Git, Maven/Gradle
+* Good spoken English
+* Be ready for fast learning and growing up to full-stack developer in the future
 
-## Nice to have
+## **Nice to have**
 
-* Be able to work in command line
+* Knowledge of Kotlin programming language
+* Any experience in HTML, CSS, JavaScript
 * Team work experience (hackatons, pet-projects) / commercial working experience
-* Basic knowledge of any web application framework
+* Basic knowledge of Spring or any other web application framework
 
 ## Responsibilities
 
