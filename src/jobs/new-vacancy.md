@@ -5,7 +5,7 @@ isActive: true
 intro: ""
 detail: "**Lorem**"
 ---
-**Required skills**
+## **Requirements**
 
 * 1+ years experience in iOS development
 * Knowledge of Objective-C and Swift
@@ -19,7 +19,7 @@ detail: "**Lorem**"
 * Using other tools (fastlane, swiftlint, etc)
 * Spoken English (Intermediate+)
 
-**Nice to have**
+## **Nice to have**
 
 * Experience with SwiftUI/Combine
 * Understanding the principles of FP and FRP (ReactiveCocoa, RxSwift, etc.)
