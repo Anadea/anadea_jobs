@@ -26,7 +26,7 @@ isActive: true
 ## **Responsibilities**
 
 * Direct communication with client representatives
-* Create solid, well-tested front-end code
+* Create solid, well-tested code
 
 ## **We offer**
 
