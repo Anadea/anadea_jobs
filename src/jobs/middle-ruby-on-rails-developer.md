@@ -18,15 +18,14 @@ isActive: true
 * Agile methodology
 * Experience with React.js
 * Experience in external services integrations
-* Responsibilities
-* Make business and technical decisions
-* Build product architecture according to product requirements
-* Direct communication with client representatives
 
 ## **Responsibilities**
 
 * Direct communication with client representatives
 * Create solid, well-tested code
+* Make business and technical decisions
+* Build product architecture according to product requirements
+* Direct communication with client representatives
 
 ## **We offer**
 
