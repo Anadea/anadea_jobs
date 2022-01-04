@@ -1,6 +1,6 @@
 ---
 title: Front End Developer
-location: Dnipro (Ukraine)
+location: Dnipro, Kyiv, Kharkiv (Ukraine), Minsk (Belarus)
 isActive: true
 ---
 ## Requirements
@@ -15,7 +15,7 @@ isActive: true
 * Experience of the command-line tools UNIX
 * Good spoken English
 
-# Nice to have
+## Nice to have
 
 * Agile methodology
 * Basic knowledge of server-side
