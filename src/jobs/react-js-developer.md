@@ -3,7 +3,7 @@ title: React.js Developer
 location: Ukraine, Belarus
 isActive: true
 ---
-##### **Requirements**
+# **Requirements**
 
 * At least 2+ years of experience as Frontend developer
 * Good knowledge of native JS including the newest possibilities of ES 6,7,8
@@ -12,7 +12,7 @@ isActive: true
 * Interaction with RESTful web-service
 * Intermediate knowledge of English
 
-##### **Nice to have**
+###### **Nice to have**
 
 * Are familiar with Agile methodology
 * Experience with React Native
@@ -20,7 +20,7 @@ isActive: true
 * GraphQL
 * TypeScript
 
-##### **Responsibilities**
+###### **Responsibilities**
 
 * Direct communication with client representatives
 * Create solid, well-tested front-end code
