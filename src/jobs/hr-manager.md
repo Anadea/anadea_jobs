@@ -1,7 +1,7 @@
 ---
 title: HR Manager
 location: Минск
-isActive: true
+isActive: false
 ---
 **Требования**
 
