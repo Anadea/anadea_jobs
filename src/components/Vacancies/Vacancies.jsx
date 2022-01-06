@@ -57,8 +57,7 @@ const Vacancies = ({ data }) => {
           <div className="row">
             <div className="offset-md-3 col-md-6">
               <p className="Typography Typography--body3 Typography--white Typography--centered u-opacity-8 u-mb-15">
-                His responsibility was to find capable engineers and manage
-                their work.
+              What is a team for us? It is a group of bright, deep, interesting and professional personalities, who decided to unite their efforts to achieve a common goal and chose our company for it. Interesting tasks, easy, fast and transparent communication and a job you are passionate about are waiting for you.
               </p>
             </div>
           </div>

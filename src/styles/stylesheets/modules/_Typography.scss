@@ -188,4 +188,9 @@
   &--bold {
     font-weight: bold;
   }
+
+  &--list {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
 }

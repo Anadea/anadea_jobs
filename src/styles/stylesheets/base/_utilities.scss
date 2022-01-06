@@ -243,6 +243,12 @@
   }
 }
 
+.u-pt-dk-40 {
+  @include media-breakpoint-up(lg) {
+    padding-top: 40px;
+  }
+}
+
 .u-pb-mb-20 {
   @include media-breakpoint-down(lg) {
     padding-bottom: 20px;

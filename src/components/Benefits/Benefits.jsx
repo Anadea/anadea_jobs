@@ -15,7 +15,7 @@ const Benefits = () => {
           <div className="row">
             <div className="offset-md-3 col-md-6">
               <p className="Typography Typography--body3 Typography--white Typography--centered u-opacity-8 u-mb-60">
-                His responsibility was to find capable engineers and manage their work.
+              We create an environment that improves not only professional but also personal skills: informal events, joint celebrations, public activities.
               </p>
             </div>
           </div>

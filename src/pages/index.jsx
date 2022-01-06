@@ -23,8 +23,7 @@ const IndexPage = ({data}) => {
                 </h1>
               </div>
               <p className="Typography Typography--body3 Typography--white Typography--centered u-opacity-8">
-                Stav Online is an interactive e-learning platform that fuses progressive educational practices with
-                modern.
+              Respectfully and honestly working on high value software products along with customers to serve their business needs. 
               </p>
             </div>
           </div>
