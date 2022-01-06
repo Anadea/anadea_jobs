@@ -1,28 +1,34 @@
-import React, {useState} from 'react'
-import {socialLinks} from '../../constants/social-links'
-import VacanciesCount from "../VacanciesCount/VacanciesCount";
-import {graphql, useStaticQuery, Link} from "gatsby";
-import { scroller } from "react-scroll";
-
+import React, { useState } from 'react'
+import { socialLinks } from '../../constants/social-links'
+import VacanciesCount from '../VacanciesCount/VacanciesCount'
+import { graphql, useStaticQuery, Link } from 'gatsby'
+import { scroller } from 'react-scroll'
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
-      query VacanciesCount {
-          allMarkdownRemark {
-              totalCount
+    query VacanciesCount {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            isActive
           }
-      }`)
+        }
+      }
+    }
+  `)
 
-  const totalCount = data.allMarkdownRemark.totalCount;
-  const isBrowser = () => typeof window !== "undefined"
+  const totalCount = data.allMarkdownRemark.nodes.filter(
+    elem => elem.frontmatter.isActive === true,
+  )
+  const isBrowser = () => typeof window !== 'undefined'
   const path = isBrowser() && window.location.pathname
 
-  const scrollToTop = (e) => {
-    let timeout = 0;
+  const scrollToTop = e => {
+    let timeout = 0
     if (path === '/') {
-      e.preventDefault();
+      e.preventDefault()
     } else {
-      timeout = 100;
+      timeout = 100
     }
 
     setTimeout(() => {
@@ -30,10 +36,10 @@ const Footer = () => {
         duration: 800,
         delay: 100,
         smooth: true,
-        offset: -50, 
+        offset: -50,
       })
     }, timeout)
-  };
+  }
 
   return (
     <footer className="Section Section--footer u-bg-jobs-bastille">
@@ -43,31 +49,67 @@ const Footer = () => {
             <div className="col-6 col-md-2">
               <div className="ContentGroup">
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/about-us" target="_blank">Company</a>
+                  <a
+                    className="Page-footerLinkText  u-bold"
+                    href="https://anadea.info/about-us"
+                    target="_blank"
+                  >
+                    Company
+                  </a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/services" target="_blank">Services</a>
+                  <a
+                    className="Page-footerLinkText  u-bold"
+                    href="https://anadea.info/services"
+                    target="_blank"
+                  >
+                    Services
+                  </a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/projects" target="_blank">Projects</a>
+                  <a
+                    className="Page-footerLinkText  u-bold"
+                    href="https://anadea.info/projects"
+                    target="_blank"
+                  >
+                    Projects
+                  </a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/solutions" target="_blank">Solutions</a>
+                  <a
+                    className="Page-footerLinkText  u-bold"
+                    href="https://anadea.info/solutions"
+                    target="_blank"
+                  >
+                    Solutions
+                  </a>
                 </div>
               </div>
             </div>
             <div className="col-6 col-md-2">
               <div className="ContentGroup">
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/contacts"  target="_blank">Write for us</a>
+                  <a
+                    className="Page-footerLinkText  u-bold"
+                    href="https://anadea.info/contacts"
+                    target="_blank"
+                  >
+                    Write for us
+                  </a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText  u-bold" href="https://anadea.info/blog"  target="_blank">Blog</a>
+                  <a
+                    className="Page-footerLinkText  u-bold"
+                    href="https://anadea.info/blog"
+                    target="_blank"
+                  >
+                    Blog
+                  </a>
                 </div>
                 <div className="Page-footerLink">
                   <Link className="Page-footerLinkText u-bold" onClick={scrollToTop} to="/#positions">Careers
-                    {totalCount ? ( <VacanciesCount
-                    count={totalCount} location="footer"/>): ''}
+                    {totalCount.length ? ( <VacanciesCount
+                    count={totalCount.length} location="footer"/>): ''}
                   </Link>
                 </div>
               </div>
@@ -75,12 +117,23 @@ const Footer = () => {
             <div className="col-12 col-md-3 col-lg-2">
               <div className="ContentGroup">
                 <div className="Page-footerLink">
-                  <a href="https://businessnameguide.com/" className="Page-footerLinkText u-bold"
-                     target="_blank" rel="noopener noreferrer">Business name
-                    generator</a>
+                  <a
+                    href="https://businessnameguide.com/"
+                    className="Page-footerLinkText u-bold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Business name generator
+                  </a>
                 </div>
                 <div className="Page-footerLink">
-                  <a className="Page-footerLinkText u-bold" href="https://anadea.info/privacy-terms" target="_blank">Privacy &amp; Terms</a>
+                  <a
+                    className="Page-footerLinkText u-bold"
+                    href="https://anadea.info/privacy-terms"
+                    target="_blank"
+                  >
+                    Privacy &amp; Terms
+                  </a>
                 </div>
               </div>
             </div>
@@ -107,18 +160,26 @@ const Footer = () => {
                 </div>
               </div>
               <div className="u-spacer-20"></div>
-              <a href="/awards-achievements" className="award" aria-label="Awards &amp; Achievements">
-                <img loading="lazy" className="u-svg-alto" alt="Awards-achievements"
-                     title="Awards-achievements"
-                     src="../images/footer/award.png"/>
+              <a
+                href="/awards-achievements"
+                className="award"
+                aria-label="Awards &amp; Achievements"
+              >
+                <img
+                  loading="lazy"
+                  className="u-svg-alto"
+                  alt="Awards-achievements"
+                  title="Awards-achievements"
+                  src="../images/footer/award.png"
+                />
               </a>
 
               <div className="u-spacer-20"></div>
               <div className="Typography Typography--body0 Typography--thin Typography--footer-alto u-mb-15">
-                © 2000-2021 <span itemProp="brand">Anadea</span> Inc.<br/>
+                © 2000-2022 <span itemProp="brand">Anadea</span> Inc.
+                <br />
                 All rights reserved
               </div>
-
             </div>
           </div>
         </div>
