@@ -3,20 +3,20 @@ const benefitsList = [
     id: 1,
     title: 'Free lunches',
     description:
-      'His responsibility was to find capable engineers and manage.',
+      'Free lunches - We treat you with lunches and optimize your time for yourself.',
     image: '../images/icons/lunches.svg',
   },
   {
     id: 2,
     title: 'Insurance',
-    description: 'His responsibility was to find capable engineers and manage.',
+    description: 'Insurance - We care about your health and precautions.',
     image: '../images/icons/insurance.svg',
   },
   {
     id: 3,
     title: 'Teambuilding',
     description:
-      'His responsibility was to find capable engineers and manage.',
+      'Entertainment  - We offer participation in conceptual events: sports, holidays, trainings.',
     image: '../images/icons/entertainment.svg',
   },
 ]
