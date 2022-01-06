@@ -176,7 +176,7 @@ const Footer = () => {
 
               <div className="u-spacer-20"></div>
               <div className="Typography Typography--body0 Typography--thin Typography--footer-alto u-mb-15">
-                © 2000-2021 <span itemProp="brand">Anadea</span> Inc.
+                © 2000-2022 <span itemProp="brand">Anadea</span> Inc.
                 <br />
                 All rights reserved
               </div>
