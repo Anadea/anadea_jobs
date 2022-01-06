@@ -94,17 +94,19 @@ const Values = () => {
       <div className="Section u-noPadded">
         <div className="ContentGroup ContentGroup--padded ContentGroup--absolute d-flex u-h-100 flex-column-reverse">
           <div className="Section-content">
-            <div className="row flex-column align-content-end u-text-align-right">
-              <p className="Typography Typography--heading2 Typography--right Typography--white u-pb-dk-40">
-                Values
-              </p>
-              <ul className='Typography Typography--body3 Typography--white  Typography--thin  u-pb-dk-40'>
-                <li>Respect</li>
-                <li>Freedom of communication and choice</li>
-                <li>Professional pride</li>
-                <li>Honesty</li>
-                <li>Erudition and broad worldview</li>
-              </ul>
+            <div className="row">
+              <div className="col-md-12 flex-column align-content-end u-text-align-right">
+                <p className="Typography Typography--heading2 Typography--right Typography--white u-pb-dk-40">
+                  Values
+                </p>
+                <ul className="Typography Typography--body3 Typography--white  Typography--thin  u-pb-dk-40">
+                  <li>Respect</li>
+                  <li>Freedom of communication and choice</li>
+                  <li>Professional pride</li>
+                  <li>Honesty</li>
+                  <li>Erudition and broad worldview</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
