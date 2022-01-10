@@ -1,6 +1,6 @@
 ---
 title: QA Engineer for Real Estate Project
-location: Dnipro
+location: Dnipro (Ukraine)
 isActive: true
 ---
 We are looking for QA Engineer, who could strengthen our technology team. The team is dedicated to building and maintaining the technical foundation of the service-based solution such as performance, integration with 3rd party services, security, and email dispatching.
@@ -13,7 +13,7 @@ We are looking for QA Engineer, who could strengthen our technology team. The te
 * Requirements analysis and processing
 * Experience with version control systems (Git)
 * Desire to develop in automation testing
-* Upper Intermediate level of English
+* Upper-Intermediate level of English
 
 ## Nice to have:
 
