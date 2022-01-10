@@ -88,7 +88,12 @@ $color-list: (
   'tundora': #444444,
   'white': #FFFFFF,
   'footer-gray': #BCBCBC,
-  'footer-alto': #82919A
+  'footer-alto': #82919A,
+  'soft-red': #e05050,
+  'soft-blue': #69aeee,
+  'moderate-orange': #cf9858,
+  'moderate-green': #95b948,
+  'moderate-lime-green': #49c246
 );
 
 @function get-color($color) {

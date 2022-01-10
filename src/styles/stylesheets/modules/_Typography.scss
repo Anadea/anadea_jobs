@@ -59,6 +59,21 @@
     }
   }
 
+  &--heading3--smaller-xs {
+    @include font(22px, 30px);
+    font-weight: 800;
+
+    @include media-breakpoint-down(md) {
+      @include font(18px, 26px);
+      font-weight: 800;
+    }
+
+    @include media-breakpoint-down(xs) {
+      @include font(15px, 23px);
+      font-weight: 800;
+    }
+  }
+
   &--heading4 {
     @include font(26px, 30px);
     font-weight: 800;

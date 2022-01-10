@@ -39,11 +39,19 @@
   }
 
   &--healthcareProjects {
-    background: linear-gradient(0deg, get-color('medical-venice-blue') 0%, get-color('medical-elm') 100%);
+    background: linear-gradient(
+      0deg,
+      get-color('medical-venice-blue') 0%,
+      get-color('medical-elm') 100%
+    );
   }
 
   &--progress {
-    background: linear-gradient(270.43deg, get-color('backend-amethyst') 1.77%, get-color('backend-malibu') 99.99%);
+    background: linear-gradient(
+      270.43deg,
+      get-color('backend-amethyst') 1.77%,
+      get-color('backend-malibu') 99.99%
+    );
     border-radius: 2px;
     height: 6px;
     padding: 0;
@@ -70,6 +78,15 @@
 
     @include media-breakpoint-down(md) {
       padding-right: 30px;
+    }
+  }
+
+  &--values {
+    padding: 15px;
+    min-height: 90px;
+
+    @include media-breakpoint-down(xs) {
+      padding: 10px;
     }
   }
 }
