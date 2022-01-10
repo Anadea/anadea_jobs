@@ -1,0 +1,75 @@
+.values-parallax {
+  .gatsby-image-wrapper {
+    max-height: 700px;
+    width: 100%;
+  }
+}
+
+.values {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+
+  @include media-breakpoint-down(xs) {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+  }
+
+  &__item {
+    width: calc(20% - 20px);
+    margin: 0 10px 20px;
+
+    @include media-breakpoint-down(lg) {
+      width: calc(33.33% - 20px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: calc(50% - 20px);
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: calc(50% - 10px);
+      margin: 0 5px 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    grid-gap: 160px;
+
+    @include media-breakpoint-down(md) {
+      grid-gap: 60px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+      grid-gap: 0;
+      align-items: center;
+    }
+
+    ul {
+      padding-left: 30px;
+      max-width: 355px;
+
+      li {
+        margin-bottom: 10px;
+        position: relative;
+
+        &:before {
+          content: '';
+          width: 18px;
+          height: 13px;
+          display: block;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: url(../images/icons/arrow-green.svg);
+          position: absolute;
+          top: 9px;
+          left: -30px;
+        }
+      }
+    }
+  }
+}
