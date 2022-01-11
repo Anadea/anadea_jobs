@@ -1,12 +1,5 @@
 @import '../grid/bootstrap-grid.scss';
 
-body {
-  background-color: #fff;
-  color: #666;
-  text-align: center;
-  font-family: arial, sans-serif;
-}
-
 .page-404 {
   width: 530px;
   max-width: 95%;
@@ -15,6 +8,10 @@ body {
   border: 1px solid #ccc;
   border-right-color: #999;
   border-bottom-color: #999;
+	background-color: #fff;
+  color: #666;
+  text-align: center;
+  font-family: arial, sans-serif;
 
   @include media-breakpoint-down(md) {
     padding: 0 32px;
