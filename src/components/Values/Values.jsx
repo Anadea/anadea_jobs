@@ -6,7 +6,7 @@ const Values = () => {
     'Respect',
     'Freedom of communication and choice',
     'Professional pride',
-    'Professional pride',
+    'Honesty',
     'Erudition and broad worldview',
   ]
   return (
