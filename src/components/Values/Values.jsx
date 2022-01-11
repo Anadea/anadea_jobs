@@ -30,11 +30,11 @@ const Values = () => {
               <div className="offset-md-3 col-md-6">
                 <p className="Typography Typography--body3 Typography--white Typography--centered Typography--thin u-pb-dk-40 u-pb-mb-20">
                   Key components of a company's success are flexible business
-                  processes,usage of effective technologies, continuous
+                  processes, usage of effective technologies, continuous
                   improvement of coworker`s qualifications, complex approach to
                   solving business tasks and success of our customers. Each one
                   of us contributes to a common result. The more successful the
-                  company is, the more successful we are.{' '}
+                  company is, the more successful we are.
                 </p>
               </div>
             </div>
