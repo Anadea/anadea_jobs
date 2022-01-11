@@ -91,15 +91,6 @@ const Footer = () => {
                 <div className="Page-footerLink">
                   <a
                     className="Page-footerLinkText  u-bold"
-                    href="https://anadea.info/contacts"
-                    target="_blank"
-                  >
-                    Write for us
-                  </a>
-                </div>
-                <div className="Page-footerLink">
-                  <a
-                    className="Page-footerLinkText  u-bold"
                     href="https://anadea.info/blog"
                     target="_blank"
                   >
