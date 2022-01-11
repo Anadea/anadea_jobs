@@ -3,6 +3,7 @@ import Benefits from '../components/Benefits/Benefits'
 import { graphql, StaticQuery } from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import ApplyForm from '../components/ApplyForm/ApplyForm'
+import Seo from '../components/Seo/Seo'
 
 const JobPage = props => {
   const path = props.path;
@@ -28,6 +29,7 @@ const JobPage = props => {
         const nodes = data.allMarkdownRemark.nodes.find(elem => elem.fields.slug === path);
         return nodes ? (
         <Layout theme={'white'}>
+          <Seo title={nodes.frontmatter.title}/>
           <div className="Section Section--job">
             <div className="Section-content">
               <div className="row">

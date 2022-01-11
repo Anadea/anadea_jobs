@@ -4,7 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Jobs - Anadea',
+    title: "Jobs",
+    titleTemplate: "%s - Anadea",
+    description: 'We hire young and talented specialists.'
   },
   plugins: [
     'gatsby-plugin-netlify-cms',

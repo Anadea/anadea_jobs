@@ -6,14 +6,14 @@ import Layout from '../components/Layout/Layout'
 import Vacancies from '../components/Vacancies/Vacancies'
 import History from '../components/History/History'
 import Values from '../components/Values/Values'
+import Seo from '../components/Seo/Seo'
 
 
 const IndexPage = ({data}) => {
-  // const isActive = data.allMarkdownRemark.nodes.find(elem => elem.frontmatter.isActive);
 
-  
   return (
     <Layout theme={'dark'}>
+      <Seo/>
       <div className="ContentGroup ContentGroup--absolute">
         <section className="Section Section--start">
           <div className="Section-content">
