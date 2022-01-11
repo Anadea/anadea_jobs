@@ -69,10 +69,11 @@ const Vacancies = ({ data }) => {
                 key={elem.id}
                 className={
                   filteredData.length > 4
-                    ? 'col-md-3 vacancies-list__item'
+                    ? 'col-md-4 vacancies-list__item'
                     : 'col-md-3'
                 }
               >
+
                 <Link
                   className="RoundedWrapper RoundedWrapper--small u-bg-jobs-bastille2 u-h-100 d-flex flex-column Typography Typography--no-underline"
                   to={elem.fields.slug}
