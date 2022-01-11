@@ -4,6 +4,7 @@ import Animation from '../components/Animation/Animation'
 import Benefits from '../components/Benefits/Benefits'
 import Layout from '../components/Layout/Layout'
 import Vacancies from '../components/Vacancies/Vacancies'
+import History from '../components/History/History'
 import Values from '../components/Values/Values'
 
 
@@ -33,6 +34,7 @@ const IndexPage = ({data}) => {
       <Vacancies data={data} />
       <Benefits/>
       <Values/>
+      <History/>
     </Layout>
   )
 }
