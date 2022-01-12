@@ -3,6 +3,8 @@ title: PHP/MySQL Developer
 location: Ukraine, Belarus
 isActive: true
 ---
+We are looking for PHP/MySQL developer with multiple years of experience building database-driven PHP applications.
+
 ## Requirements
 
 * Spoken English
