@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Seo = ({ title, customDesc }) => {
@@ -8,7 +8,7 @@ const Seo = ({ title, customDesc }) => {
       query {
         site {
           siteMetadata {
-						title
+            title
             description
             titleTemplate
           }
@@ -16,7 +16,9 @@ const Seo = ({ title, customDesc }) => {
       }
     `,
   )
-  const description = customDesc || `Company Anadea is looking for an ${title}. Learn about job requirements, duties and opportunities here.`
+  const description =
+    customDesc ||
+    `Company Anadea is looking for an ${title}. Learn about job requirements, duties and opportunities here.`
   return (
     <Helmet
       title={title || site.siteMetadata.title}
