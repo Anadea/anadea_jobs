@@ -9,6 +9,7 @@ module.exports = {
     description: 'We hire young and talented specialists.'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sass',
     'gatsby-plugin-image',

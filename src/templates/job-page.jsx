@@ -27,6 +27,7 @@ const JobPage = props => {
       `}
       render={data => {
         const nodes = data.allMarkdownRemark.nodes.find(elem => elem.fields.slug === path);
+    
         return nodes ? (
         <Layout theme={'white'}>
           <Seo title={nodes.frontmatter.title}/>
