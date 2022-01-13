@@ -6,12 +6,11 @@ linkedIn: https://www.linkedin.com/jobs/view/2791551584/?refId=o1kzx1sRjp8KtR57P
 ---
 ## Requirements
 
-* At least 1-year experience with Java or Scala
-* Experience with object-oriented programming (OOP), object-oriented design (OOD), and design patterns
+* Experience with Java or Scala
+* Experience with object-oriented programming (OOP), object-oriented design (OOD), and software design patterns
 * Experience using test-driven development (TDD)
+* Experience with SQL.
 * English (intermediate or better level)
-* Experience working with complex SQL queries in Postgresql.
-* Willingness to master the A-framework (Journal web framework).
 
 ## Nice to have
 
