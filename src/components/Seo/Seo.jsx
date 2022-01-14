@@ -4,15 +4,19 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Seo = ({ title, customDesc }) => {
-  const { site } = useStaticQuery(
+  const { site, sitePage } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
-            titleTemplate
+            titleTemplate,
+            url
           }
+        }
+        sitePage {
+          path
         }
       }
     `,
@@ -51,11 +55,11 @@ const Seo = ({ title, customDesc }) => {
         },
         {
           name: 'og:url',
-          content: window.location.href
+          content: site.siteMetadata.url + sitePage.path
         },
         {
           name: 'twitter:url',
-          content: window.location.href
+          content: site.siteMetadata.url + sitePage.path
         },
         {
           name: 'og:title',

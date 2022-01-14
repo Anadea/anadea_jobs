@@ -6,7 +6,8 @@ module.exports = {
   siteMetadata: {
     title: "Jobs",
     titleTemplate: "%s - Anadea",
-    description: 'We hire young and talented specialists.'
+    description: 'We hire young and talented specialists.',
+    url: 'https://jobs.anadea.info'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
