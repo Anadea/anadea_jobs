@@ -30,7 +30,7 @@ const JobPage = props => {
     
         return nodes ? (
         <Layout theme={'white'}>
-          <Seo title={nodes.frontmatter.title}/>
+          <Seo title={nodes.frontmatter.title} customDesc={''}/>
           <div className="Section Section--job">
             <div className="Section-content">
               <div className="row">

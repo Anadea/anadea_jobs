@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -31,8 +31,48 @@ const Seo = ({ title, customDesc }) => {
       meta={[
         {
           name: 'description',
-          content: title ? description : site.siteMetadata.description,
+          content: description
         },
+        {
+          name: 'og:description',
+          content: description
+        },
+        {
+          name: 'twitter:description',
+          content: description,
+        },
+        {
+          name: 'og:type',
+          content: 'website'
+        },
+        {
+          name: 'twitter:type',
+          content: 'website'
+        },
+        {
+          name: 'og:url',
+          content: window.location.href
+        },
+        {
+          name: 'twitter:url',
+          content: window.location.href
+        },
+        {
+          name: 'og:title',
+          content: title || site.siteMetadata.title
+        },
+        {
+          name: 'twitter:title',
+          content: title || site.siteMetadata.title
+        },
+        {
+          name: 'og:image',
+          content: 'https://jobs.anadea.info/images/icons/favicon.ico'
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://jobs.anadea.info/images/icons/favicon.ico'
+        }
       ]}
     />
   )
@@ -40,7 +80,7 @@ const Seo = ({ title, customDesc }) => {
 
 Seo.defaultProps = {
   customDesc: 'We hire young and talented specialists.',
-  title: 'Jobs'
+  title: 'Jobs',
 }
 
 Seo.propTypes = {
