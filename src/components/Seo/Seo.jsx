@@ -3,20 +3,31 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const Seo = ({ title, customDesc }) => {
-  const { site, sitePage } = useStaticQuery(
+const Seo = ({ title, customDesc, markdownRemark }) => {
+  const { site, allMarkdownRemark } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
-            titleTemplate,
+            titleTemplate
             url
           }
         }
-        sitePage {
-          path
+        allMarkdownRemark {
+          nodes {
+            fields {
+              slug
+            }
+          }
+          edges {
+            node {
+              frontmatter {
+                title
+              }
+            }
+          }
         }
       }
     `,
@@ -25,6 +36,10 @@ const Seo = ({ title, customDesc }) => {
   const description =
     customDesc ||
     `Company Anadea is looking for an ${title}. Learn about job requirements, duties and opportunities here.`
+
+  const slugIdx = allMarkdownRemark.edges?.findIndex(elem => elem.node.frontmatter.title === title ? true: false)
+  const slug = allMarkdownRemark.nodes[slugIdx]?.fields.slug
+  const pageUrl = slug ? site.siteMetadata.url + slug: site.siteMetadata.url
   return (
     <Helmet
       title={title || site.siteMetadata.title}
@@ -35,11 +50,11 @@ const Seo = ({ title, customDesc }) => {
       meta={[
         {
           name: 'description',
-          content: description
+          content: description,
         },
         {
           name: 'og:description',
-          content: description
+          content: description,
         },
         {
           name: 'twitter:description',
@@ -47,36 +62,36 @@ const Seo = ({ title, customDesc }) => {
         },
         {
           name: 'og:type',
-          content: 'website'
+          content: 'website',
         },
         {
           name: 'twitter:type',
-          content: 'website'
+          content: 'website',
         },
         {
           name: 'og:url',
-          content: site.siteMetadata.url + sitePage.path
+          content: pageUrl
         },
         {
           name: 'twitter:url',
-          content: site.siteMetadata.url + sitePage.path
+          content: pageUrl
         },
         {
           name: 'og:title',
-          content: title || site.siteMetadata.title
+          content: title || site.siteMetadata.title,
         },
         {
           name: 'twitter:title',
-          content: title || site.siteMetadata.title
+          content: title || site.siteMetadata.title,
         },
         {
           name: 'og:image',
-          content: 'https://jobs.anadea.info/images/icons/favicon.ico'
+          content: 'https://jobs.anadea.info/images/icons/favicon.ico',
         },
         {
           name: 'twitter:image',
-          content: 'https://jobs.anadea.info/images/icons/favicon.ico'
-        }
+          content: 'https://jobs.anadea.info/images/icons/favicon.ico',
+        },
       ]}
     />
   )
