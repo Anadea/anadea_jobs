@@ -18,7 +18,7 @@ const Header = () => {
       }`}
     >
       <nav className="Navigation-content">
-        <a className="Navigation-logo" href="/">
+        <a className="Navigation-logo" href="https://anadea.info">
           <div className="Navigation-logoImage">
             <img className="Image" alt="logo" src={logo} />
           </div>
