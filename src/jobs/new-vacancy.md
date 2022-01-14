@@ -1,7 +1,7 @@
 ---
 title: iOS Developer
 location: Dnipro, Kyiv, Kharkiv (Ukraine), Minsk (Belarus)
-isActive: true
+isActive: false
 intro: ""
 detail: "**Lorem**"
 ---
