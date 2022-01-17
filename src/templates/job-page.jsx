@@ -5,8 +5,7 @@ import Layout from '../components/Layout/Layout'
 import ApplyForm from '../components/ApplyForm/ApplyForm'
 import Seo from '../components/Seo/Seo'
 
-const JobPage = (props) => {
-  const path = props.path
+const JobPage = ({ path, pageContext }) => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -26,43 +25,45 @@ const JobPage = (props) => {
   const nodes = data.allMarkdownRemark.nodes.find(
     (elem) => elem.fields.slug === path,
   )
-  return nodes ? (
+  return (
     <React.Fragment>
-      <Seo title={nodes.frontmatter.title} customDesc={''} article={true} />
-      <Layout theme={'white'}>
-        <div className="Section Section--job">
-          <div className="Section-content">
-            <div className="row">
-              <div className="col-md-8">
-                <div className="ContentGroup ContentGroup--padded">
-                  <div className="ContentGroup-title">
-                    <h1 className="Typography Typography--heading2 Typography--cod-gray">
-                      {nodes.frontmatter.title}
-                    </h1>
+      <Seo title={pageContext.title} customDesc={''} article={true} />
+      {nodes ? (
+        <Layout theme={'white'}>
+          <div className="Section Section--job">
+            <div className="Section-content">
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="ContentGroup ContentGroup--padded">
+                    <div className="ContentGroup-title">
+                      <h1 className="Typography Typography--heading2 Typography--cod-gray">
+                        {nodes.frontmatter.title}
+                      </h1>
+                    </div>
+                    <p className="Typography Typography--body2 Typography--cod-gray">
+                      <span className="Typography--bold">Location</span>:{' '}
+                      {`${nodes.frontmatter.location}`}
+                    </p>
                   </div>
-                  <p className="Typography Typography--body2 Typography--cod-gray">
-                    <span className="Typography--bold">Location</span>:{' '}
-                    {`${nodes.frontmatter.location}`}
-                  </p>
+                  <div
+                    className="JobPage"
+                    dangerouslySetInnerHTML={{
+                      __html: nodes.html,
+                    }}
+                  />
                 </div>
-                <div
-                  className="JobPage"
-                  dangerouslySetInnerHTML={{
-                    __html: nodes.html,
-                  }}
-                />
-              </div>
-              <div className="col-md-4">
-                <ApplyForm data={nodes} />
+                <div className="col-md-4">
+                  <ApplyForm data={nodes} />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <Benefits />
-      </Layout>
+          <Benefits />
+        </Layout>
+      ) : (
+        ''
+      )}
     </React.Fragment>
-  ) : (
-    ''
   )
 }
 
