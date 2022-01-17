@@ -5,7 +5,7 @@ isActive: true
 ---
 ## Requirements
 
-* At least 2+ years of experience as Frontend developer
+* At least 1+ years of experience as FrontEnd Developer
 * Good knowledge of native JS including newest possibilities of ES 6,7,8
 * Experience with React
 * Good knowledge of HTML and methodology of work with it
