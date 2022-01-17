@@ -24,9 +24,11 @@ exports.createPages = ({ graphql, actions }) => {
             fields {
               slug
             }
+            html
             frontmatter {
               isActive
               title
+              location
             }
           }
         }
@@ -41,7 +43,9 @@ exports.createPages = ({ graphql, actions }) => {
             component: path.resolve('./src/templates/job-page.jsx'),
             context: {
               slug: node.fields.slug,
-              title: node.frontmatter.title
+              title: node.frontmatter.title,
+              html: node.html,
+              location: node.frontmatter.location
             },
           })
         }

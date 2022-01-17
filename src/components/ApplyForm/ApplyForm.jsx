@@ -34,7 +34,7 @@ const validate = values => {
   return errors
 }
 
-const ApplyFormFormik = ({ data }) => {
+const ApplyFormFormik = ({ jobTitle }) => {
   const [validationFlag, setValidationFlag] = useState(false)
   const [resumeName, setResumeName] = useState('')
   const [successMessage, setSuccessMessage] = useState(false)
@@ -46,7 +46,7 @@ const ApplyFormFormik = ({ data }) => {
     initialValues: {
       'bot-field': '',
       'form-name': 'resume',
-      job_position: data.frontmatter.title,
+      job_position: jobTitle,
       full_name: '',
       phone: '',
       email: '',
