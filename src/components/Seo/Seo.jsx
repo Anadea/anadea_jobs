@@ -69,10 +69,6 @@ const Seo = ({ title, customDesc, article }) => {
           content: pageUrl
         },
         {
-          name: 'twitter:url',
-          content: pageUrl
-        },
-        {
           name: 'og:title',
           content: title || site.siteMetadata.title,
         },
