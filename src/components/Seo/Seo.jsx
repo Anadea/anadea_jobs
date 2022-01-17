@@ -78,11 +78,11 @@ const Seo = ({ title, customDesc, article }) => {
         },
         {
           name: 'og:image',
-          content: 'https://jobs.anadea.info/images/icons/preview-logo.svg',
+          content: 'https://jobs.anadea.info/images/icons/preview-logo.png',
         },
         {
           name: 'twitter:image',
-          content: 'https://jobs.anadea.info/images/icons/preview-logo.svg',
+          content: 'https://jobs.anadea.info/images/icons/preview-logo.png',
         },
       ]}
     />
