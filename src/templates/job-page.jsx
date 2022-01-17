@@ -1,34 +1,14 @@
 import React from 'react'
 import Benefits from '../components/Benefits/Benefits'
-import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import ApplyForm from '../components/ApplyForm/ApplyForm'
 import Seo from '../components/Seo/Seo'
 
-const JobPage = ({ path, pageContext }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
-        nodes {
-          html
-          frontmatter {
-            title
-            location
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `)
-  const nodes = data.allMarkdownRemark.nodes.find(
-    (elem) => elem.fields.slug === path,
-  )
+const JobPage = ({ pageContext }) => {
   return (
     <React.Fragment>
       <Seo title={pageContext.title} customDesc={''} article={true} />
-      {nodes ? (
+      {pageContext ? (
         <Layout theme={'white'}>
           <div className="Section Section--job">
             <div className="Section-content">
@@ -37,23 +17,23 @@ const JobPage = ({ path, pageContext }) => {
                   <div className="ContentGroup ContentGroup--padded">
                     <div className="ContentGroup-title">
                       <h1 className="Typography Typography--heading2 Typography--cod-gray">
-                        {nodes.frontmatter.title}
+                        {pageContext.title}
                       </h1>
                     </div>
                     <p className="Typography Typography--body2 Typography--cod-gray">
                       <span className="Typography--bold">Location</span>:{' '}
-                      {`${nodes.frontmatter.location}`}
+                      {`${pageContext.location}`}
                     </p>
                   </div>
                   <div
                     className="JobPage"
                     dangerouslySetInnerHTML={{
-                      __html: nodes.html,
+                      __html: pageContext.html,
                     }}
                   />
                 </div>
                 <div className="col-md-4">
-                  <ApplyForm data={nodes} />
+                  <ApplyForm jobTitle={pageContext.title} />
                 </div>
               </div>
             </div>
