@@ -26,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             frontmatter {
               isActive
+              title
             }
           }
         }
@@ -40,6 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
             component: path.resolve('./src/templates/job-page.jsx'),
             context: {
               slug: node.fields.slug,
+              title: node.frontmatter.title
             },
           })
         }
