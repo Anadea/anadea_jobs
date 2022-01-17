@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const Seo = ({ title, customDesc, markdownRemark }) => {
+const Seo = ({ title, customDesc, article }) => {
   const { site, allMarkdownRemark } = useStaticQuery(
     graphql`
       query {
@@ -62,11 +62,7 @@ const Seo = ({ title, customDesc, markdownRemark }) => {
         },
         {
           name: 'og:type',
-          content: 'website',
-        },
-        {
-          name: 'twitter:type',
-          content: 'website',
+          content: article ? 'article':'website',
         },
         {
           name: 'og:url',
@@ -86,11 +82,11 @@ const Seo = ({ title, customDesc, markdownRemark }) => {
         },
         {
           name: 'og:image',
-          content: 'https://jobs.anadea.info/images/icons/favicon.ico',
+          content: 'https://jobs.anadea.info/images/icons/preview-logo.svg',
         },
         {
           name: 'twitter:image',
-          content: 'https://jobs.anadea.info/images/icons/favicon.ico',
+          content: 'https://jobs.anadea.info/images/icons/preview-logo.svg',
         },
       ]}
     />
