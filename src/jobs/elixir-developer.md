@@ -1,7 +1,7 @@
 ---
 title: Elixir Developer
 location: Ukraine, Belarus
-isActive: true
+isActive: false
 ---
 ## **Requirements**
 
