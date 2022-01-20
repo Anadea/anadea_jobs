@@ -7,11 +7,9 @@ const Vacancies = ({ data }) => {
   const [buttonText, setButtonText] = useState('Show more')
   const filteredData = data.allMarkdownRemark.nodes
 
-  const vacancies = data.allMarkdownRemark.nodes
-  console.log('vac', vacancies);
-  // const isActive =  vacancies.find(elem => elem.frontmatter.isActive)
+  const vacanciesCount = data.allMarkdownRemark.nodes.length
 
-  if (vacancies.length === 0 /* || !isActive */) {
+  if (vacanciesCount === 0) {
     return (
       <section className="Section u-noPaddedTop u-bg-jobs-bastille" >
       <div id="positions" className="Section-content">

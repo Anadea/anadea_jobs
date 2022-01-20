@@ -18,9 +18,6 @@ collections:
         name: "title"
       - label: "Location"
         name: "location"
-      - label: "IsActive"
-        name: "isActive"
-        widget: "boolean"
       - label: "Details"
         name: body
         widget: "markdown"

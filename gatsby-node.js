@@ -26,7 +26,6 @@ exports.createPages = ({ graphql, actions }) => {
             }
             html
             frontmatter {
-              isActive
               title
               location
             }
@@ -74,7 +73,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       title: String
       location: String
-      isActive: Boolean
       linkedIn: String
     }
 
