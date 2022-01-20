@@ -1,6 +1,6 @@
 ---
 title: test job
 location: location
-isActive: true
+isActive: false
 ---
 details
