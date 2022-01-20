@@ -53,35 +53,39 @@ const Seo = ({ title, customDesc, article }) => {
           content: description,
         },
         {
-          name: 'og:description',
+          property: 'og:description',
           content: description,
         },
         {
-          name: 'twitter:description',
+          property: 'twitter:description',
           content: description,
         },
         {
-          name: 'og:type',
+          property: 'og:type',
           content: article ? 'article':'website',
         },
         {
-          name: 'og:url',
+          property: 'og:url',
           content: pageUrl
         },
         {
-          name: 'og:title',
+          property: 'og:title',
           content: title || site.siteMetadata.title,
         },
         {
-          name: 'twitter:title',
+          property: 'twitter:title',
           content: title || site.siteMetadata.title,
         },
         {
-          name: 'og:image',
+          property: 'og:image',
           content: 'https://jobs.anadea.info/images/icons/preview-logo.png',
         },
         {
-          name: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://jobs.anadea.info/images/icons/preview-logo.png',
+        },
+        {
+          property: 'twitter:card',
           content: 'https://jobs.anadea.info/images/icons/preview-logo.png',
         },
       ]}
