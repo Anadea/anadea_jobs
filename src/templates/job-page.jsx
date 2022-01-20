@@ -7,7 +7,7 @@ import Seo from '../components/Seo/Seo'
 const JobPage = ({ pageContext }) => {
   return (
     <React.Fragment>
-      <Seo title={pageContext.title} customDesc={''} article={true} />
+      <Seo title={pageContext.title} customDesc={''} />
       {pageContext ? (
         <Layout theme={'white'}>
           <div className="Section Section--job">
