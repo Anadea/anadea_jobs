@@ -9,17 +9,13 @@ const Footer = () => {
     query VacanciesCount {
       allMarkdownRemark {
         nodes {
-          frontmatter {
-            isActive
-          }
+          id
         }
       }
     }
   `)
 
-  const totalCount = data.allMarkdownRemark.nodes.filter(
-    elem => elem.frontmatter.isActive === true,
-  )
+  const totalCount = data.allMarkdownRemark.nodes.length
   const isBrowser = () => typeof window !== 'undefined'
   const path = isBrowser() && window.location.pathname
 
@@ -99,8 +95,8 @@ const Footer = () => {
                 </div>
                 <div className="Page-footerLink">
                   <Link className="Page-footerLinkText u-bold" onClick={scrollToTop} to="/#positions">Careers
-                    {totalCount.length ? ( <VacanciesCount
-                    count={totalCount.length} location="footer"/>): ''}
+                    {totalCount ? ( <VacanciesCount
+                    count={totalCount} location="footer"/>): ''}
                   </Link>
                 </div>
               </div>

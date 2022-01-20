@@ -26,7 +26,6 @@ exports.createPages = ({ graphql, actions }) => {
             }
             html
             frontmatter {
-              isActive
               title
               location
             }
@@ -37,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
   `).then(result => {
     if (result.data.allMarkdownRemark.edges.length > 0) {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.frontmatter.isActive) {
+        if (node.frontmatter) {
           createPage({
             path: node.fields.slug,
             component: path.resolve('./src/templates/job-page.jsx'),
@@ -74,7 +73,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       title: String
       location: String
-      isActive: Boolean
       linkedIn: String
     }
 

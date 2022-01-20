@@ -47,7 +47,6 @@ export const query = graphql`
                   frontmatter {
                       location
                       title
-                      isActive
                   }
                   fields {
                       slug

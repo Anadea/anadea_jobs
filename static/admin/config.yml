@@ -5,6 +5,7 @@ backend:
 
 media_folder: static/images/uploads
 public_folder: /images
+publish_mode: editorial_workflow
 
 collections:
   - name: "jobs"
@@ -17,9 +18,6 @@ collections:
         name: "title"
       - label: "Location"
         name: "location"
-      - label: "IsActive"
-        name: "isActive"
-        widget: "boolean"
       - label: "Details"
         name: body
         widget: "markdown"

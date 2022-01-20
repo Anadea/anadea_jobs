@@ -5,14 +5,11 @@ import VacanciesCount from '../VacanciesCount/VacanciesCount'
 const Vacancies = ({ data }) => {
   const [showCount, setShowCount] = useState(5)
   const [buttonText, setButtonText] = useState('Show more')
-  const filteredData = data.allMarkdownRemark.nodes.filter(
-    elem => elem.frontmatter.isActive === true,
-  )
+  const filteredData = data.allMarkdownRemark.nodes
 
-  const vacancies = data.allMarkdownRemark.nodes
-  const isActive =  vacancies.find(elem => elem.frontmatter.isActive)
+  const vacanciesCount = data.allMarkdownRemark.nodes.length
 
-  if (vacancies.length === 0 || !isActive) {
+  if (vacanciesCount === 0) {
     return (
       <section className="Section u-noPaddedTop u-bg-jobs-bastille" >
       <div id="positions" className="Section-content">
