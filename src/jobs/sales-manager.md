@@ -1,6 +1,6 @@
 ---
 title: Sales Manager
-location: Dnipro (Ukraine)
+location: Ukraine,Belarus
 isActive: true
 ---
 ## **Requirements**
