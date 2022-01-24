@@ -1,6 +1,6 @@
 ---
 title: Sales Manager
-location: Ukraine,Belarus
+location: Ukraine, Belarus
 isActive: true
 ---
 ## **Requirements**
