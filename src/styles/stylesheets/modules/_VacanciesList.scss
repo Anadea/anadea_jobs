@@ -1,16 +1,6 @@
 .vacancies-list {
-  grid-row-gap: 40px;
   justify-content: center;
-  margin-bottom: 24px;
   transition: 0.3s;
-
-  @include media-breakpoint-down(sm) {
-    grid-row-gap: 30px;
-  }
-
-  @include media-breakpoint-down(xs) {
-    grid-row-gap: 20px;
-  }
 
   &__item {
     max-width: calc(25% + 20px);
@@ -19,6 +9,7 @@
     animation-duration: 0.3s;
     animation-name: showElems;
     animation-timing-function: linear;
+    margin-bottom: 40px;
 
     @include media-breakpoint-down(sm) {
       max-width: calc(50% - 10px);
@@ -28,6 +19,7 @@
     @include media-breakpoint-down(xs) {
       max-width: 100%;
       flex-basis: 100%;
+      margin-bottom: 20px;
     }
   }
 }
