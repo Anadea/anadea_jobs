@@ -3,13 +3,13 @@ title: Team Coordinator
 location: Dnipro (Ukraine)
 isActive: true
 ---
-This vacancy is not about project management. (Unique possibility to join project team as an important communication professional)
+###### This vacancy is not about project management. (Unique possibility to join project team as an important communication professional)
 
-Team Coordinator is a type of specialist in charge of overseeing the processes and details of how a team reaches a goal. (Team Coordinator is a project keeper, who is responsible for communication and coordination inside and outside of the team.
+###### Team Coordinator is a type of specialist in charge of overseeing the processes and details of how a team reaches a goal. (Team Coordinator is a project keeper, who is responsible for communication and coordination inside and outside of the team.
 
-We are looking for a person who creates a great spirit, who helps the team coordinate and organize tasks and motivates team members to achieve ambitious aims.) 
+###### We are looking for a person who creates a great spirit, who helps the team coordinate and organize tasks and motivates team members to achieve ambitious aims.) 
 
-He will help the team lead in coordinating, uniting and focusing the team to achieve the main goal. Also, this is the person who can inspire and motivate. 
+###### He will help the team lead in coordinating, uniting and focusing the team to achieve the main goal. Also, this is the person who can inspire and motivate. 
 
 ## Requirements
 
