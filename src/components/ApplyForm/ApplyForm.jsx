@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useFormik } from 'formik'
 import axios from 'axios'
+import Validator from '../../images/icons/validator.svg'
+import Clip from '../../images/icons/clip.svg'
 
 const validate = values => {
   const errors = {}
@@ -116,7 +118,7 @@ const ApplyFormFormik = ({ jobTitle }) => {
       >
         <img
           className="formInvalid-picture"
-          src="../../images/icons/validator.png"
+          src={Validator}
         />
       </div>
       <div className="FormBlue u-bg-jobs-bastille">
@@ -267,7 +269,7 @@ const ApplyFormFormik = ({ jobTitle }) => {
                 htmlFor="resumeField"
               >
                 <span className="FormBlue-attachmentIcon u-opacity-6">
-                  <img src="../../images/icons/clip.png" />
+                  <img src={Clip} />
                 </span>
                 <span className="FormBlue-attachmentLabel jsFileInputLabel Typography Typography--white Typography--body2 d-flex align-items-center">
                   {resumeName ? resumeName : 'Attach a resume'}

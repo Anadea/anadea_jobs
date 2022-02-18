@@ -4,6 +4,8 @@ import VacanciesCount from '../VacanciesCount/VacanciesCount'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import { scroller } from 'react-scroll'
 
+import Awards from '../../images/icons/awards.svg';
+
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query VacanciesCount {
@@ -157,7 +159,7 @@ const Footer = () => {
                   className="u-svg-alto"
                   alt="Awards-achievements"
                   title="Awards-achievements"
-                  src="../images/footer/award.png"
+                  src={Awards}
                 />
               </a>
 
