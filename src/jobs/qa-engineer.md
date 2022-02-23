@@ -1,6 +1,6 @@
 ---
 title: QA Engineer
-location: Dnipro (Ukraine)
+location: Dnipro, Kyiv (Ukraine)
 isActive: true
 ---
 ## **Requirements**
