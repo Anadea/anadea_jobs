@@ -1,6 +1,6 @@
 ---
 title: Node.js Developer
-location: Minsk (Belarus)
+location: Remote
 isActive: true
 ---
 ## **Requirements**
