@@ -1,5 +1,5 @@
 ---
-title: Full-stack Developer
+title: Full stack Developer
 location: Remote
 ---
 ## **Requirements**
