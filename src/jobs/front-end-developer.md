@@ -1,6 +1,6 @@
 ---
 title: Front End Developer
-location: Dnipro, Kyiv, Kharkiv (Ukraine), Minsk (Belarus)
+location: Remote
 isActive: true
 ---
 ## Requirements
