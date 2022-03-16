@@ -1,6 +1,6 @@
 ---
 title: Middle Ruby on Rails Developer
-location: Dnipro, Kyiv, Kharkiv (Ukraine), Minsk, Grodno (Belarus)
+location: Remote
 isActive: true
 ---
 ## **Requirements**
