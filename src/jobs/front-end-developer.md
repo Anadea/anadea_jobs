@@ -37,5 +37,4 @@ isActive: true
   package
 * You can influence the technology choice
 * Professional growth and support of your personal improvement goals
-* Corporate lunches
 * Medical insurance
