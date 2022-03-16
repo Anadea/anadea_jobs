@@ -1,6 +1,6 @@
 ---
 title: Ruby on Rails Developer for Real Estate Project
-location: Ukraine, Belarus
+location: Remote
 isActive: true
 ---
 ## **About Project**
