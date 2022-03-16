@@ -1,10 +1,10 @@
 ---
-title: Full stack Developer
+title: Full Stack Developer
 location: Remote
 ---
 ## **Requirements**
 
-* At least 1+ year of experience as Full-stack developer
+* At least 1+ year of experience as Full Stack developer
 * Have experience in developing SPA using modern JS stack (preferably React + Redux)
 * Have experience in developing scalable back-end system using Node.js
 * Are familiar with TDD and love to write meaningful and useful tests
