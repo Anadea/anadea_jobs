@@ -1,6 +1,6 @@
 ---
 title: React.js Developer
-location: Ukraine, Belarus
+location: Remote
 isActive: true
 ---
 ## **Requirements**
