@@ -4,13 +4,10 @@ location: Poland, Remote
 ---
 ## Requirements:
 
-* 2+years of expierence
-* Solid experience with Golang and deep understanding of Golang-basics ( GC, sys-calls, go-routines )
+* 3+years of experience with Golang and deep understanding of Golang-basics ( GC, sys-calls, go-routines )
 * Experience with PostgreSQL DB
 * Experience with transfer-data protocols ( grpc, rest )
 * Experience with OpenAPI3/Swagger documentation
-* Experience with MongoDB, ClickHouse as +
-* Experience with Kafka, RabbitMQ as +
 * Experience with Containerization  ( Docker, Kubernetes ) required
 * CI/CD ( GitLab, GitHub, Kubernetes )
 * Understanding of Microservice architectures
@@ -18,6 +15,11 @@ location: Poland, Remote
 * Profiling
 * Testing and Benchmarking
 * Good level of English
+
+## **Nice to have**
+
+* Experience with MongoDB, ClickHouse
+* Experience with Kafka, RabbitMQ
 
 ## Responsibilities:
 
