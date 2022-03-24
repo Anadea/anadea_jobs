@@ -10,8 +10,6 @@ location: Remote
 
 ##### He / She will help the team lead in coordinating, uniting, and focusing the team to achieve the main goal. Also, this is the person who can inspire and motivate. 
 
-
-
 ## Requirements
 
 * Experience in management or in HR for at least 1 year.
