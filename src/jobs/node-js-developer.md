@@ -3,7 +3,6 @@ title: Node.js Developer
 location: Remote
 isActive: true
 ---
- 
 ## **Requirements**
 
 * 1,5+ years of experience with JavaScript, Node.js
@@ -29,8 +28,8 @@ isActive: true
 
 ## **We offer:**
 
-* Assessing customer requirements and ensuring that these are met
-* Backend testing
-* Testing the interaction of various services within the application
-* Perform thorough regression testing
-* Report bugs and errors to development teams
+* Work with motivated professionals
+* Continuous performance reviews and appropriate changes in your compensation package
+* You can influence the technology choice
+* Professional growth and support of your personal improvement goals
+* Medical insurance
