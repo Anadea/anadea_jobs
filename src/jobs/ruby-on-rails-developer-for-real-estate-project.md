@@ -13,7 +13,7 @@ You'll become a part of the multi-brand company from the Time’s “100 Most In
 
 ## **Requirements**
 
-* 3+ years of experience with Ruby on Rails
+* 1+ years of experience with Ruby on Rails
 * Experience with Git and *nix command line tools
 * Ability to write automated tests and understanding why to do that
 * Good knowledge of SQL databases
