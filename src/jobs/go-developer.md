@@ -4,7 +4,7 @@ location: Poland, Remote
 ---
 ## Requirements:
 
-* 3+years of experience with Golang and deep understanding of Golang-basics ( GC, sys-calls, go-routines )
+* 3+years of experience with Golang and deep understanding of Golang-basics (GC, sys-calls, go-routines)
 * Experience with PostgreSQL DB
 * Experience with transfer-data protocols ( grpc, rest )
 * Experience with OpenAPI3/Swagger documentation
