@@ -1,5 +1,5 @@
 ---
-title: UI/UIX Designer
+title: UI/UX Designer
 location: Ukraine, Remote
 ---
 We are looking for a dynamic UI/UX designer who will be responsible for the user experience (UX) and user interface (UI) design of various digital assets. You will ensure that all elements of the online user experience are optimized for improved usability, usefulness, and exceptional visual design.
