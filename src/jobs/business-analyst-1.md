@@ -4,15 +4,13 @@ location: Remote
 ---
 ## **About the job**
 
-We are looking for a person that can perform business analysis tasks during all stages starting from pre-sale, through discovery to development of a product.
+#### We are looking for a person that can perform business analysis tasks during all stages starting from pre-sale, through discovery to development of a product.
 
-We would like to draw your attention that our main goal is to provide the customer with what they really need versus what they want. This is why first of all we need you to focus on business requirements and scope baselining from the very beginning of the product elaboration.
+#### We would like to draw your attention that our main goal is to provide the customer with what they really need versus what they want. This is why first of all we need you to focus on business requirements and scope baselining from the very beginning of the product elaboration.
 
-You will work closely with customers and a number of stakeholders within Anadea, including your colleagues in the Sales and Engineering departments.
+#### You will work closely with customers and a number of stakeholders within Anadea, including your colleagues in the Sales and Engineering departments.
 
-The Business Analyst at Anadea is responsible for helping the team to deliver value to our clients.
-
-
+#### The Business Analyst at Anadea is responsible for helping the team to deliver value to our clients.
 
 ## **Required skills**
 
@@ -29,13 +27,9 @@ The Business Analyst at Anadea is responsible for helping the team to deliver va
 * Effective communication and facilitation skills
 * English: Upper-intermediate or higher
 
-
-
 ## **Nice to have**
 
 * Experience in on-site discovery phases
-
-
 
 ## **Responsibilities**
 
@@ -47,8 +41,6 @@ The Business Analyst at Anadea is responsible for helping the team to deliver va
 * Lead product roadmap and backlog development
 * Manage change requests 
 * Follow scrum ceremonies
-
-
 
 ## **We offer**
 
