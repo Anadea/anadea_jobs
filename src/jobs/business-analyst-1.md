@@ -6,6 +6,8 @@ location: Remote
 
 #### The Business Analyst at Anadea is responsible for helping the team to deliver value to our clients.
 
+
+
 #### We are looking for a person that can perform business analysis tasks during all stages starting from pre-sale, through discovery to development of a product.
 
 
