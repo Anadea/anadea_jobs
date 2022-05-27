@@ -2,7 +2,7 @@
 title: iOS Developer
 location: Remote, Ukraine
 ---
-### Requirements
+## Requirements
 
 * 2+ years experience in iOS development
 * Knowledge of Objective-C and Swift
@@ -16,14 +16,14 @@ location: Remote, Ukraine
 * Experience with using other tools (fastlane, swiftlint, etc)
 * Spoken English (Intermediate+)
 
-### Strong Plus
+## Strong Plus
 
 * Experience with SwiftUI/Combine
 * Understanding the principles of FP and FRP (ReactiveCocoa, RxSwift, etc.)
 * Experience with cross-platform (Flutter, ReactNative)
 * Knowledge of other related areas Android, RoR, Django, React.Js etc.
 
-### We offer
+## We offer
 
 * Competitive compensation and benefits
 * Work with motivated professionals
@@ -31,7 +31,7 @@ location: Remote, Ukraine
 * Professional growth and support of your personal improvement goals
 * Medical insurance
 
-### Responsibilities
+## Responsibilities
 
 * Work within a team of developers to complete proposed initiatives
 * Work on clients’ requirements, technology needs
