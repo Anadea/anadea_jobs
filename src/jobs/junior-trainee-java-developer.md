@@ -1,5 +1,5 @@
 ---
-title: Junior Java Developer
+title: Java Developer
 location: Dnipro (Ukraine)
 isActive: true
 linkedIn: https://www.linkedin.com/jobs/view/2791551584/?refId=o1kzx1sRjp8KtR57P0hydQ%3D%3D&trackingId=XNLQ0MEyXbX2nk9WASZkBg%3D%3D
