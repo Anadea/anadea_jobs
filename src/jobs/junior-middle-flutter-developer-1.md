@@ -12,8 +12,7 @@ location: Ukraine
 * Good knowledge of Unix command-line tools. Be able to work with Git, Pub, Flutter tools
 * English - Intermediate or higher
 
-## \
-**Will be a plus**
+### **Will be a plus**
 
 * Knowledge of Flutter for Web and Desktop applications
 * Team work experience (hackatons, pet-projects) / commercial working experience
@@ -22,8 +21,7 @@ location: Ukraine
 * Experience in writing Flutter plugins for native features
 * Knowing other programming languages - Java/Kotlin, Swift or any other
 
-## \
-**Responsibilities**
+### **Responsibilities**
 
 * Make business and technical decisions
 * Direct communication with client representatives
