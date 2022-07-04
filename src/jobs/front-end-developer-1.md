@@ -1,5 +1,5 @@
 ---
-title: Junior/Trainee Front End Developer
+title: Junior/Trainee Front End Developer (Dnipro only)
 location: Dnipro
 ---
 
