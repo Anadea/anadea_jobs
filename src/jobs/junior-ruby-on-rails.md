@@ -18,8 +18,6 @@ location: Ukraine
 * Experience with React.js
 * Experience in external services integrations
 
-
-
 **We offer**
 
 * Work with motivated professionals
