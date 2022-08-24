@@ -1,5 +1,5 @@
 ---
-title: "Junior Ruby on Rails "
+title: Junior Ruby on Rails Developer
 location: Ukraine
 ---
 ## **Requirements**
