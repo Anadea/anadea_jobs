@@ -12,13 +12,13 @@ location: Ukraine
 * Knowledge of frontend (HTML, JS, CSS)
 * Spoken English
 
-**NICE TO HAVE SKILLS**
+## **Nice to have skills**
 
 * Agile methodology
 * Experience with React.js
 * Experience in external services integrations
 
-**We offer**
+## **We offer**
 
 * Work with motivated professionals
 * Continuous performance reviews and appropriate changes in your compensation package
