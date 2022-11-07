@@ -6,6 +6,7 @@ isActive: true
 ## **Requirements**
 
 * English: Fluent
+* At least 12 months experience in IT Sales/Lead Generation, outsource
 * Solid knowledge of Upwork, ability to show & prove it
 * Good knowledge of sales techniques and different clients acquisition channels
 * Experience with full-cycle sales — from lead generation to contract signing
@@ -15,7 +16,7 @@ isActive: true
 
 ## **Nice to have**
 
-* At least 12 months experience in IT Sales/Lead Generation, outsource
+*
 
 ## **Responsibilities**
 
