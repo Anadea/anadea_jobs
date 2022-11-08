@@ -1,6 +1,6 @@
 ---
 title: Sales Manager
-location: Remote
+location: "Spain, Netherlands, Sweeden "
 isActive: true
 ---
 ## **Requirements**
@@ -16,7 +16,7 @@ isActive: true
 
 ## **Nice to have**
 
-*
+* Working proficiency in Spanish
 
 ## **Responsibilities**
 
@@ -40,7 +40,5 @@ isActive: true
 
 * Work with motivated professionals
 * Continuous performance reviews and appropriate changes in your compensation package
-* You can influence the technology choice
-* Comfortable office at the center of the city
 * Professional growth and support of your personal improvement goals
 * Medical insurance
