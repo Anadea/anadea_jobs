@@ -23,14 +23,14 @@ location: Remote
 * Experience with cross-platform (Flutter, ReactNative)
 * Knowledge of other related areas Android, RoR, Django, React.Js etc.
 
-### Responsibilities
+## Responsibilities
 
 * Work within a team of developers to complete proposed initiatives
 * Work on clients requirements, technology needs
 * Application development, coding & documentation
 * Application unit testing and support
 
-### We offer
+## We offer
 
 * Competitive compensation and benefits
 * Work with motivated professionals
