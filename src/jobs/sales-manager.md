@@ -1,11 +1,12 @@
 ---
 title: Sales Manager
-location: Remote
+location: "Spain, Netherlands, Sweeden "
 isActive: true
 ---
 ## **Requirements**
 
 * English: Fluent
+* At least 12 months experience in IT Sales/Lead Generation, outsource
 * Solid knowledge of Upwork, ability to show & prove it
 * Good knowledge of sales techniques and different clients acquisition channels
 * Experience with full-cycle sales — from lead generation to contract signing
@@ -15,7 +16,7 @@ isActive: true
 
 ## **Nice to have**
 
-* At least 12 months experience in IT Sales/Lead Generation, outsource
+* Working proficiency in Spanish
 
 ## **Responsibilities**
 
@@ -39,7 +40,5 @@ isActive: true
 
 * Work with motivated professionals
 * Continuous performance reviews and appropriate changes in your compensation package
-* You can influence the technology choice
-* Comfortable office at the center of the city
 * Professional growth and support of your personal improvement goals
 * Medical insurance
