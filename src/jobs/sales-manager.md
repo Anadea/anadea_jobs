@@ -1,6 +1,6 @@
 ---
 title: Sales Manager
-location: "Spain, Netherlands, Sweeden "
+location: Spain, Netherlands, Sweden
 isActive: true
 ---
 ## **Requirements**
