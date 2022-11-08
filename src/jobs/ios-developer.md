@@ -16,7 +16,7 @@ location: Remote, Ukraine
 * Experience with using other tools (fastlane, swiftlint, etc)
 * Spoken English (Intermediate+)
 
-## Strong Plus
+## N﻿ice to have
 
 * Experience with SwiftUI/Combine
 * Understanding the principles of FP and FRP (ReactiveCocoa, RxSwift, etc.)
