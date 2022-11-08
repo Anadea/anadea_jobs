@@ -23,6 +23,13 @@ location: Remote, Ukraine
 * Experience with cross-platform (Flutter, ReactNative)
 * Knowledge of other related areas Android, RoR, Django, React.Js etc.
 
+## Responsibilities
+
+* Work within a team of developers to complete proposed initiatives
+* Work on clients requirements, technology needs
+* Application development, coding & documentation
+* Application unit testing and support
+
 ## We offer
 
 * Competitive compensation and benefits
@@ -30,10 +37,3 @@ location: Remote, Ukraine
 * Continuous performance reviews and appropriate changes in your compensation package
 * Professional growth and support of your personal improvement goals
 * Medical insurance
-
-## Responsibilities
-
-* Work within a team of developers to complete proposed initiatives
-* Work on clients’ requirements, technology needs
-* Application development, coding & documentation
-* Application unit testing and support
