@@ -1,6 +1,6 @@
 ---
 title: iOS Developer
-location: Remote, Ukraine
+location: "Remote, Ukraine, Georgia, Turkey "
 ---
 ## Requirements
 
