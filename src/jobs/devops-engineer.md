@@ -13,7 +13,7 @@ location: Ukraine, Remote
 * English — good enough to chat and to talk with clients
 * Have good communication skills
 
-## **N﻿ICE TO HAVE:**
+## **N﻿ice to have:**
 
 * Basic knowledge of at least one programming language (Python, Perl, Ruby)
 * Knowledge of services scalability principles
