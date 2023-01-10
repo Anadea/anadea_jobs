@@ -1,6 +1,6 @@
 ---
 title: DevOps Engineer
-location: Ukraine, remote
+location: Ukraine, Remote
 ---
 ## **Requirements:**
 
