@@ -2,7 +2,7 @@
 title: DevOps Engineer
 location: Ukraine, remote
 ---
-## **Requirement:**
+## **Requirements:**
 
 * Experience in DevOps Engineering 3+ years
 * Have experience with automation pipelines and CI/CD tools
