@@ -1,6 +1,6 @@
 ---
 title: .NET Developer
-location: Remote
+location: Europe
 ---
 ## Requirements
 
