@@ -1,6 +1,6 @@
 ---
 title: Middle Ruby on Rails Developer
-location: Remote
+location: Europe
 isActive: true
 ---
 ## **Requirements**
