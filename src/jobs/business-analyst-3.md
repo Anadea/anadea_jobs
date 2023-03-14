@@ -2,8 +2,6 @@
 title: Business Analyst
 location: Europe
 ---
-## **About the job**
-
 We are looking for a person that can perform business analysis tasks and work as a proxy-product owner in the on-going FinTech project. The project is a crowd-lending (both B2B and B2C oriented), web-based platform, currently operating in the EU market. Strategic goals set for the platform are:  its transformation to a SaaS platform and expansion to new markets (possibly, African countries). 
 
 ## **R﻿equirements:**
@@ -42,7 +40,6 @@ We are looking for a person that can perform business analysis tasks and work as
 * Continuous performance reviews and appropriate changes in your compensation package
 * Professional growth and support of your personal improvement goals
 * Medical insurance
-
 
 We would like to draw your attention that our main goal is to provide the customer with what they really need versus what they want. This is why first of all we need you to focus on business requirements and scope baselining from the very beginning of the product elaboration.
 
