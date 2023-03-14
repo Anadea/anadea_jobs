@@ -43,6 +43,7 @@ We are looking for a person that can perform business analysis tasks and work as
 * Professional growth and support of your personal improvement goals
 * Medical insurance
 
+
 We would like to draw your attention that our main goal is to provide the customer with what they really need versus what they want. This is why first of all we need you to focus on business requirements and scope baselining from the very beginning of the product elaboration.
 
 You will work closely with the Customer’s stakeholders (product owner, board members) and the engineering team from Anadea (currently the team consists of backend and frontend engineers, QA, designer, delivery manager, 8 people in total).
