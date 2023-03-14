@@ -4,7 +4,7 @@ location: Europe
 ---
 ## **About the job**
 
-We are looking for a person that can perform business analysis tasks and work as a proxy-product owner in the on-going FinTech project. The project is a crowd-lending (both B2B and B2C oriented), web-based platform, currently operating in the EU market. Strategic goals set for the platform are:  its transformation to a SaaS platform and expansion to new markets (possibly, African countries). 
+###### We are looking for a person that can perform business analysis tasks and work as a proxy-product owner in the on-going FinTech project. The project is a crowd-lending (both B2B and B2C oriented), web-based platform, currently operating in the EU market. Strategic goals set for the platform are:  its transformation to a SaaS platform and expansion to new markets (possibly, African countries). 
 
 ## **R﻿equirements:**
 
