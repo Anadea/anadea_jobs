@@ -17,7 +17,7 @@ export const socialLinks = [
     icon: (
       <FaFacebookF className={socialLinksClassList} size={16}></FaFacebookF>
     ),
-    url: 'https://github.com/sne-syn',
+    url: 'https://www.facebook.com/anadeainc/',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const socialLinks = [
     icon: (
       <FaInstagram className={socialLinksClassList} size={16}></FaInstagram>
     ),
-    url: 'https://www.instagram.com/anadea_inc/',
+    url: 'https://www.instagram.com/anadea_info/',
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const socialLinks = [
     id: 4,
     name: 'Twitter',
     icon: <FaTwitter className={socialLinksClassList} size={16}></FaTwitter>,
-    url: 'https://twitter.com/AnadeaInc',
+    url: 'https://twitter.com/Anadea_Info',
   },
   {
     id: 5,
