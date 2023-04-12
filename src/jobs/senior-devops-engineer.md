@@ -5,7 +5,8 @@ location: Europe
 ## Requirements
 
 * 5+ years of DevOps experience
-* Relevant Kubernetes certificates, Azure experience Network and operations
+* Experience with Azure 
+* Experience with Network and operations
 * Experience/certificates with pipelines (DevOps)
 * Experience in Bitbucket and/or Jenkins or similar
 * Experience working with Containers
@@ -15,6 +16,7 @@ location: Europe
 ## N﻿ice to have
 
 * Experience as a DevOps mentor \ Team Leader
+* Relevant Kubernetes certificates
 
 ## We offer
 
