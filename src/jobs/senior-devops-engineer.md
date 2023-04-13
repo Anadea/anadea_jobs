@@ -5,8 +5,8 @@ location: Europe
 ## Requirements
 
 * 5+ years of DevOps experience
-* Experience with Azure 
-* Experience with Network and operations
+* Experience with Azure, Kubernetes, K8s, CloudFlare
+* Experience with Network and Operations
 * Experience/certificates with pipelines (DevOps)
 * Experience in Bitbucket and/or Jenkins or similar
 * Experience working with Containers
