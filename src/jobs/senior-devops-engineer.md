@@ -10,7 +10,7 @@ location: Europe
 * Experience/certificates with pipelines (DevOps)
 * Experience in Bitbucket and/or Jenkins or similar
 * Experience working with Containers
-* Experience with monitoring and Logging
+* Experience with monitoring and logging
 * Infrastructure security (Azure)
 
 ## N﻿ice to have
