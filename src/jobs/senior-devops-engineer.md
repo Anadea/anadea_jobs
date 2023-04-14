@@ -12,6 +12,7 @@ location: Europe
 * Experience working with Containers
 * Experience with monitoring and logging
 * Infrastructure security (Azure)
+* Good spoken English
 
 ## N﻿ice to have
 
