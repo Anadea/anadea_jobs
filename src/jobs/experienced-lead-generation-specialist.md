@@ -2,7 +2,7 @@
 title: Experienced Lead Generation Specialist
 location: Dnipro, Ukraine (office/remote combination possible)
 ---
-##### **Anadea’s sales team is looking for a highly motivated, experienced, curious and persevering individual.**
+#### **Anadea’s sales team is looking for a highly motivated, experienced, curious and persevering individual.**
 
 ## Requirements:
 
