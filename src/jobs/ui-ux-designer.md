@@ -9,7 +9,7 @@ location: Ukraine, Europe
 * Ability to discuss requirements with clients and implement their ideas
 * Portfolio demonstrating experience
 * In the know of the latest design trends
-* Spoken English (Upper-Inetrmediate +)
+* English Upper-Intermediate+
 * Excellent time-management skills and able to work in a fast-paced environment
 * You are excited to contribute to the overall success of the project
 
