@@ -28,7 +28,6 @@ isActive: true
 
 * Agile methodology
 * Experience with React.js
-* Experience in external services integrations
 
 ## **Responsibilities**
 
