@@ -6,12 +6,23 @@ isActive: true
 ## **Requirements**
 
 * 2+ years of experience with Ruby on Rails
-* Experience with Git and *nix command line tools
-* Ability to write automated tests and understanding why to do that
-* Understanding and using the principles of OOP and patterns
-* Good knowledge of SQL databases
-* Knowledge of frontend (HTML, JS, CSS)
-* Spoken English
+* Strong knowledge of database, PostgreSQL
+* Strong knowledge of Ruby on Rails version 5 and up (rails 5 and up, ruby 2.7 up)
+* Dry RB stack (dry transactions, monads)
+* Strong knowledge of authorization libraries (CanCanCan, Pundit)
+* Strong TDD knowledge
+* Strong knowledge of Rspeck, webmock, factory bot
+* Skills in working with Amazon related AWS and Ruby libraries
+* Basic knowledge and experience in HTML+CSS, SASS
+* CI Operation and Configuration
+* Third party services integration
+* Experience in API development for external customers
+* Knowledge of SOAP (savon gem), REST
+* Knowledge of client-server architectures
+* Strong knowledge of Git
+* Working with Unix servers
+* Ability to manage requirements
+* Strong English skills
 
 ## **Nice to have**
 
