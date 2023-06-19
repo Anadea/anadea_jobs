@@ -1,6 +1,6 @@
 ---
 title: UI\UX Designer
-location: Ukraine, Europe
+location: Dnipro, Ukraine
 ---
 ## Requirements
 
