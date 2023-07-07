@@ -1,5 +1,5 @@
 ---
-title: Middle Ruby on Rails Developer
+title: Ruby on Rails Developer
 location: Europe
 isActive: true
 ---
