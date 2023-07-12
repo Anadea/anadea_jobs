@@ -4,7 +4,7 @@ location: Dnipro, Ukraine
 ---
 ## Requirements
 
-* 1+ years of experience with UI and graphics design for web, mobile, and marketing, preferably within an agency environment
+* 1,5+ years of experience with UI and graphics design for web, mobile, and marketing, preferably within an agency environment
 * Working knowledge of design tools like Photoshop, Illustrator, Sketch, and at least one wire-framing or prototyping tool (e.g. Figma, InVision, ReadyMag etc)
 * Ability to discuss requirements with clients and implement their ideas
 * Portfolio demonstrating experience
