@@ -2,12 +2,10 @@
 title: Go Developer
 location: Ukraine/Europe
 ---
-
-
 **Requirements**
 
-* 5+ years of back-end development with mainly C++/JAVA/GO/Rust/C and other low-level languages
-* 2+ years of experience with Go and micro-service architecture
+* 3+ years of back-end development with mainly C++/JAVA/GO/Rust/C and other low-level languages
+* 1+ years of experience with Go and micro-service architecture
 * Strong understanding of Docker and Networking ( including Cluster-networking )
 * Deep experience with both SQL and NoSQL databases
 * Self-ops, ( experience debugging GitLab-CI templates, Docker-files, building new CI-pipeline for new services based on needs )
