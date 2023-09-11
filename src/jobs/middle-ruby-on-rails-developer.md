@@ -1,6 +1,6 @@
 ---
 title: Ruby on Rails Developer
-location: Europe
+location: Europe/Ukraine
 isActive: true
 ---
 ## **Requirements**
@@ -8,10 +8,9 @@ isActive: true
 * 2+ years of experience with Ruby on Rails
 * Strong knowledge of database, PostgreSQL
 * Strong knowledge of Ruby on Rails version 5 and up (rails 5 and up, ruby 2.7 up)
-* Dry RB stack (dry transactions, monads)
 * Strong knowledge of authorization libraries (CanCanCan, Pundit)
 * Strong TDD knowledge
-* Strong knowledge of Rspeck, webmock, factory bot
+* Strong knowledge of Rspec, webmock, factory bot
 * Skills in working with Amazon related AWS and Ruby libraries
 * Basic knowledge and experience in HTML+CSS, SASS
 * CI Operation and Configuration
@@ -28,6 +27,7 @@ isActive: true
 
 * Agile methodology
 * Experience with React.js
+* Dry RB stack (dry transactions, monads)
 
 ## **Responsibilities**
 
