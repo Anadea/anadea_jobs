@@ -1,5 +1,5 @@
 ---
-title: Senior DevOps (Azure) part-time
+title: DevOps (Azure) part-time
 location: Ukraine/Euope
 ---
 **R﻿esponsibilities**
