@@ -1,5 +1,5 @@
 ---
-title: " Social Media Marketing Manager"
+title: Middle Social Media Marketing Manager
 location: Ukraine, Europe
 ---
 About Us:\
@@ -36,5 +36,5 @@ Why Join Us?
 * Opportunities for professional growth and development.
 
 How to Apply:\
-Send your resume and a cover letter explaining why you are the perfect fit for this role to ----------. Please include examples of previous work or campaigns you have successfully executed.\
+Send your resume and a cover letter explaining why you are the perfect fit for this role. Please include examples of previous work or campaigns you have successfully executed.\
 We look forward to hearing from you and potentially welcoming you to our trailblazing team at Anadea/Tensorway!
