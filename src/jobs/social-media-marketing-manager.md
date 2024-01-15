@@ -1,5 +1,5 @@
 ---
-title: Middle Social Media Marketing Manager
+title: Social Media Marketing Manager
 location: Ukraine, Europe
 ---
 About Us:\
@@ -14,7 +14,7 @@ Key Responsibilities:
 
 Required Skills:
 
-* Proven experience in social media marketing or a related field.
+* Proven 1.5+ years experience in social media marketing or a related field
 * Strong creativity and a keen eye for design, capable of producing visually captivating content.
 * Excellent analytical skills to assess social media performance and make data-driven decisions.
 * Proficiency in using AI tools such as ChatGPT and DALL-E for content creation.
