@@ -1,5 +1,5 @@
 ---
-title: Social Media Marketing Manager
+title: Social Media Marketing Manager-Copywriter
 location: Ukraine, Europe
 ---
 About Us:\
