@@ -1,40 +1,47 @@
 ---
-title: Middle Social Media Marketing Manager
+title: Creative Content and Social Media Writer
 location: Ukraine, Europe
 ---
-About Us:\
-Join our team at Anadea/Tensorway, a pioneering software outsourcing company that's redefining the industry. We are on the lookout for a talented and dynamic Social Media Marketing Manager to propel our brand to new heights.\
+About us\
+Join the ranks of Anadea/Tensorway, a software outsourcing company pioneering a new path in the industry. We're searching for a talented and dynamic Creative Content & Social Media Writer to propel our brand story through the power of words
+
+ \
 Key Responsibilities:
 
-* Along with marketing team develop and implement innovative social media strategies to increase brand awareness and engagement across various platforms.
-* Create compelling, visually appealing content that resonates with our target audience. Write compelling texts and assist in written content creation
-* Analyze social media metrics to gauge success and inform future campaigns.
-* Collaborate with cross-functional teams to ensure a cohesive brand message.
-* Stay abreast of the latest social media trends and best practices.
+* Develop and write compelling copy for various marketing materials, including websites, social media posts, blog content, and more. 
+* Craft clear, concise, and engaging written content that resonates with our target audience. 
+* Collaborate with the marketing team to develop innovative social media strategies that amplify brand awareness and engagement.
+* Analyze content performance to measure success and inform future decisions.
+* Partner with cross-functional teams to maintain a consistent brand message across all platforms.
+* Stay up-to-date on the latest industry trends and best practices in copywriting and social media.
 
+\
 Required Skills:
 
-* Proven experience in social media marketing or a related field.
-* Strong creativity and a keen eye for design, capable of producing visually captivating content.
-* Excellent analytical skills to assess social media performance and make data-driven decisions.
-* Proficiency in using AI tools such as ChatGPT and DALL-E for content creation.
-* Experience with video editing software and ability to create engaging multimedia content.
-* Exceptional command of English, both written and verbal. Proven copywriting skills
+* Proven experience as a copywriter or a related field (1+ years).
+* Exceptional command of written and verbal English (B2 level or higher).
+* Strong writing skills with a focus on clarity, creativity, and brand storytelling.
+* Ability to adapt writing style to different content formats and platforms (blogs, social media).
+* Analytical mindset for data-driven content optimization.
+* Experience with IT outsourcing (a huge plus)! Understanding the nuances of our industry will significantly enhance your ability to craft targeted and effective copy.
 
+\
 Who You Are:
 
-* A smart, joyful, and optimistic individual who brings positive energy to the team.
-* Able to think outside the box and bring fresh, innovative ideas to the table.
-* Comfortable working in a fast-paced, dynamic environment.
-* A team player who collaborates well with others but can also work independently.
+* A wordsmith with a passion for crafting engaging and persuasive copy.
+* A creative thinker who can translate complex concepts into clear and compelling narratives.
+* A team player who thrives in a collaborative environment but can also excel independently.
+* A keen learner who stays informed about the ever-evolving marketing landscape.
 
+\
 Why Join Us?
 
-* Be a part of a game-changing company with a forward-thinking mindset.
-* Work in a creative and dynamic environment that values your ideas and creativity.
-* Competitive salary and benefits package.
-* Opportunities for professional growth and development.
+* Be part of a game-changing company with a forward-thinking vision.
+* Work in a dynamic and creative environment that values your ideas.
+* Enjoy a competitive salary and benefits package.
+* Pursue professional growth and development opportunities.
 
+\
 How to Apply:\
-Send your resume and a cover letter explaining why you are the perfect fit for this role. Please include examples of previous work or campaigns you have successfully executed. \
-We look forward to hearing from you and potentially welcoming you to our trailblazing team at Anadea/Tensorway!
+Send your resume and a cover letter showcasing your writing skills. Include examples of your previous work to demonstrate your copywriting prowess.\
+We're eager to hear from you and potentially welcome you to our team of innovators
