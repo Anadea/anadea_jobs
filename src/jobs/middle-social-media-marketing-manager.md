@@ -1,5 +1,5 @@
 ---
-title: Social Media Marketing Manager
+title: Creative Content and Social Media Writer
 location: Ukraine, Europe
 ---
 About us\
