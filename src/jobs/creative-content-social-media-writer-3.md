@@ -1,5 +1,5 @@
 ---
-title: Creative Content & Social Media Writer
+title: Creative Content and Social Media Writer
 location: Ukraine/Europe
 ---
 Join the ranks of Anadea/Tensorway, a software outsourcing company pioneering a new path in the industry. We’re searching for a talented and dynamic Creative Content & Social Media Writer to propel our brand story through the power of words.
