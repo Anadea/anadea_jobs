@@ -2,7 +2,7 @@
 title: PHP Developer (Part-time)
 location: Ukraine/Europe
 ---
-## \    Requirements.   
+##  Requirements.
 
 * 3+ years of experience with PHP 7+ (Laravel or another MVC framework)
 * Proficiency in working with SQL databases
@@ -15,14 +15,14 @@ location: Ukraine/Europe
 * Experience with React or React + NextJS
 * Experience with .NET framework (or Core), C#, ASP.NET
 
-##    Responsibilities
+## Responsibilities
 
 * Direct communication with client representatives
 * Create solid, well-tested code
 * Make business and technical decisions
 * Build product architecture according to product requirements
 
-##    We offer
+## We offer
 
 * Work with motivated professionals
 * Continuous performance reviews and appropriate changes in your compensation package
