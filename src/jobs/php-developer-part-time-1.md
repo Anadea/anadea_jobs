@@ -1,5 +1,5 @@
 ---
-title: PHP Developer (Part-time)
+title: Middle/Senior PHP Developer (Part-time)
 location: Ukraine/Europe
 ---
 
