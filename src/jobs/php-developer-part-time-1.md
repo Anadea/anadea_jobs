@@ -2,7 +2,7 @@
 title: PHP Developer (Part-time)
 location: Ukraine/Europe
 ---
-##    Requirements
+## Requirements
 
 * 3+ years of experience with PHP 7
 * Skill in creating APIs for mobile devices
@@ -15,7 +15,7 @@ location: Ukraine/Europe
 * Experience with Mailchimp
 * Experience with Twilio
 
-##    Responsibilities
+## Responsibilities
 
 * Direct communication with client representatives
 * Create solid, well-tested code
