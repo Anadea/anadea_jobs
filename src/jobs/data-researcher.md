@@ -2,10 +2,6 @@
 title: Data Researcher
 location: Ukraine/Europe
 ---
-
-
-Job Description:
-
 We are seeking a skilled and detail-oriented Data Researcher to join our dynamic team. The successful candidate will be responsible for generating and maintaining a comprehensive database of relevant leads and contacts. This database will be used for targeted outreach campaigns aimed at securing new software development projects.
 
 Key Responsibilities:
