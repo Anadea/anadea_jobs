@@ -37,7 +37,7 @@ Content Management and Optimization:
 ### Required Skills:
 
 * Proven experience as a copywriter, content manager, or related field (2+ years).
-* Exceptional written and verbal English (C1 or higher).
+* Exceptional written and verbal English (В2 or higher).
 * Strong writing skills with clarity, creativity, and brand storytelling.
 * Ability to adapt writing style to different formats and platforms.
 * Analytical mindset for data-driven content optimization.
