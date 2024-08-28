@@ -24,8 +24,6 @@ We are looking for an exceptional Python developer to work with our team and joi
 
 \- Experience in working with event driven architecture.
 
-
-
 **Nice to have:**
 
 \- Experience working with PostgreSQL.
@@ -35,6 +33,8 @@ We are looking for an exceptional Python developer to work with our team and joi
 \- Familiarity with or a willingness to learn Golang.
 
 \- Knowledge and experience with front-end part
+
+\-﻿ Experience with Numpy, Pandas
 
 **Responsibilities:**
 
@@ -46,10 +46,9 @@ We are looking for an exceptional Python developer to work with our team and joi
 
 \- Participate in code reviews, design discussions, and team activities to maintain codebase quality and consistency. 
 
-
-
 **We offer:**\
-- Work with motivated professionals
+
+* Work with motivated professionals
 
 \- Continuous performance reviews and appropriate changes in your compensation package
 
