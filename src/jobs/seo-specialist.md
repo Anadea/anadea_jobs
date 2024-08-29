@@ -26,7 +26,6 @@ Requirements
 * Experience in conducting comprehensive SEO audits and implementing recommendations.
 * Upper Intermediate or higher level of spoken English for effective communication with clients.
 * Ability to work independently and collaboratively in a team-oriented environment.
-* English — B1+ level or hire
 
 We offer:
 
