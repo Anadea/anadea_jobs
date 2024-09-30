@@ -14,7 +14,7 @@ Join Anadea/Tensorway, a forward-thinking software development company. We're lo
 ### What We're Looking For:
 
 * 2+ years of experience as content marketing manager, copywriter, or similar role. Experience with software & AI-related topics is a big plus.
-* Excellent English skills (C1 level).
+* Excellent English skills (В2 level or higher)
 * Strong writing skills, focusing on clarity, creativity, and storytelling.
 * Familiarity with SEO, content marketing, AI trends, and social media strategies.
 * Strong time management and ability to meet deadlines.
