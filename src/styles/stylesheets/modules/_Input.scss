@@ -4,7 +4,7 @@
   box-shadow: none;
   box-sizing: border-box;
   display: block;
-  font-family: 'Stem Text', Helvetica, Arial, sans-serif;
+  font-family: 'Wix Madefor Display', 'arial_fallback', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -27,6 +27,7 @@
   }
 
   &--autofillDark {
+
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus {
@@ -36,11 +37,10 @@
 
   &--generator {
     padding: 17px;
-    
+
     @include media-breakpoint-down(xs) {
       font-size: 13px;
       padding: 12px;
     }
   }
 }
-
