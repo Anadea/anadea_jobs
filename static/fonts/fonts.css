@@ -1,21 +1,62 @@
+/* font source https://github.com/wix-incubator/wixmadefor/releases/tag/3.100 */
+
 @font-face {
-  font-display: swap;
-  font-family: 'Stem Text';
+  font-family: 'Wix Madefor Display';
+  src: url('./wix_madefor_display/WixMadeforDisplay-Medium.otf.woff2')
+      format('woff2'),
+    url('./wix_madefor_display/WixMadeforDisplay-Medium.otf.otf')
+      format('opentype');
   font-style: normal;
   font-weight: 400;
-  src: local('Stem Text'),
-    url('STT55.woff2') format('woff2'),
-    url('STT55.woff') format('woff'),
-    url('STT55.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('./wix_madefor_display/WixMadeforDisplay-Medium.woff2')
+      format('woff2'),
+    url('./wix_madefor_display/WixMadeforDisplay-Medium.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
   font-display: swap;
-  font-family: 'Stem Text';
+}
+
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('./wix_madefor_display/WixMadeforDisplay-SemiBold.woff2')
+      format('woff2'),
+    url('./wix_madefor_display/WixMadeforDisplay-SemiBold.otf')
+      format('opentype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('./wix_madefor_display/WixMadeforDisplay-Bold.woff2') format('woff2'),
+    url('./wix_madefor_display/WixMadeforDisplay-Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('./wix_madefor_display/WixMadeforDisplay-ExtraBold.woff2')
+      format('woff2'),
+    url('./wix_madefor_display/WixMadeforDisplay-ExtraBold.otf')
+      format('opentype');
   font-style: normal;
   font-weight: 800;
-  src: local('Stem Text Bold'),
-    url('STT75.woff2') format('woff2'),
-    url('STT75.woff') format('woff'),
-    url('STT75.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'arial_fallback';
+  src: local('Arial'), local('ArialMT');
+  size-adjust: 104.3067%;
+  ascent-override: 96.6381%;
+  descent-override: 24.1595%;
+  line-gap-override: 0%;
 }
