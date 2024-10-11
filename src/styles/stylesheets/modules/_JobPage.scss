@@ -1,5 +1,6 @@
 .JobPage {
   margin-bottom: 20px;
+
   @mixin font($font-size, $line-height) {
     font-size: $font-size;
     line-height: $line-height;
@@ -8,12 +9,12 @@
   h2 {
     padding-bottom: 20px;
     @include font(22px, 30px);
-    font-weight: 800;
+    font-weight: 700;
 
     @include media-breakpoint-down(md) {
       @include font(18px, 26px);
-      font-weight: 800;
-    } 
+      font-weight: 700;
+    }
   }
 
   p {

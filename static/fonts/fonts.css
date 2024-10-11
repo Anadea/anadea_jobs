@@ -2,33 +2,12 @@
 
 @font-face {
   font-family: 'Wix Madefor Display';
-  src: url('./wix_madefor_display/WixMadeforDisplay-Medium.otf.woff2')
+  src: url('./wix_madefor_display/WixMadeforDisplay-Regular.woff2')
       format('woff2'),
-    url('./wix_madefor_display/WixMadeforDisplay-Medium.otf.otf')
+    url('./wix_madefor_display/WixMadeforDisplay-Regular.otf')
       format('opentype');
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Wix Madefor Display';
-  src: url('./wix_madefor_display/WixMadeforDisplay-Medium.woff2')
-      format('woff2'),
-    url('./wix_madefor_display/WixMadeforDisplay-Medium.otf') format('opentype');
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Wix Madefor Display';
-  src: url('./wix_madefor_display/WixMadeforDisplay-SemiBold.woff2')
-      format('woff2'),
-    url('./wix_madefor_display/WixMadeforDisplay-SemiBold.otf')
-      format('opentype');
-  font-style: normal;
-  font-weight: 600;
   font-display: swap;
 }
 
@@ -38,17 +17,6 @@
     url('./wix_madefor_display/WixMadeforDisplay-Bold.otf') format('opentype');
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Wix Madefor Display';
-  src: url('./wix_madefor_display/WixMadeforDisplay-ExtraBold.woff2')
-      format('woff2'),
-    url('./wix_madefor_display/WixMadeforDisplay-ExtraBold.otf')
-      format('opentype');
-  font-style: normal;
-  font-weight: 800;
   font-display: swap;
 }
 
