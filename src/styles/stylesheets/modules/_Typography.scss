@@ -33,7 +33,7 @@
 .Typography {
   &--heading1 {
     @include font(56px, 64px);
-    font-weight: 800;
+    font-weight: 700;
 
     @include media-breakpoint-down(md) {
       @include font(36px, 44px);
@@ -42,7 +42,7 @@
 
   &--heading2 {
     @include font(40px, 48px);
-    font-weight: 800;
+    font-weight: 700;
 
     @include media-breakpoint-down(md) {
       @include font(28px, 36px);
@@ -51,32 +51,32 @@
 
   &--heading3 {
     @include font(22px, 30px);
-    font-weight: 800;
+    font-weight: 700;
 
     @include media-breakpoint-down(md) {
       @include font(18px, 26px);
-      font-weight: 800;
+      font-weight: 700;
     }
   }
 
   &--heading3--smaller-xs {
     @include font(22px, 30px);
-    font-weight: 800;
+    font-weight: 700;
 
     @include media-breakpoint-down(md) {
       @include font(18px, 26px);
-      font-weight: 800;
+      font-weight: 700;
     }
 
     @include media-breakpoint-down(xs) {
       @include font(15px, 23px);
-      font-weight: 800;
+      font-weight: 700;
     }
   }
 
   &--heading4 {
     @include font(26px, 30px);
-    font-weight: 800;
+    font-weight: 700;
 
     @include media-breakpoint-down(md) {
       @include font(20px, 26px);
