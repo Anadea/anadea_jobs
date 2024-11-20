@@ -30,7 +30,3 @@ What You'll Do
 * Work in a dynamic, creative environment that values your input.
 * Competitive salary and benefits package.
 * Opportunities for professional growth and development.
-
-### How to Apply:
-
-Submit your resume and examples of your writing. Be ready to complete a brief test assignment. We're excited to see your skills in action and welcome you to our team of innovators!
