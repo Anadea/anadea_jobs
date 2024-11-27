@@ -17,7 +17,7 @@ What You'll Do
 ### What We're Looking For
 
 * Proven experience (3+ years) as an SEO Specialist for Western markets, with a strong understanding of SEO practices and tools.
-* Will be a huge plus: experience in IT outsourcing industry.
+* Experience in IT outsourcing industry.
 * Solid knowledge of search engine algorithms and ranking factors.
 * Proficiency in SEO tools such as Google Search Console, Ahrefs, SEMrush, Screaming Frog, and similar.
 * Experience in conducting comprehensive SEO audits and implementing recommendations.
