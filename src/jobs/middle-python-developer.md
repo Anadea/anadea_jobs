@@ -8,7 +8,7 @@ Our developers are extremely technically talented guys and passionate about thei
 
 We are looking for an exceptional Python developer to work with our team and join our community of talented experts.
 
-**Required skills:**
+**Required skills**
 
 \- 3+ years of experience developing python applications.
 
@@ -24,7 +24,9 @@ We are looking for an exceptional Python developer to work with our team and joi
 
 \- Experience in working with event driven architecture.
 
-**Nice to have:**
+
+
+**Nice to have**
 
 \- Experience working with PostgreSQL.
 
@@ -32,11 +34,9 @@ We are looking for an exceptional Python developer to work with our team and joi
 
 \- Familiarity with or a willingness to learn Golang.
 
-\- Knowledge and experience with front-end part
+\- Ability to work with front-end technologies
 
-\-﻿ Experience with Numpy, Pandas
-
-**Responsibilities:**
+**Responsibilities**
 
 \- Engage in direct communication with client representatives. 
 
@@ -44,11 +44,13 @@ We are looking for an exceptional Python developer to work with our team and joi
 
 \- Shape the technical roadmap, focusing on innovation, efficiency, and growth. 
 
-\- Participate in code reviews, design discussions, and team activities to maintain codebase quality and consistency. 
+\- Participate in code reviews, design discussions, and team activities to maintain codebase quality and consistency.
 
-**We offer:**\
 
-* Work with motivated professionals
+
+**We offer** 
+
+\- Work with motivated professionals
 
 \- Continuous performance reviews and appropriate changes in your compensation package
 
