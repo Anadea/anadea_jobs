@@ -150,7 +150,7 @@ const Footer = () => {
               </div>
               <div className="u-spacer-20"></div>
               <a
-                href="/awards-achievements"
+                href="https://anadea.info/awards-achievements"
                 className="award"
                 aria-label="Awards &amp; Achievements"
               >
