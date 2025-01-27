@@ -12,9 +12,6 @@ location: Ukraine/Europe
 1. #### Languages:
 
 * JavaScript (ES6+): Variables, scope, collections (map/filter/reduce), async/await, error handling, etc.
-
-<!---->
-
 * TypeScript: Interfaces, types, generics, inheritance.
 * SQL: Joins, subqueries, aggregates, group by.
 
