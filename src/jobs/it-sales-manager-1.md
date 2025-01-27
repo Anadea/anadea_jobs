@@ -4,7 +4,7 @@ location: Ukraine/Europe
 ---
 Anadea’s sales team is looking for a highly motivated, energetic, curious, and persevering individual, with a wide network, able to generate new opportunities
 
-**Requirements:**
+## Requirements:
 
 * Higher education (university degree)
 * 3+ years of experience in IT sales for the EU/US markets (outstaff/outsource companies)
@@ -17,7 +17,7 @@ Anadea’s sales team is looking for a highly motivated, energetic, curious, and
 * Good knowledge of technology, startups, digital trends
 * Strong analytical, presentation and interpersonal skills
 
-**Nice to have:**
+## Nice to have:
 
 * Roadshows/conferences experience 
 * Technical background
@@ -25,7 +25,7 @@ Anadea’s sales team is looking for a highly motivated, energetic, curious, and
 * Industry expertise (MedTech, FinTech, PropTech)
 * Interest in AI
 
-**Responsibilities:**
+## Responsibilities:
 
 * Research and target new prospects from various industries and regions
 * Understand customer needs in the custom software development context through extensive dialogue and deep understanding of the typical challenges and bottlenecks that drive companies to outsource
@@ -36,7 +36,7 @@ Anadea’s sales team is looking for a highly motivated, energetic, curious, and
 * Build expertise across various industry segments
 * Develop sales strategies to meet sales goals
 
-**W﻿e offer:**
+## **W﻿e offer:**
 
 * Work with motivated professionals
 * Continuous performance reviews and appropriate changes in your compensation package
