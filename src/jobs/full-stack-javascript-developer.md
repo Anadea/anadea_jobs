@@ -5,17 +5,17 @@ location: Ukraine/Europe
 ## Required Skills:
 
 * Experience: 3+ years of commercial development.
-* English Level: B1 (intermediate).
+* English Level: B1 (intermediate+).
 
 **Technical Stack:**
 
-1. Languages:
+1. #### Languages:
 
 * JavaScript (ES6+): Variables, scope, collections (map/filter/reduce), async/await, error handling, etc.
 * TypeScript: Interfaces, types, generics, inheritance.
 * SQL: Joins, subqueries, aggregates, group by.
 
-2. **Frameworks & Libraries:**
+2. #### **Frameworks & Libraries:**
 
 * Frontend: React (hooks, conditional rendering), React Query, Next.js (SSR, routing).
 * Backend: NestJS (modules, controllers, services, DTOs), TypeORM, WebSockets.
@@ -23,9 +23,9 @@ location: Ukraine/Europe
 * Styles: Tailwind, SCSS, Styled-components/Emotion.
 * Additional: Axios, Formik/React-Hook-Form, i18next, Yup/Zod.
 
-3. **Technologies:** PostgreSQL, Redis, Git, AWS basics.
-4. **Patterns:** MVC, Dependency Injection.
-5. **Computer Science:**
+3. #### **Technologies:** PostgreSQL, Redis, Git, AWS basics.
+4. #### **Patterns:** MVC, Dependency Injection.
+5. #### **Computer Science:**
 
 * Network protocols, authentication flows.
 * Algorithms (O(n)), threading basics.
