@@ -5,7 +5,7 @@ location: Ukraine/Europe
 ## Required Skills:
 
 * Experience: 3+ years of commercial development.
-* English Level: B1 (intermediate).
+* English Level: B1 (intermediate+).
 
 **Technical Stack:**
 
