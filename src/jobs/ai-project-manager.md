@@ -2,13 +2,11 @@
 title: AI Project Manager
 location: Ukraine/Europe
 ---
-
-
 We are looking for a Project Manager who can improve processes, effectively communicate with clients, implement standardised approaches to AI project management, and support the team in strategic development.
 
 **Requirements:**
 
-* 3+ years of experience as an IT Project Manager (experience with AI/ML will be an advantage).
+* 2+ years of experience as an IT Project Manager (experience with AI/ML will be an advantage).
 * Ability to effectively organize team workflows and ensure efficient task planning.
 * Strong communication, negotiation, and coordination skills for technical and business requirements.
 * Understanding of AI/ML solution development processes and experience in their implementation.
