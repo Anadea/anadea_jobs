@@ -1,5 +1,5 @@
 ---
-title: AI Project Manager
+title: Project Manager (AI related projects)
 location: Ukraine/Europe
 ---
 We are looking for a Project Manager who can improve processes, effectively communicate with clients, implement standardised approaches to AI project management, and support the team in strategic development.
