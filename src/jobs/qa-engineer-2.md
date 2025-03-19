@@ -1,5 +1,5 @@
 ---
-title: QA Engineer
+title: Junior QA Engineer
 location: Ukraine/Europe
 ---
 We are seeking a dedicated and detail-oriented QA Engineer with over 1 year of experience to join our team. The ideal candidate will be responsible for ensuring the quality and reliability of our software products through comprehensive testing and close collaboration with the development team.
