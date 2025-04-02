@@ -12,23 +12,37 @@ We are looking for an exceptional Python developer to work with our team and joi
 
 \- 3+ years of experience developing python applications.
 
-\- Experience in building serverless applications (AWS Lambda preferred)
+\- Experience working with web frameworks (Django, FastAPI).
 
-\- Proven record of writing readable, testable and scalable code in production environment
+\- Experience working with relational databases.
 
-\- English B1+ or higher
+\- Experience in developing architecture and building services from the ground up.
 
-**Will be a plus**
+\- Experience with containerization technologies.
 
-\- Familiarity with AWS cloud infrastructure (DynamoDB, SQS/SNS, API Gateway)
+\- English Intermediate.
 
-\- Experience with Infrastructure as Code (AWS CDK preferred)
+\- Experience in working with event driven architecture.
 
-\- Experience with CI/CD pipelines (GitHub Actions preferred)
+
+
+**Nice to have**
+
+\- Experience working with PostgreSQL.
+
+\- Experience using cloud (AWS, GCP).
+
+\- Familiarity with or a willingness to learn Golang.
+
+\- Ability to work with front-end technologies
+
+
 
 **Responsibilities**
 
-\- Engage in direct communication with client representatives.
+\- Engage in direct communication with client representatives. 
+
+\- Contribute to both ongoing projects and the initiation of new product launches.
 
 \- Shape the technical roadmap, focusing on innovation, efficiency, and growth.
 
