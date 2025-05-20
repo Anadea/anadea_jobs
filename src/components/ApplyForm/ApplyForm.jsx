@@ -26,8 +26,8 @@ const validate = values => {
     errors.email = true
   }
 
-  if (values.skype && !/[a-z0-9_\-.,:]$/i.test(values.skype)) {
-    errors.skype = true
+  if (values.telegram && !/[a-z0-9_\-.,:]$/i.test(values.telegram)) {
+    errors.telegram = true
   }
 
   if (values.resume_file.length === 0) {
@@ -52,7 +52,7 @@ const ApplyFormFormik = ({ jobTitle }) => {
       full_name: '',
       phone: '',
       email: '',
-      skype: '',
+      telegram: '',
       resume_file: [],
     },
     validate,
@@ -237,26 +237,24 @@ const ApplyFormFormik = ({ jobTitle }) => {
               <div className="InputGroup-input">
                 <input
                   className="Input Input--large Input--autofillDark Typography Typography--white"
-                  id="skype"
+                  id="telegram"
                   type="text"
-                  name="skype"
+                  name="telegram"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.skype}
+                  value={formik.values.telegram}
                 />
               </div>
               <div className="InputGroup-label">
                 <label
                   className="Label Typography Typography--white d-flex align-items-center"
-                  htmlFor="skype"
+                  htmlFor="telegram"
                 >
-                  Skype:
+                  Telegram:
                 </label>
                 <img
                   className={`inputInvalid ${
-                    validationFlag && formik.errors.skype
-                      ? 'inputInvalid--show'
-                      : ''
+                    validationFlag && formik.errors.telegram ? 'inputInvalid--show' : ''
                   }`}
                   src="../../images/icons/exclamationpoint.svg"
                 />
