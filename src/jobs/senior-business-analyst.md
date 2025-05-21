@@ -1,9 +1,7 @@
 ---
-title: Senior Business Analyst
+title: Business Analyst
 location: Ukraine/Europe
 ---
-
-
 We are looking for a person that can perform business analysis tasks during all stages starting from pre-sale, through discovery to development of a product.
 
 We would like to draw your attention that our main goal is to provide the customer with what they really need versus what they want. This is why first of all we need you to focus on business requirements and scope baselining from the very beginning of the product elaboration.
@@ -14,7 +12,7 @@ The Business Analyst at Anadea is responsible for helping the team to deliver va
 
 Required skills
 
-* 4+ years of business analysis in a software development company
+* 3+ years of business analysis in a software development company
 * Knowledge of different SDLC
 * Participation in pre-sales, upsales and discovery phases
 * Understanding of business requirements and how they traced to system requirements
