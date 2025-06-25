@@ -17,8 +17,6 @@ Anadea | Tensorway is an international distributed team with more than 20 years 
 * **DevOps Basics**: Docker containerization and CI setup (GitHub Actions/GitLab CI) for “green” builds and agent testing.
 * **Cloud Platforms**: familiarity with AWS, GCP, or Azure for deployment, scaling, and load balancing.
 
-
-
 **Bonus Knowledge and Preferred Qualifications**
 
 * **Rust or another systems language** for high-performance services.
@@ -26,8 +24,8 @@ Anadea | Tensorway is an international distributed team with more than 20 years 
 * **Additional Eval Frameworks**: experience with TruLens, Promptfoo, or Phoenix (Arize) for comparative analysis of agent behavior.
 * **Guardrails and Security**: implementation of input/output filters to protect against unwanted content and prompt injection.
 * **Fine-tuning and Local Models**: basic experience with quantization, fine-tuning, and working with RLHF approaches.
-
-
+* **Software Development:** experience with concurrent programming and database systems, understanding of software design principles and patterns.
+* **AI Agents:** understanding the structure of agents and environments, traditional and LLM-based approaches to agent problem-solving, decision-making, planning, etc.
 
 **Conditions and Benefits**
 
