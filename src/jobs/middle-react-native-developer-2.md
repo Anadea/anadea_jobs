@@ -1,5 +1,5 @@
 ---
-title: Middle React Native Developer
+title: Middle React Native Developer (Freelance short term project)
 location: Ukraine/Europe
 ---
 
