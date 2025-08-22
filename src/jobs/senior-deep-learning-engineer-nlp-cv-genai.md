@@ -35,7 +35,6 @@ As a Senior Engineer, you will collaborate closely with clients and internal tea
 
 * Introduction (30 minutes)
 * Technical Discussion (60 minutes): Discuss your previous AI achievements, how you approach solving complex challenges, and your vision of the industry. 
-* Live Practical Technical Session (60 minutes): Collaborate on AI-related puzzles, small tasks and problem-solving scenarios in real time.
 * Final Interview (Offer & Next Steps): Align on long-term objectives, potential growth opportunities, and fine-tune role expectations. 
 
 ## How to Apply:
