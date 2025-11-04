@@ -1,7 +1,10 @@
 ---
-title: Senior iOS Developer
+title: Senior iOS Developer (Dnipro city)
 location: Ukraine/Europe
 ---
+**Please note that this position requires visiting the office in Dnipro 2-3 times a week.**
+
+\
 We're looking for a Senior iOS Developer to join our team and help us build and release innovative and top-quality iOS applications for our industry-leading products.\
 We are looking for a highly experienced, proactive, and technically skilled iOS Developer with\
 expertise in native iOS development. The ideal candidate has over 5 years of hands-on experience building iOS apps, is comfortable leading development efforts, and has a deep understanding of architectural patterns, performance tuning, and modern testing practices.\
