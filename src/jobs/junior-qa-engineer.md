@@ -1,18 +1,18 @@
 ---
-title: Junior QA Engineer
+title: QA Engineer
 location: Ukraine/Europe
 ---
-Are you looking to take the first step in your professional career in the world of technology? We are looking for a highlye motivated QA Junior to join our international team.\
+Are you looking to take the first step in your professional career in the world of technology? \
 If you are a curious person with great attention to detail and a passion for ensuring users enjoy the best possible experience, especially when interacting with our forms, then this is the place for you! We offer a dynamic and collaborative environment where you can develop
 
-## Requirements: 
+## Requirements:
 
 * **Motivation and Eagerness to Learn:** Passion for technology and a great interest in developing a professional career in software quality assurance (QA). No previous professional experience is required, but internships or personal projects will be valued.
 * **Extreme Attention to Detail:** You are a meticulous, observant, and organised Junior QA –Job Description person, capable of identifying logical and visual inconsistencies, even in the most complex forms.
 * **Analytical Skills:** You have a curious mind and problem-solving abilities, with the capacity to understand data flows and the logic behind validations.
 * **Technical Fundamentals:** You possess basic knowledge of web development technologies such as HTML and CSS to understand the structure of forms. Familiarity with JavaScript/TypeScript is a big plus.
 * **Agile Mindset:** Interest in or knowledge of the principles of agile methodologies (Scrum, Kanban) and a desire to work in a dynamic and collaborative environment.
-*  **Communication Skills:** Ability to communicate clearly and effectively, both orally and in writing, to accurately report errors found.
+* **Communication Skills:** Ability to communicate clearly and effectively, both orally and in writing, to accurately report errors found.
 * **Teamwork:** You are a proactive person, with a positive attitude and a desire to collaborate and learn from the rest of the team.
 * **Languages:** A good level of English (minimum B2), both spoken and written, is essential, as it is the main working language of the team and for technical documentation
 
