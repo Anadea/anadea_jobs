@@ -1,5 +1,5 @@
 ---
-title: Junior QA
+title: Junior QA Engineer
 location: Ukraine/Europe
 ---
 Are you looking to take the first step in your professional career in the world of\
