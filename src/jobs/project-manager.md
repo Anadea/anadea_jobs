@@ -1,5 +1,5 @@
 ---
-title: Project Manager
+title: Middle Project Manager
 location: Ukraine/Europe
 ---
 
