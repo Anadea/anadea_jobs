@@ -3,7 +3,7 @@ title: Senior QA Engineer
 location: Ukraine/Europe
 ---
 **About the role**\
-We are seeking a highly skilled and motivated Senior QAEngineer to join our team. In this strategic role, you will own the end-to-end quality process—from strategy conception to execution—while driving innovation across our QA practices. You will build and refine guidelines, spearhead process improvements, and ensure our releases consistently meet the \
+We are seeking a highly skilled and motivated Senior QA Engineer to join our team. In this strategic role, you will own the end-to-end quality process—from strategy conception to execution—while driving innovation across our QA practices. You will build and refine guidelines, spearhead process improvements, and ensure our releases consistently meet the \
 highest standards of excellence. The ideal candidate brings a proven track record of defining and implementing quality best practices, hands-on experience in test automation and promoting excellence and continuous improvement across QA discipline.\
 If you're a motivated and meticulous person with strong analytical skills and your passions are process optimization and automating tests, this is your place!\
 \
