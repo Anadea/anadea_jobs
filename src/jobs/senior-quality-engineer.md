@@ -5,15 +5,8 @@ location: Ukraine/Europe
 **About the role**\
 We are seeking a highly skilled and motivated Senior QA Engineer to join our team. In this strategic role, you will own the end-to-end quality process—from strategy conception to execution—while driving innovation across our QA practices. You will build and refine guidelines, spearhead process improvements, and ensure our releases consistently meet the \
 highest standards of excellence. The ideal candidate brings a proven track record of defining and implementing quality best practices, hands-on experience in test automation and promoting excellence and continuous improvement across QA discipline.\
-If you're a motivated and meticulous person with strong analytical skills and your passions are process optimization and automating tests, this is your place!\
-\
-**Responsibilities**\
-● Quality Management and Strategy: You will actively participate in defining and implementing the QA strategy, ensuring that quality standards and best practices are effectively integrated throughout the entire development lifecycle.\
-● Automation Design and Execution: You will design, develop, and maintain automated test scripts for web and API testing to validate services' functionality, reliability, and performance. You will contribute to decisions regarding architecture, tools, and scope to maximize efficiency and coverage.\
-● Driving Continuous Improvement: You will actively contribute to continuous improvement by researching, prototyping, and implementing new technologies and methodologies that optimize quality processes from a technical perspective and help to reduce technical debt within a fast-moving, agile environment.\
-● Strategic Collaboration: You will work closely with product, DevOps, and development teams to ensure that technical quality is a fundamental pillar in day-to-day decision-making, and that our CI/CD process is effective and reliable.
+If you're a motivated and meticulous person with strong analytical skills and your passions are process optimization and automating tests, this is your place!
 
-\
 **Requirements**\
 ● Experience collaborating with cross-functional teams in an Agile setting.\
 ● Proven experience creating QA test plans and generating detailed and well-structured test cases.\
@@ -27,11 +20,15 @@ If you're a motivated and meticulous person with strong analytical skills and yo
 ● Solid experience with debugging, logging analysis, and root cause investigation of application issues.\
 ● Track record in defining, implementing, and optimizing quality strategies for software systems.\
 \
+**Responsibilities**\
+● Quality Management and Strategy: You will actively participate in defining and implementing the QA strategy, ensuring that quality standards and best practices are effectively integrated throughout the entire development lifecycle.\
+● Automation Design and Execution: You will design, develop, and maintain automated test scripts for web and API testing to validate services' functionality, reliability, and performance. You will contribute to decisions regarding architecture, tools, and scope to maximize efficiency and coverage.\
+● Driving Continuous Improvement: You will actively contribute to continuous improvement by researching, prototyping, and implementing new technologies and methodologies that optimize quality processes from a technical perspective and help to reduce technical debt within a fast-moving, agile environment.\
+● Strategic Collaboration: You will work closely with product, DevOps, and development teams to ensure that technical quality is a fundamental pillar in day-to-day decision-making, and that our CI/CD process is effective and reliable.
+
+\
 **Preferred Experience**\
 ● A strong grasp of formal testing fundamentals (ISTQB certification is a plus).\
 ● Familiarity with advanced testing areas like web performance (Core Web Vitals) and security testing (SAST/DAST). Experience with our tech stack: JS/TypeScript, React and Node.\
 ● Hands-on experience with AWS, Google Cloud Platform (GCP), X-Ray, or Datadog.\
-\
-**Other requirements:**\
-● Required Spanish level: Conversational is enough but mandatory.\
-● English level: Conversational level is not required. Reading comprehension and writing is a plus.
+● English level: Upper-Intermediate
