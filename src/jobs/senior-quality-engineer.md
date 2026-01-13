@@ -31,7 +31,4 @@ If you're a motivated and meticulous person with strong analytical skills and yo
 ● A strong grasp of formal testing fundamentals (ISTQB certification is a plus).\
 ● Familiarity with advanced testing areas like web performance (Core Web Vitals) and security testing (SAST/DAST). Experience with our tech stack: JS/TypeScript, React and Node.\
 ● Hands-on experience with AWS, Google Cloud Platform (GCP), X-Ray, or Datadog.\
-\
-**Other requirements:**\
-● Required Spanish level: Conversational is enough but mandatory.\
-● English level: Conversational level is not required. Reading comprehension and writing is a plus.
+● English level: Upper-Intermediate
