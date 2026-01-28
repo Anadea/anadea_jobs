@@ -1,5 +1,5 @@
 ---
-title: Senior AI Engineer
+title: Senior Python + AI Engineer
 location: Ukraine/Europe
 ---
 We're looking for a Senior Backend Developer to join our dream team and help us release the best, most innovative products across our mobile and AI platforms.\
