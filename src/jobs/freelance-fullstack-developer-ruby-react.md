@@ -2,7 +2,6 @@
 title: Freelance Fullstack Developer (Ruby + React)
 location: Ukraine/Europe
 ---
-##### \
 Anadea Inc is a team of more than 130 IT professionals. Our developers are extremely technically talented guys and passionate about their technologies, which is dictated by our highly competitive IT market.\
 We are looking for an exceptional Fullstack developer to work with our team and join our community of talented experts.
 
