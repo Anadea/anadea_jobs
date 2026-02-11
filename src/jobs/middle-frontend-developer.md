@@ -4,7 +4,7 @@ location: Ukraine/Europe
 ---
 **P﻿LEASE NOTE THAT CONVERSATIONAL SPANISH IS MANDATORY FOR THIS POSITION**\
 \
-We are looking for a motivated Frontend Developer  to join our team. Youwill work on building modern, high-quality web experiences for both customer-facingsites and internal tools, collaborating closely with cross-functional teams.\
+We are looking for a motivated Frontend Developer  to join our team. You will work on building modern, high-quality web experiences for both customer-facingsites and internal tools, collaborating closely with cross-functional teams.\
 \
 **W﻿hat you will do**\
 ● Develop modern, user-friendly interfaces following design and marketing guidelines.\
