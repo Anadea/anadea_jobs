@@ -4,10 +4,7 @@ location: Ukraine/Europe
 ---
 We’re looking for a Senior Android Developer to join our team and help us build and release\
 innovative and top-quality Android applications for our industry-leading products.\
-We are looking for a highly experienced, proactive, and technically skilled Android Developer with\
-expertise in native Android development. The ideal candidate has over 5 years of hands-on\
-experience building Android apps using Kotlin, is comfortable leading development efforts, and has a\
-deep understanding of architectural patterns, performance tuning, and modern testing practices\
+We are looking for a highly experienced, proactive, and technically skilled Android Developer with expertise in native Android development. The ideal candidate has over 5 years of hands-on experience building Android apps using Kotlin, is comfortable leading development efforts, and has a deep understanding of architectural patterns, performance tuning, and modern testing practices\
 \
 **Key Responsibilities**\
 ● Drive new features for our existing and upcoming Android applications, ensuring a seamless and engaging user experience\
