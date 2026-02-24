@@ -3,7 +3,7 @@ title: Middle/Senior Flutter Developer
 location: Ukraine/Europe
 ---
 \
-We are looking for a motivated Frontend Engineer (Flutter) to join our team. You will be\
+We are looking for a motivated Flutter Developer to join our team. You will be\
 responsible for building high-quality mobile experiences for iOS and Android, working closely\
 with Product, Design, Backend, QA, and Growth teams.\
 Your focus will be delivering scalable, performant, and user-friendly mobile applications.\
