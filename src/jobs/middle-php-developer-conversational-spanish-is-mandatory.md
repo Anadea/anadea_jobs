@@ -1,6 +1,6 @@
 ---
 title: Middle PHP Developer (Conversational Spanish is mandatory)
-location: Ukraine/Spain
+location: Ukraine/Europe
 ---
 **Responsibilities:**\
 - Develop scalable, secure, and high-performance back-end architectures using \
