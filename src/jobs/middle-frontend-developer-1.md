@@ -18,7 +18,6 @@ quality.\
 ● Write clean, reusable, and maintainable code, adhering to established best practices\
 and design patterns.\
 ● Contribute to continuous improvement of frontend processes and standards.\
-What You'll Bring (Requirements)\
 \
 **Requirements**\
 ● 2–4 years of professional experience in frontend development.\
