@@ -1,5 +1,5 @@
 ---
-title: "Middle Frontend Developer "
+title: Middle Frontend Developer (Conversational Spanish is required)
 location: Ukraine/Europe
 ---
 We are looking for a motivated Middle Frontend Developer to join our team. You\
