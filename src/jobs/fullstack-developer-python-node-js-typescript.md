@@ -2,11 +2,11 @@
 title: FullStack Developer (Python/Node.js/TypeScript)
 location: Ukraine/Europe
 ---
-We're building Project Apollo, a multiplatform Al-powered document system serving hundreds of thousands of users every month: We need a  Engineer who ships end-to-end: someone who thinks like a product owner, codes like a craftsperson, and reaches for Al-native tooling by default.
+We're building Project, a multiplatform Al-powered document system serving hundreds of thousands of users every month: We need a  Engineer who ships end-to-end: someone who thinks like a product owner, codes like a craftsperson, and reaches for Al-native tooling by default.
 
 What You Will Do
 
-• Build and maintain the core Apollo multiplatform document system. You'll own features end-to-end, from idea to production, React frontends, Node.js/Express backends, and PostgreSQL, Databricks integration & data layers.
+• Build and maintain the core multiplatform document system. You'll own features end-to-end, from idea to production, React frontends, Node.js/Express backends, and PostgreSQL, Databricks integration & data layers.
 
 • Ship to learn. Proactively instrument features, measure impact, seek user feedback, and iterate or kill based on what you discover. You treat metrics as a compass, not a report caro
 
