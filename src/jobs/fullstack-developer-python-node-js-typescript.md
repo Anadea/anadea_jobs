@@ -1,5 +1,5 @@
 ---
-title: FullStack Developer (Python/Node.js/TypeScript)
+title: Product Engineer (Python/Node.js/TypeScript)
 location: Ukraine/Europe
 ---
 We're building Project, a multiplatform Al-powered document system serving hundreds of thousands of users every month: We need a  Engineer who ships end-to-end: someone who thinks like a product owner, codes like a craftsperson, and reaches for Al-native tooling by default.
