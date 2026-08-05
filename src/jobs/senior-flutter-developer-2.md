@@ -41,6 +41,4 @@ We are looking for a highly experienced, proactive, and technically skilled Flut
 
 **Working Relationship**
 
-You will be working as part of our external partner network, collaborating closely with our internal teams including Mobile Advisors, Product Owners, Designers, and QA professionals. This partnership model ensures knowledge sharing, consistent quality standards, and seamless integration with our development processes while maintaining the flexibility and expertise that external partnerships provide.
-
-<!---->
+You will be working as part of our external partner network, collaborating closely with our internal teams including Mobile Advisors, Product Owners, Designers, and QA professionals.
