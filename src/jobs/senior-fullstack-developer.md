@@ -1,5 +1,5 @@
 ---
-title: Senior Fullstack Developer
+title: Senior Fullstack Developer (Python + React)
 location: Ukraine/Europe
 ---
 
