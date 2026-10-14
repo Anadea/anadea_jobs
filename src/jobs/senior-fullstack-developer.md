@@ -2,8 +2,6 @@
 title: Senior Fullstack Developer (Python + React)
 location: Ukraine/Europe
 ---
-
-
 **About us**\
 Our mission is to remove capital barriers in the mortgage industry by providing a universal direct purchasing platform and serving as the primary liquidity hub for market participants.\
 We built a platform, which helps investors realize higher returns with greater control and flexibility, while delivering more and better options for lenders and borrowers. Leading mortgage investors and originators trust HomeLend and grow their business with us.\
@@ -19,7 +17,7 @@ We built a platform, which helps investors realize higher returns with greater
 **Required skills**
 
 * Experience as a Tech Lead / Team Lead
-* Front-end oriented development
+* Front-end oriented development (React or VueJS)
 * 80% hands-on development
 * AI-assisted development
 * Experience with Git Work tree ([git-scm.com/docs/git-worktree](https://git-scm.com/docs/git-worktree)) or similar
